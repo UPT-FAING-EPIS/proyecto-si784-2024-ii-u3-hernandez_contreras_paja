@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\he\\ProyectoAsistencia\\ProyectoAsistencia\\ProyectoAsistencia.csproj": {}
+    "D:\\calidad22\\ProyectoAsistencia\\ProyectoAsistencia\\ProyectoAsistencia.csproj": {}
   },
   "projects": {
-    "D:\\he\\ProyectoAsistencia\\ProyectoAsistencia\\ProyectoAsistencia.csproj": {
+    "D:\\calidad22\\ProyectoAsistencia\\ProyectoAsistencia\\ProyectoAsistencia.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\he\\ProyectoAsistencia\\ProyectoAsistencia\\ProyectoAsistencia.csproj",
+        "projectUniqueName": "D:\\calidad22\\ProyectoAsistencia\\ProyectoAsistencia\\ProyectoAsistencia.csproj",
         "projectName": "ProyectoAsistencia",
-        "projectPath": "D:\\he\\ProyectoAsistencia\\ProyectoAsistencia\\ProyectoAsistencia.csproj",
+        "projectPath": "D:\\calidad22\\ProyectoAsistencia\\ProyectoAsistencia\\ProyectoAsistencia.csproj",
         "packagesPath": "C:\\Users\\ALVARO\\.nuget\\packages\\",
-        "outputPath": "D:\\he\\ProyectoAsistencia\\ProyectoAsistencia\\obj\\",
+        "outputPath": "D:\\calidad22\\ProyectoAsistencia\\ProyectoAsistencia\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ALVARO\\AppData\\Roaming\\NuGet\\NuGet.Config"

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "cx9kBFldpi4=",
+  "dgSpecHash": "7kaXX/0nNJQ=",
   "success": true,
-  "projectFilePath": "D:\\he\\ProyectoAsistencia\\ProyectoAsistencia.Tests\\ProyectoAsistencia.Tests.csproj",
+  "projectFilePath": "D:\\calidad22\\ProyectoAsistencia\\ProyectoAsistencia.Tests\\ProyectoAsistencia.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ALVARO\\.nuget\\packages\\bodi\\1.5.0\\bodi.1.5.0.nupkg.sha512",
     "C:\\Users\\ALVARO\\.nuget\\packages\\castle.core\\5.1.1\\castle.core.5.1.1.nupkg.sha512",
