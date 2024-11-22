@@ -40,8 +40,7 @@ jobs:
           cd ProyectoAsistencia.Tests
           dotnet test --collect:"XPlat Code Coverage"
 
-          
-          reportgenerator "-reports:TestResults/**/coverage.cobertura.xml" "-targetdir:coverage" -reporttypes:Cobertura
+          reportgenerator "-reports:TestResults/**/coverage.cobertura.xml" "-targetdir:coverage" -reporttypes:Cobertura -sourcedirs:.
           Rename-Item -Path "coverage\Cobertura.xml" -NewName "coverage.xml"
 
 
