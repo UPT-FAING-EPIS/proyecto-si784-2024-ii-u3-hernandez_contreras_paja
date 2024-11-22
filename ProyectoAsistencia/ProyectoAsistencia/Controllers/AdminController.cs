@@ -57,6 +57,13 @@ namespace ProyectoAsistencia.Controllers
         [HttpPost]
         public IActionResult AgregarEmpleado(Empleado empleado)
         {
+            // Verifica si el modelo es válido
+            if (!ModelState.IsValid)
+            {
+                return View(empleado);
+            }
+
+            // Validación personalizada: Verifica si el modelo es nulo o el NombreUsuario está vacío
             if (empleado == null || string.IsNullOrWhiteSpace(empleado.NombreUsuario))
             {
                 ModelState.AddModelError("NombreUsuario", "El nombre de usuario es requerido.");
@@ -70,6 +77,7 @@ namespace ProyectoAsistencia.Controllers
                 return View(empleado);
             }
 
+            // Asigna un ID único y agrega el empleado a la lista
             empleado.Id = empleados.Count + 1;
             empleados.Add(empleado);
 
@@ -84,6 +92,7 @@ namespace ProyectoAsistencia.Controllers
 
             return RedirectToAction("GestionEmpleados");
         }
+
 
         // Gestión de Asistencias - Lista
         public IActionResult GestionAsistencias()
