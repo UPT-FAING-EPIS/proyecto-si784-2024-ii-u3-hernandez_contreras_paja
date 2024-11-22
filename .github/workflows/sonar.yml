@@ -32,7 +32,6 @@ jobs:
           dotnet restore
           cd ProyectoAsistencia.Tests
           dotnet test --collect:"XPlat Code Coverage"
-          reportGenerator "-reports:./TestResults/*/coverage.cobertura.xml" "-targetdir:Cobertura" -reporttypes
           dotnet tool install --global dotnet-sonarscanner
           dotnet sonarscanner begin /k:"alvarocontreras13_calidadproyecto" /o:"alvarocontreras13" /d:sonar.cs.opencover.reportsPaths="TestResults/*/coverage.cobertura.xml" /d:sonar.login="${{ secrets.SONAR_TOKEN }}"
           dotnet build
