@@ -33,7 +33,7 @@ jobs:
           cd ProyectoAsistencia.Tests
           dotnet test --collect:"XPlat Code Coverage"
           dotnet tool install --global dotnet-sonarscanner
-          dotnet sonarscanner begin /k:"alvarocontreras13_calidadproyecto" /o:"alvarocontreras13" /d:sonar.cs.opencover.reportsPaths="ProyectoAsistencia.Tests/TestResults/2f512b4b-e2d8-49b6-a8df-edc1303ec357/coverage.cobertura.xml" /d:sonar.exclusions="Cobertura/**" /d:sonar.login="${{ secrets.SONAR_TOKEN }}"
+          dotnet sonarscanner begin /k:"alvarocontreras13_calidadproyecto" /o:"alvarocontreras13" /d:sonar.cs.opencover.reportsPaths="TestResults/2f512b4b-e2d8-49b6-a8df-edc1303ec357/coverage.cobertura.xml" /d:sonar.exclusions="Cobertura/**" /d:sonar.login="${{ secrets.SONAR_TOKEN }}"
           dotnet build
           dotnet sonarscanner end /d:sonar.login="${{ secrets.SONAR_TOKEN }}"
 
