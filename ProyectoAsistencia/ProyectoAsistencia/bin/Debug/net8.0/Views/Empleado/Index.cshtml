@@ -1,0 +1,25 @@
+﻿@model IEnumerable<ProyectoAsistencia.Models.Empleado>
+
+<h2>Lista de Empleados</h2>
+
+<a asp-action="AgregarEmpleado">Agregar Empleado</a>
+
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Nombre de Usuario</th>
+            <th>Detalles</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var empleado in Model)
+        {
+            <tr>
+                <td>@empleado.Id</td>
+                <td>@empleado.NombreUsuario</td>
+                <td><a asp-action="Detalles" asp-route-id="@empleado.Id">Ver Detalles</a></td>
+            </tr>
+        }
+    </tbody>
+</table>

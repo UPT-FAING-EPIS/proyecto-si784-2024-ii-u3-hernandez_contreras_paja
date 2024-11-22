@@ -1,0 +1,181 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\angel\\source\\repos\\ProyectoAsistencia\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A51C513B-1861-4686-B370-4FA619F1F18B}|ProyectoAsistencia\\ProyectoAsistencia.csproj|c:\\users\\angel\\source\\repos\\proyectoasistencia\\proyectoasistencia\\views\\asistencia\\historial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A51C513B-1861-4686-B370-4FA619F1F18B}|ProyectoAsistencia\\ProyectoAsistencia.csproj|solutionrelative:proyectoasistencia\\views\\asistencia\\historial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A51C513B-1861-4686-B370-4FA619F1F18B}|ProyectoAsistencia\\ProyectoAsistencia.csproj|c:\\users\\angel\\source\\repos\\proyectoasistencia\\proyectoasistencia\\views\\asistencia\\registrarasistencia.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A51C513B-1861-4686-B370-4FA619F1F18B}|ProyectoAsistencia\\ProyectoAsistencia.csproj|solutionrelative:proyectoasistencia\\views\\asistencia\\registrarasistencia.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A51C513B-1861-4686-B370-4FA619F1F18B}|ProyectoAsistencia\\ProyectoAsistencia.csproj|c:\\users\\angel\\source\\repos\\proyectoasistencia\\proyectoasistencia\\views\\admin\\verempleados.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A51C513B-1861-4686-B370-4FA619F1F18B}|ProyectoAsistencia\\ProyectoAsistencia.csproj|solutionrelative:proyectoasistencia\\views\\admin\\verempleados.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A51C513B-1861-4686-B370-4FA619F1F18B}|ProyectoAsistencia\\ProyectoAsistencia.csproj|c:\\users\\angel\\source\\repos\\proyectoasistencia\\proyectoasistencia\\views\\admin\\agregarempleado.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A51C513B-1861-4686-B370-4FA619F1F18B}|ProyectoAsistencia\\ProyectoAsistencia.csproj|solutionrelative:proyectoasistencia\\views\\admin\\agregarempleado.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A51C513B-1861-4686-B370-4FA619F1F18B}|ProyectoAsistencia\\ProyectoAsistencia.csproj|c:\\users\\angel\\source\\repos\\proyectoasistencia\\proyectoasistencia\\models\\asistencia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A51C513B-1861-4686-B370-4FA619F1F18B}|ProyectoAsistencia\\ProyectoAsistencia.csproj|solutionrelative:proyectoasistencia\\models\\asistencia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A51C513B-1861-4686-B370-4FA619F1F18B}|ProyectoAsistencia\\ProyectoAsistencia.csproj|c:\\users\\angel\\source\\repos\\proyectoasistencia\\proyectoasistencia\\models\\empleado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A51C513B-1861-4686-B370-4FA619F1F18B}|ProyectoAsistencia\\ProyectoAsistencia.csproj|solutionrelative:proyectoasistencia\\models\\empleado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A51C513B-1861-4686-B370-4FA619F1F18B}|ProyectoAsistencia\\ProyectoAsistencia.csproj|c:\\users\\angel\\source\\repos\\proyectoasistencia\\proyectoasistencia\\controllers\\asistenciacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A51C513B-1861-4686-B370-4FA619F1F18B}|ProyectoAsistencia\\ProyectoAsistencia.csproj|solutionrelative:proyectoasistencia\\controllers\\asistenciacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A51C513B-1861-4686-B370-4FA619F1F18B}|ProyectoAsistencia\\ProyectoAsistencia.csproj|c:\\users\\angel\\source\\repos\\proyectoasistencia\\proyectoasistencia\\controllers\\empleadocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A51C513B-1861-4686-B370-4FA619F1F18B}|ProyectoAsistencia\\ProyectoAsistencia.csproj|solutionrelative:proyectoasistencia\\controllers\\empleadocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A51C513B-1861-4686-B370-4FA619F1F18B}|ProyectoAsistencia\\ProyectoAsistencia.csproj|c:\\users\\angel\\source\\repos\\proyectoasistencia\\proyectoasistencia\\views\\asistencia\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A51C513B-1861-4686-B370-4FA619F1F18B}|ProyectoAsistencia\\ProyectoAsistencia.csproj|solutionrelative:proyectoasistencia\\views\\asistencia\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A51C513B-1861-4686-B370-4FA619F1F18B}|ProyectoAsistencia\\ProyectoAsistencia.csproj|c:\\users\\angel\\source\\repos\\proyectoasistencia\\proyectoasistencia\\views\\asistencia\\agregarasistencia.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A51C513B-1861-4686-B370-4FA619F1F18B}|ProyectoAsistencia\\ProyectoAsistencia.csproj|solutionrelative:proyectoasistencia\\views\\asistencia\\agregarasistencia.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Historial.cshtml",
+              "DocumentMoniker": "C:\\Users\\angel\\source\\repos\\ProyectoAsistencia\\ProyectoAsistencia\\Views\\Asistencia\\Historial.cshtml",
+              "RelativeDocumentMoniker": "ProyectoAsistencia\\Views\\Asistencia\\Historial.cshtml",
+              "ToolTip": "C:\\Users\\angel\\source\\repos\\ProyectoAsistencia\\ProyectoAsistencia\\Views\\Asistencia\\Historial.cshtml",
+              "RelativeToolTip": "ProyectoAsistencia\\Views\\Asistencia\\Historial.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-15T22:08:04.124Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "VerEmpleados.cshtml",
+              "DocumentMoniker": "C:\\Users\\angel\\source\\repos\\ProyectoAsistencia\\ProyectoAsistencia\\Views\\Admin\\VerEmpleados.cshtml",
+              "RelativeDocumentMoniker": "ProyectoAsistencia\\Views\\Admin\\VerEmpleados.cshtml",
+              "ToolTip": "C:\\Users\\angel\\source\\repos\\ProyectoAsistencia\\ProyectoAsistencia\\Views\\Admin\\VerEmpleados.cshtml",
+              "RelativeToolTip": "ProyectoAsistencia\\Views\\Admin\\VerEmpleados.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-15T22:06:46.567Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Asistencia.cs",
+              "DocumentMoniker": "C:\\Users\\angel\\source\\repos\\ProyectoAsistencia\\ProyectoAsistencia\\Models\\Asistencia.cs",
+              "RelativeDocumentMoniker": "ProyectoAsistencia\\Models\\Asistencia.cs",
+              "ToolTip": "C:\\Users\\angel\\source\\repos\\ProyectoAsistencia\\ProyectoAsistencia\\Models\\Asistencia.cs",
+              "RelativeToolTip": "ProyectoAsistencia\\Models\\Asistencia.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T22:05:12.473Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AsistenciaController.cs",
+              "DocumentMoniker": "C:\\Users\\angel\\source\\repos\\ProyectoAsistencia\\ProyectoAsistencia\\Controllers\\AsistenciaController.cs",
+              "RelativeDocumentMoniker": "ProyectoAsistencia\\Controllers\\AsistenciaController.cs",
+              "ToolTip": "C:\\Users\\angel\\source\\repos\\ProyectoAsistencia\\ProyectoAsistencia\\Controllers\\AsistenciaController.cs",
+              "RelativeToolTip": "ProyectoAsistencia\\Controllers\\AsistenciaController.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAuwDQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T22:04:58.38Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Empleado.cs",
+              "DocumentMoniker": "C:\\Users\\angel\\source\\repos\\ProyectoAsistencia\\ProyectoAsistencia\\Models\\Empleado.cs",
+              "RelativeDocumentMoniker": "ProyectoAsistencia\\Models\\Empleado.cs",
+              "ToolTip": "C:\\Users\\angel\\source\\repos\\ProyectoAsistencia\\ProyectoAsistencia\\Models\\Empleado.cs",
+              "RelativeToolTip": "ProyectoAsistencia\\Models\\Empleado.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAiwA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T22:03:42.921Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "RegistrarAsistencia.cshtml",
+              "DocumentMoniker": "C:\\Users\\angel\\source\\repos\\ProyectoAsistencia\\ProyectoAsistencia\\Views\\Asistencia\\RegistrarAsistencia.cshtml",
+              "RelativeDocumentMoniker": "ProyectoAsistencia\\Views\\Asistencia\\RegistrarAsistencia.cshtml",
+              "ToolTip": "C:\\Users\\angel\\source\\repos\\ProyectoAsistencia\\ProyectoAsistencia\\Views\\Asistencia\\RegistrarAsistencia.cshtml",
+              "RelativeToolTip": "ProyectoAsistencia\\Views\\Asistencia\\RegistrarAsistencia.cshtml",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-15T21:52:29.998Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "EmpleadoController.cs",
+              "DocumentMoniker": "C:\\Users\\angel\\source\\repos\\ProyectoAsistencia\\ProyectoAsistencia\\Controllers\\EmpleadoController.cs",
+              "RelativeDocumentMoniker": "ProyectoAsistencia\\Controllers\\EmpleadoController.cs",
+              "ToolTip": "C:\\Users\\angel\\source\\repos\\ProyectoAsistencia\\ProyectoAsistencia\\Controllers\\EmpleadoController.cs",
+              "RelativeToolTip": "ProyectoAsistencia\\Controllers\\EmpleadoController.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAuwCsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T21:52:00.884Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AgregarEmpleado.cshtml",
+              "DocumentMoniker": "C:\\Users\\angel\\source\\repos\\ProyectoAsistencia\\ProyectoAsistencia\\Views\\Admin\\AgregarEmpleado.cshtml",
+              "RelativeDocumentMoniker": "ProyectoAsistencia\\Views\\Admin\\AgregarEmpleado.cshtml",
+              "ToolTip": "C:\\Users\\angel\\source\\repos\\ProyectoAsistencia\\ProyectoAsistencia\\Views\\Admin\\AgregarEmpleado.cshtml",
+              "RelativeToolTip": "ProyectoAsistencia\\Views\\Admin\\AgregarEmpleado.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-15T21:44:09.957Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "AgregarAsistencia.cshtml",
+              "DocumentMoniker": "C:\\Users\\angel\\source\\repos\\ProyectoAsistencia\\ProyectoAsistencia\\Views\\Asistencia\\AgregarAsistencia.cshtml",
+              "RelativeDocumentMoniker": "ProyectoAsistencia\\Views\\Asistencia\\AgregarAsistencia.cshtml",
+              "ToolTip": "C:\\Users\\angel\\source\\repos\\ProyectoAsistencia\\ProyectoAsistencia\\Views\\Asistencia\\AgregarAsistencia.cshtml",
+              "RelativeToolTip": "ProyectoAsistencia\\Views\\Asistencia\\AgregarAsistencia.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-15T21:39:13.448Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\angel\\source\\repos\\ProyectoAsistencia\\ProyectoAsistencia\\Views\\Asistencia\\Index.cshtml",
+              "RelativeDocumentMoniker": "ProyectoAsistencia\\Views\\Asistencia\\Index.cshtml",
+              "ToolTip": "C:\\Users\\angel\\source\\repos\\ProyectoAsistencia\\ProyectoAsistencia\\Views\\Asistencia\\Index.cshtml",
+              "RelativeToolTip": "ProyectoAsistencia\\Views\\Asistencia\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-15T21:32:57.509Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

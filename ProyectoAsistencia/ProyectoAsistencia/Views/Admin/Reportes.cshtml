@@ -1,0 +1,79 @@
+﻿@{
+    ViewData["Title"] = "Reportes";
+}
+
+<h2>Reportes de Asistencia</h2>
+<p>Visualiza los datos de asistencia en gráficos para un análisis rápido.</p>
+
+<div class="container mt-5">
+    <!-- Gráfico de barras para Asistencias por Mes -->
+    <div class="card mb-4">
+        <div class="card-body">
+            <h4 class="card-title">Asistencias por Mes</h4>
+            <canvas id="asistenciasPorMes"></canvas>
+        </div>
+    </div>
+
+    <!-- Gráfico de pastel para Presentes vs Ausentes -->
+    <div class="card mb-4">
+        <div class="card-body">
+            <h4 class="card-title">Comparación de Presentes y Ausentes</h4>
+            <canvas id="presentesVsAusentes"></canvas>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+    // Datos dinámicos obtenidos desde el controlador
+    var asistenciasMensuales = @Html.Raw(Json.Serialize(ViewBag.AsistenciasPorMes));
+        var presentes = @ViewBag.Presentes;
+    var ausentes = @ViewBag.Ausentes;
+
+    // Gráfico de barras - Asistencias por Mes
+    var ctxMes = document.getElementById('asistenciasPorMes').getContext('2d');
+    var asistenciasPorMes = new Chart(ctxMes, {
+        type: 'bar',
+        data: {
+            labels: ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'],
+            datasets: [{
+                label: '# de Asistencias',
+                data: asistenciasMensuales,
+                backgroundColor: 'rgba(54, 162, 235, 0.5)',
+                borderColor: 'rgba(54, 162, 235, 1)',
+                borderWidth: 1
+            }]
+        },
+        options: {
+            responsive: true,
+            scales: {
+                y: {
+                    beginAtZero: true
+                }
+            }
+        }
+    });
+
+    // Gráfico de pastel - Comparación de Presentes y Ausentes
+    var ctxEstado = document.getElementById('presentesVsAusentes').getContext('2d');
+    var presentesVsAusentes = new Chart(ctxEstado, {
+        type: 'pie',
+        data: {
+            labels: ['Presentes', 'Ausentes'],
+            datasets: [{
+                data: [presentes, ausentes],
+                backgroundColor: ['#4CAF50', '#FF5733'],
+            }]
+        },
+        options: {
+            responsive: true,
+        }
+    });
+</script>
+
+<style>
+    .card-title {
+        font-size: 1.5em;
+        font-weight: bold;
+    }
+</style>

@@ -1,0 +1,173 @@
+C:\Users\angel\source\repos\ProyectoAsistencia\ProyectoAsistencia\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\angel\source\repos\ProyectoAsistencia\ProyectoAsistencia\bin\Debug\net8.0\appsettings.json
+C:\Users\angel\source\repos\ProyectoAsistencia\ProyectoAsistencia\bin\Debug\net8.0\ProyectoAsistencia.staticwebassets.runtime.json
+C:\Users\angel\source\repos\ProyectoAsistencia\ProyectoAsistencia\bin\Debug\net8.0\ProyectoAsistencia.exe
+C:\Users\angel\source\repos\ProyectoAsistencia\ProyectoAsistencia\bin\Debug\net8.0\ProyectoAsistencia.deps.json
+C:\Users\angel\source\repos\ProyectoAsistencia\ProyectoAsistencia\bin\Debug\net8.0\ProyectoAsistencia.runtimeconfig.json
+C:\Users\angel\source\repos\ProyectoAsistencia\ProyectoAsistencia\bin\Debug\net8.0\ProyectoAsistencia.dll
+C:\Users\angel\source\repos\ProyectoAsistencia\ProyectoAsistencia\bin\Debug\net8.0\ProyectoAsistencia.pdb
+C:\Users\angel\source\repos\ProyectoAsistencia\ProyectoAsistencia\obj\Debug\net8.0\ProyectoAsistencia.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\angel\source\repos\ProyectoAsistencia\ProyectoAsistencia\obj\Debug\net8.0\ProyectoAsistencia.AssemblyInfoInputs.cache
+C:\Users\angel\source\repos\ProyectoAsistencia\ProyectoAsistencia\obj\Debug\net8.0\ProyectoAsistencia.AssemblyInfo.cs
+C:\Users\angel\source\repos\ProyectoAsistencia\ProyectoAsistencia\obj\Debug\net8.0\ProyectoAsistencia.csproj.CoreCompileInputs.cache
+C:\Users\angel\source\repos\ProyectoAsistencia\ProyectoAsistencia\obj\Debug\net8.0\ProyectoAsistencia.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\angel\source\repos\ProyectoAsistencia\ProyectoAsistencia\obj\Debug\net8.0\ProyectoAsistencia.RazorAssemblyInfo.cache
+C:\Users\angel\source\repos\ProyectoAsistencia\ProyectoAsistencia\obj\Debug\net8.0\ProyectoAsistencia.RazorAssemblyInfo.cs
+C:\Users\angel\source\repos\ProyectoAsistencia\ProyectoAsistencia\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\angel\source\repos\ProyectoAsistencia\ProyectoAsistencia\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\angel\source\repos\ProyectoAsistencia\ProyectoAsistencia\obj\Debug\net8.0\staticwebassets\msbuild.ProyectoAsistencia.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\angel\source\repos\ProyectoAsistencia\ProyectoAsistencia\obj\Debug\net8.0\staticwebassets\msbuild.build.ProyectoAsistencia.props
+C:\Users\angel\source\repos\ProyectoAsistencia\ProyectoAsistencia\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.ProyectoAsistencia.props
+C:\Users\angel\source\repos\ProyectoAsistencia\ProyectoAsistencia\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.ProyectoAsistencia.props
+C:\Users\angel\source\repos\ProyectoAsistencia\ProyectoAsistencia\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\angel\source\repos\ProyectoAsistencia\ProyectoAsistencia\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\angel\source\repos\ProyectoAsistencia\ProyectoAsistencia\obj\Debug\net8.0\scopedcss\bundle\ProyectoAsistencia.styles.css
+C:\Users\angel\source\repos\ProyectoAsistencia\ProyectoAsistencia\obj\Debug\net8.0\scopedcss\projectbundle\ProyectoAsistencia.bundle.scp.css
+C:\Users\angel\source\repos\ProyectoAsistencia\ProyectoAsistencia\obj\Debug\net8.0\ProyectoAsistencia.dll
+C:\Users\angel\source\repos\ProyectoAsistencia\ProyectoAsistencia\obj\Debug\net8.0\refint\ProyectoAsistencia.dll
+C:\Users\angel\source\repos\ProyectoAsistencia\ProyectoAsistencia\obj\Debug\net8.0\ProyectoAsistencia.pdb
+C:\Users\angel\source\repos\ProyectoAsistencia\ProyectoAsistencia\obj\Debug\net8.0\ProyectoAsistencia.genruntimeconfig.cache
+C:\Users\angel\source\repos\ProyectoAsistencia\ProyectoAsistencia\obj\Debug\net8.0\ref\ProyectoAsistencia.dll
+D:\proyectoAsistencia\ProyectoAsistencia\bin\Debug\net8.0\appsettings.Development.json
+D:\proyectoAsistencia\ProyectoAsistencia\bin\Debug\net8.0\appsettings.json
+D:\proyectoAsistencia\ProyectoAsistencia\bin\Debug\net8.0\ProyectoAsistencia.staticwebassets.runtime.json
+D:\proyectoAsistencia\ProyectoAsistencia\bin\Debug\net8.0\ProyectoAsistencia.exe
+D:\proyectoAsistencia\ProyectoAsistencia\bin\Debug\net8.0\ProyectoAsistencia.deps.json
+D:\proyectoAsistencia\ProyectoAsistencia\bin\Debug\net8.0\ProyectoAsistencia.runtimeconfig.json
+D:\proyectoAsistencia\ProyectoAsistencia\bin\Debug\net8.0\ProyectoAsistencia.dll
+D:\proyectoAsistencia\ProyectoAsistencia\bin\Debug\net8.0\ProyectoAsistencia.pdb
+D:\proyectoAsistencia\ProyectoAsistencia\obj\Debug\net8.0\ProyectoAsistencia.GeneratedMSBuildEditorConfig.editorconfig
+D:\proyectoAsistencia\ProyectoAsistencia\obj\Debug\net8.0\ProyectoAsistencia.AssemblyInfoInputs.cache
+D:\proyectoAsistencia\ProyectoAsistencia\obj\Debug\net8.0\ProyectoAsistencia.AssemblyInfo.cs
+D:\proyectoAsistencia\ProyectoAsistencia\obj\Debug\net8.0\ProyectoAsistencia.csproj.CoreCompileInputs.cache
+D:\proyectoAsistencia\ProyectoAsistencia\obj\Debug\net8.0\ProyectoAsistencia.MvcApplicationPartsAssemblyInfo.cache
+D:\proyectoAsistencia\ProyectoAsistencia\obj\Debug\net8.0\ProyectoAsistencia.RazorAssemblyInfo.cache
+D:\proyectoAsistencia\ProyectoAsistencia\obj\Debug\net8.0\ProyectoAsistencia.RazorAssemblyInfo.cs
+D:\proyectoAsistencia\ProyectoAsistencia\obj\Debug\net8.0\staticwebassets.build.json
+D:\proyectoAsistencia\ProyectoAsistencia\obj\Debug\net8.0\staticwebassets.development.json
+D:\proyectoAsistencia\ProyectoAsistencia\obj\Debug\net8.0\staticwebassets\msbuild.ProyectoAsistencia.Microsoft.AspNetCore.StaticWebAssets.props
+D:\proyectoAsistencia\ProyectoAsistencia\obj\Debug\net8.0\staticwebassets\msbuild.build.ProyectoAsistencia.props
+D:\proyectoAsistencia\ProyectoAsistencia\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.ProyectoAsistencia.props
+D:\proyectoAsistencia\ProyectoAsistencia\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.ProyectoAsistencia.props
+D:\proyectoAsistencia\ProyectoAsistencia\obj\Debug\net8.0\staticwebassets.pack.json
+D:\proyectoAsistencia\ProyectoAsistencia\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+D:\proyectoAsistencia\ProyectoAsistencia\obj\Debug\net8.0\scopedcss\bundle\ProyectoAsistencia.styles.css
+D:\proyectoAsistencia\ProyectoAsistencia\obj\Debug\net8.0\scopedcss\projectbundle\ProyectoAsistencia.bundle.scp.css
+D:\proyectoAsistencia\ProyectoAsistencia\obj\Debug\net8.0\ProyectoAsistencia.dll
+D:\proyectoAsistencia\ProyectoAsistencia\obj\Debug\net8.0\refint\ProyectoAsistencia.dll
+D:\proyectoAsistencia\ProyectoAsistencia\obj\Debug\net8.0\ProyectoAsistencia.pdb
+D:\proyectoAsistencia\ProyectoAsistencia\obj\Debug\net8.0\ProyectoAsistencia.genruntimeconfig.cache
+D:\proyectoAsistencia\ProyectoAsistencia\obj\Debug\net8.0\ref\ProyectoAsistencia.dll
+C:\Users\Usuario\Documents\CALIDADYPRUEBADESOFTWARE\PROYECTO CALIDAD\ProyectoAsistencia\ProyectoAsistencia\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\Usuario\Documents\CALIDADYPRUEBADESOFTWARE\PROYECTO CALIDAD\ProyectoAsistencia\ProyectoAsistencia\bin\Debug\net8.0\appsettings.json
+C:\Users\Usuario\Documents\CALIDADYPRUEBADESOFTWARE\PROYECTO CALIDAD\ProyectoAsistencia\ProyectoAsistencia\bin\Debug\net8.0\ProyectoAsistencia.staticwebassets.runtime.json
+C:\Users\Usuario\Documents\CALIDADYPRUEBADESOFTWARE\PROYECTO CALIDAD\ProyectoAsistencia\ProyectoAsistencia\bin\Debug\net8.0\ProyectoAsistencia.exe
+C:\Users\Usuario\Documents\CALIDADYPRUEBADESOFTWARE\PROYECTO CALIDAD\ProyectoAsistencia\ProyectoAsistencia\bin\Debug\net8.0\ProyectoAsistencia.deps.json
+C:\Users\Usuario\Documents\CALIDADYPRUEBADESOFTWARE\PROYECTO CALIDAD\ProyectoAsistencia\ProyectoAsistencia\bin\Debug\net8.0\ProyectoAsistencia.runtimeconfig.json
+C:\Users\Usuario\Documents\CALIDADYPRUEBADESOFTWARE\PROYECTO CALIDAD\ProyectoAsistencia\ProyectoAsistencia\bin\Debug\net8.0\ProyectoAsistencia.dll
+C:\Users\Usuario\Documents\CALIDADYPRUEBADESOFTWARE\PROYECTO CALIDAD\ProyectoAsistencia\ProyectoAsistencia\bin\Debug\net8.0\ProyectoAsistencia.pdb
+C:\Users\Usuario\Documents\CALIDADYPRUEBADESOFTWARE\PROYECTO CALIDAD\ProyectoAsistencia\ProyectoAsistencia\obj\Debug\net8.0\ProyectoAsistencia.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Usuario\Documents\CALIDADYPRUEBADESOFTWARE\PROYECTO CALIDAD\ProyectoAsistencia\ProyectoAsistencia\obj\Debug\net8.0\ProyectoAsistencia.AssemblyInfoInputs.cache
+C:\Users\Usuario\Documents\CALIDADYPRUEBADESOFTWARE\PROYECTO CALIDAD\ProyectoAsistencia\ProyectoAsistencia\obj\Debug\net8.0\ProyectoAsistencia.AssemblyInfo.cs
+C:\Users\Usuario\Documents\CALIDADYPRUEBADESOFTWARE\PROYECTO CALIDAD\ProyectoAsistencia\ProyectoAsistencia\obj\Debug\net8.0\ProyectoAsistencia.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Documents\CALIDADYPRUEBADESOFTWARE\PROYECTO CALIDAD\ProyectoAsistencia\ProyectoAsistencia\obj\Debug\net8.0\ProyectoAsistencia.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Usuario\Documents\CALIDADYPRUEBADESOFTWARE\PROYECTO CALIDAD\ProyectoAsistencia\ProyectoAsistencia\obj\Debug\net8.0\ProyectoAsistencia.RazorAssemblyInfo.cache
+C:\Users\Usuario\Documents\CALIDADYPRUEBADESOFTWARE\PROYECTO CALIDAD\ProyectoAsistencia\ProyectoAsistencia\obj\Debug\net8.0\ProyectoAsistencia.RazorAssemblyInfo.cs
+C:\Users\Usuario\Documents\CALIDADYPRUEBADESOFTWARE\PROYECTO CALIDAD\ProyectoAsistencia\ProyectoAsistencia\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\Usuario\Documents\CALIDADYPRUEBADESOFTWARE\PROYECTO CALIDAD\ProyectoAsistencia\ProyectoAsistencia\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\Usuario\Documents\CALIDADYPRUEBADESOFTWARE\PROYECTO CALIDAD\ProyectoAsistencia\ProyectoAsistencia\obj\Debug\net8.0\staticwebassets\msbuild.ProyectoAsistencia.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\Usuario\Documents\CALIDADYPRUEBADESOFTWARE\PROYECTO CALIDAD\ProyectoAsistencia\ProyectoAsistencia\obj\Debug\net8.0\staticwebassets\msbuild.build.ProyectoAsistencia.props
+C:\Users\Usuario\Documents\CALIDADYPRUEBADESOFTWARE\PROYECTO CALIDAD\ProyectoAsistencia\ProyectoAsistencia\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.ProyectoAsistencia.props
+C:\Users\Usuario\Documents\CALIDADYPRUEBADESOFTWARE\PROYECTO CALIDAD\ProyectoAsistencia\ProyectoAsistencia\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.ProyectoAsistencia.props
+C:\Users\Usuario\Documents\CALIDADYPRUEBADESOFTWARE\PROYECTO CALIDAD\ProyectoAsistencia\ProyectoAsistencia\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\Usuario\Documents\CALIDADYPRUEBADESOFTWARE\PROYECTO CALIDAD\ProyectoAsistencia\ProyectoAsistencia\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\Usuario\Documents\CALIDADYPRUEBADESOFTWARE\PROYECTO CALIDAD\ProyectoAsistencia\ProyectoAsistencia\obj\Debug\net8.0\scopedcss\bundle\ProyectoAsistencia.styles.css
+C:\Users\Usuario\Documents\CALIDADYPRUEBADESOFTWARE\PROYECTO CALIDAD\ProyectoAsistencia\ProyectoAsistencia\obj\Debug\net8.0\scopedcss\projectbundle\ProyectoAsistencia.bundle.scp.css
+C:\Users\Usuario\Documents\CALIDADYPRUEBADESOFTWARE\PROYECTO CALIDAD\ProyectoAsistencia\ProyectoAsistencia\obj\Debug\net8.0\ProyectoAsistencia.dll
+C:\Users\Usuario\Documents\CALIDADYPRUEBADESOFTWARE\PROYECTO CALIDAD\ProyectoAsistencia\ProyectoAsistencia\obj\Debug\net8.0\refint\ProyectoAsistencia.dll
+C:\Users\Usuario\Documents\CALIDADYPRUEBADESOFTWARE\PROYECTO CALIDAD\ProyectoAsistencia\ProyectoAsistencia\obj\Debug\net8.0\ProyectoAsistencia.pdb
+C:\Users\Usuario\Documents\CALIDADYPRUEBADESOFTWARE\PROYECTO CALIDAD\ProyectoAsistencia\ProyectoAsistencia\obj\Debug\net8.0\ProyectoAsistencia.genruntimeconfig.cache
+C:\Users\Usuario\Documents\CALIDADYPRUEBADESOFTWARE\PROYECTO CALIDAD\ProyectoAsistencia\ProyectoAsistencia\obj\Debug\net8.0\ref\ProyectoAsistencia.dll
+C:\Users\angel\Downloads\ProyectoAsistenciav2\ProyectoAsistencia\ProyectoAsistencia\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\angel\Downloads\ProyectoAsistenciav2\ProyectoAsistencia\ProyectoAsistencia\bin\Debug\net8.0\appsettings.json
+C:\Users\angel\Downloads\ProyectoAsistenciav2\ProyectoAsistencia\ProyectoAsistencia\bin\Debug\net8.0\ProyectoAsistencia.staticwebassets.runtime.json
+C:\Users\angel\Downloads\ProyectoAsistenciav2\ProyectoAsistencia\ProyectoAsistencia\bin\Debug\net8.0\ProyectoAsistencia.exe
+C:\Users\angel\Downloads\ProyectoAsistenciav2\ProyectoAsistencia\ProyectoAsistencia\bin\Debug\net8.0\ProyectoAsistencia.deps.json
+C:\Users\angel\Downloads\ProyectoAsistenciav2\ProyectoAsistencia\ProyectoAsistencia\bin\Debug\net8.0\ProyectoAsistencia.runtimeconfig.json
+C:\Users\angel\Downloads\ProyectoAsistenciav2\ProyectoAsistencia\ProyectoAsistencia\bin\Debug\net8.0\ProyectoAsistencia.dll
+C:\Users\angel\Downloads\ProyectoAsistenciav2\ProyectoAsistencia\ProyectoAsistencia\bin\Debug\net8.0\ProyectoAsistencia.pdb
+C:\Users\angel\Downloads\ProyectoAsistenciav2\ProyectoAsistencia\ProyectoAsistencia\obj\Debug\net8.0\ProyectoAsistencia.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\angel\Downloads\ProyectoAsistenciav2\ProyectoAsistencia\ProyectoAsistencia\obj\Debug\net8.0\ProyectoAsistencia.AssemblyInfoInputs.cache
+C:\Users\angel\Downloads\ProyectoAsistenciav2\ProyectoAsistencia\ProyectoAsistencia\obj\Debug\net8.0\ProyectoAsistencia.AssemblyInfo.cs
+C:\Users\angel\Downloads\ProyectoAsistenciav2\ProyectoAsistencia\ProyectoAsistencia\obj\Debug\net8.0\ProyectoAsistencia.csproj.CoreCompileInputs.cache
+C:\Users\angel\Downloads\ProyectoAsistenciav2\ProyectoAsistencia\ProyectoAsistencia\obj\Debug\net8.0\ProyectoAsistencia.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\angel\Downloads\ProyectoAsistenciav2\ProyectoAsistencia\ProyectoAsistencia\obj\Debug\net8.0\ProyectoAsistencia.RazorAssemblyInfo.cache
+C:\Users\angel\Downloads\ProyectoAsistenciav2\ProyectoAsistencia\ProyectoAsistencia\obj\Debug\net8.0\ProyectoAsistencia.RazorAssemblyInfo.cs
+C:\Users\angel\Downloads\ProyectoAsistenciav2\ProyectoAsistencia\ProyectoAsistencia\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\angel\Downloads\ProyectoAsistenciav2\ProyectoAsistencia\ProyectoAsistencia\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\angel\Downloads\ProyectoAsistenciav2\ProyectoAsistencia\ProyectoAsistencia\obj\Debug\net8.0\staticwebassets\msbuild.ProyectoAsistencia.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\angel\Downloads\ProyectoAsistenciav2\ProyectoAsistencia\ProyectoAsistencia\obj\Debug\net8.0\staticwebassets\msbuild.build.ProyectoAsistencia.props
+C:\Users\angel\Downloads\ProyectoAsistenciav2\ProyectoAsistencia\ProyectoAsistencia\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.ProyectoAsistencia.props
+C:\Users\angel\Downloads\ProyectoAsistenciav2\ProyectoAsistencia\ProyectoAsistencia\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.ProyectoAsistencia.props
+C:\Users\angel\Downloads\ProyectoAsistenciav2\ProyectoAsistencia\ProyectoAsistencia\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\angel\Downloads\ProyectoAsistenciav2\ProyectoAsistencia\ProyectoAsistencia\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\angel\Downloads\ProyectoAsistenciav2\ProyectoAsistencia\ProyectoAsistencia\obj\Debug\net8.0\scopedcss\bundle\ProyectoAsistencia.styles.css
+C:\Users\angel\Downloads\ProyectoAsistenciav2\ProyectoAsistencia\ProyectoAsistencia\obj\Debug\net8.0\scopedcss\projectbundle\ProyectoAsistencia.bundle.scp.css
+C:\Users\angel\Downloads\ProyectoAsistenciav2\ProyectoAsistencia\ProyectoAsistencia\obj\Debug\net8.0\ProyectoAsistencia.dll
+C:\Users\angel\Downloads\ProyectoAsistenciav2\ProyectoAsistencia\ProyectoAsistencia\obj\Debug\net8.0\refint\ProyectoAsistencia.dll
+C:\Users\angel\Downloads\ProyectoAsistenciav2\ProyectoAsistencia\ProyectoAsistencia\obj\Debug\net8.0\ProyectoAsistencia.pdb
+C:\Users\angel\Downloads\ProyectoAsistenciav2\ProyectoAsistencia\ProyectoAsistencia\obj\Debug\net8.0\ProyectoAsistencia.genruntimeconfig.cache
+C:\Users\angel\Downloads\ProyectoAsistenciav2\ProyectoAsistencia\ProyectoAsistencia\obj\Debug\net8.0\ref\ProyectoAsistencia.dll
+D:\he\ProyectoAsistencia\ProyectoAsistencia\bin\Debug\net8.0\appsettings.Development.json
+D:\he\ProyectoAsistencia\ProyectoAsistencia\bin\Debug\net8.0\appsettings.json
+D:\he\ProyectoAsistencia\ProyectoAsistencia\bin\Debug\net8.0\Views\Admin\AgregarEmpleado.cshtml
+D:\he\ProyectoAsistencia\ProyectoAsistencia\bin\Debug\net8.0\Views\Admin\Dashboard.cshtml
+D:\he\ProyectoAsistencia\ProyectoAsistencia\bin\Debug\net8.0\Views\Admin\GestionAsistencias.cshtml
+D:\he\ProyectoAsistencia\ProyectoAsistencia\bin\Debug\net8.0\Views\Admin\GestionEmpleados.cshtml
+D:\he\ProyectoAsistencia\ProyectoAsistencia\bin\Debug\net8.0\Views\Admin\HistorialCambios.cshtml
+D:\he\ProyectoAsistencia\ProyectoAsistencia\bin\Debug\net8.0\Views\Admin\Reportes.cshtml
+D:\he\ProyectoAsistencia\ProyectoAsistencia\bin\Debug\net8.0\Views\Admin\VerEmpleados.cshtml
+D:\he\ProyectoAsistencia\ProyectoAsistencia\bin\Debug\net8.0\Views\Asistencia\AgregarAsistencia.cshtml
+D:\he\ProyectoAsistencia\ProyectoAsistencia\bin\Debug\net8.0\Views\Asistencia\Confirmacion.cshtml
+D:\he\ProyectoAsistencia\ProyectoAsistencia\bin\Debug\net8.0\Views\Asistencia\FiltrarPorFecha.cshtml
+D:\he\ProyectoAsistencia\ProyectoAsistencia\bin\Debug\net8.0\Views\Asistencia\Historial.cshtml
+D:\he\ProyectoAsistencia\ProyectoAsistencia\bin\Debug\net8.0\Views\Asistencia\Index.cshtml
+D:\he\ProyectoAsistencia\ProyectoAsistencia\bin\Debug\net8.0\Views\Asistencia\RegistrarAsistencia.cshtml
+D:\he\ProyectoAsistencia\ProyectoAsistencia\bin\Debug\net8.0\Views\Empleado\AgregarEmpleado.cshtml
+D:\he\ProyectoAsistencia\ProyectoAsistencia\bin\Debug\net8.0\Views\Empleado\Detalles.cshtml
+D:\he\ProyectoAsistencia\ProyectoAsistencia\bin\Debug\net8.0\Views\Empleado\Index.cshtml
+D:\he\ProyectoAsistencia\ProyectoAsistencia\bin\Debug\net8.0\Views\Home\Index.cshtml
+D:\he\ProyectoAsistencia\ProyectoAsistencia\bin\Debug\net8.0\Views\Home\Privacy.cshtml
+D:\he\ProyectoAsistencia\ProyectoAsistencia\bin\Debug\net8.0\Views\Shared\Error.cshtml
+D:\he\ProyectoAsistencia\ProyectoAsistencia\bin\Debug\net8.0\Views\Shared\_Layout.cshtml
+D:\he\ProyectoAsistencia\ProyectoAsistencia\bin\Debug\net8.0\Views\Shared\_ValidationScriptsPartial.cshtml
+D:\he\ProyectoAsistencia\ProyectoAsistencia\bin\Debug\net8.0\Views\_ViewImports.cshtml
+D:\he\ProyectoAsistencia\ProyectoAsistencia\bin\Debug\net8.0\Views\_ViewStart.cshtml
+D:\he\ProyectoAsistencia\ProyectoAsistencia\bin\Debug\net8.0\ProyectoAsistencia.staticwebassets.runtime.json
+D:\he\ProyectoAsistencia\ProyectoAsistencia\bin\Debug\net8.0\ProyectoAsistencia.deps.json
+D:\he\ProyectoAsistencia\ProyectoAsistencia\bin\Debug\net8.0\ProyectoAsistencia.runtimeconfig.json
+D:\he\ProyectoAsistencia\ProyectoAsistencia\obj\Debug\net8.0\ProyectoAsistencia.GeneratedMSBuildEditorConfig.editorconfig
+D:\he\ProyectoAsistencia\ProyectoAsistencia\obj\Debug\net8.0\ProyectoAsistencia.AssemblyInfoInputs.cache
+D:\he\ProyectoAsistencia\ProyectoAsistencia\obj\Debug\net8.0\ProyectoAsistencia.AssemblyInfo.cs
+D:\he\ProyectoAsistencia\ProyectoAsistencia\obj\Debug\net8.0\ProyectoAsistencia.RazorAssemblyInfo.cache
+D:\he\ProyectoAsistencia\ProyectoAsistencia\obj\Debug\net8.0\ProyectoAsistencia.RazorAssemblyInfo.cs
+D:\he\ProyectoAsistencia\ProyectoAsistencia\obj\Debug\net8.0\staticwebassets.build.json
+D:\he\ProyectoAsistencia\ProyectoAsistencia\obj\Debug\net8.0\staticwebassets.development.json
+D:\he\ProyectoAsistencia\ProyectoAsistencia\obj\Debug\net8.0\staticwebassets\msbuild.ProyectoAsistencia.Microsoft.AspNetCore.StaticWebAssets.props
+D:\he\ProyectoAsistencia\ProyectoAsistencia\obj\Debug\net8.0\staticwebassets\msbuild.build.ProyectoAsistencia.props
+D:\he\ProyectoAsistencia\ProyectoAsistencia\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.ProyectoAsistencia.props
+D:\he\ProyectoAsistencia\ProyectoAsistencia\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.ProyectoAsistencia.props
+D:\he\ProyectoAsistencia\ProyectoAsistencia\obj\Debug\net8.0\staticwebassets.pack.json
+D:\he\ProyectoAsistencia\ProyectoAsistencia\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+D:\he\ProyectoAsistencia\ProyectoAsistencia\obj\Debug\net8.0\scopedcss\bundle\ProyectoAsistencia.styles.css
+D:\he\ProyectoAsistencia\ProyectoAsistencia\obj\Debug\net8.0\scopedcss\projectbundle\ProyectoAsistencia.bundle.scp.css
+D:\he\ProyectoAsistencia\ProyectoAsistencia\obj\Debug\net8.0\ProyectoAsistencia.genruntimeconfig.cache
+D:\he\ProyectoAsistencia\ProyectoAsistencia\bin\Debug\net8.0\ProyectoAsistencia.exe
+D:\he\ProyectoAsistencia\ProyectoAsistencia\bin\Debug\net8.0\ProyectoAsistencia.dll
+D:\he\ProyectoAsistencia\ProyectoAsistencia\bin\Debug\net8.0\ProyectoAsistencia.pdb
+D:\he\ProyectoAsistencia\ProyectoAsistencia\obj\Debug\net8.0\ProyectoAsistencia.csproj.CoreCompileInputs.cache
+D:\he\ProyectoAsistencia\ProyectoAsistencia\obj\Debug\net8.0\ProyectoAsistencia.MvcApplicationPartsAssemblyInfo.cache
+D:\he\ProyectoAsistencia\ProyectoAsistencia\obj\Debug\net8.0\ProyectoAsistencia.dll
+D:\he\ProyectoAsistencia\ProyectoAsistencia\obj\Debug\net8.0\refint\ProyectoAsistencia.dll
+D:\he\ProyectoAsistencia\ProyectoAsistencia\obj\Debug\net8.0\ProyectoAsistencia.pdb
+D:\he\ProyectoAsistencia\ProyectoAsistencia\obj\Debug\net8.0\ref\ProyectoAsistencia.dll
