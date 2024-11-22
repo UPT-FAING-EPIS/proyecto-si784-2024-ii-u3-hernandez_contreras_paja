@@ -24,20 +24,15 @@ jobs:
           dotnet-version: 8.x  
 
  
-      - name: Restore dependencies
-        run: dotnet restore
-
-    
-      - name: Run tests and generate coverage
-        run: |
-          dotnet test /p:CollectCoverage=true /p:CoverletOutput=coverage.cobertura.xml /p:CoverletOutputFormat=cobertura
-
-      
-      - name: Run SonarCloud analysis
+      - name: Restore, Test, and Analyze with SonarCloud
         env:
-          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }} 
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}  # Configura este secreto en tu repositorio
         run: |
+          cd ProyectoAsistencia
+          dotnet restore
+          dotnet test /p:CollectCoverage=true /p:CoverletOutput=coverage.cobertura.xml /p:CoverletOutputFormat=cobertura
           dotnet tool install --global dotnet-sonarscanner
           dotnet sonarscanner begin /k:"calidadproyecto" /o:"alvarocontreras13" /d:sonar.cs.opencover.reportsPaths="coverage.cobertura.xml" /d:sonar.login="${{ secrets.SONAR_TOKEN }}"
           dotnet build
           dotnet sonarscanner end /d:sonar.login="${{ secrets.SONAR_TOKEN }}"
+
