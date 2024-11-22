@@ -11791,11 +11791,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\calidad22\\ProyectoAsistencia\\ProyectoAsistencia.Tests\\ProyectoAsistencia.Tests.csproj",
+      "projectUniqueName": "D:\\proyecto-si784-2024-ii-u2-contreras_paja_hernandez\\ProyectoAsistencia\\ProyectoAsistencia.Tests\\ProyectoAsistencia.Tests.csproj",
       "projectName": "ProyectoAsistencia.Tests",
-      "projectPath": "D:\\calidad22\\ProyectoAsistencia\\ProyectoAsistencia.Tests\\ProyectoAsistencia.Tests.csproj",
+      "projectPath": "D:\\proyecto-si784-2024-ii-u2-contreras_paja_hernandez\\ProyectoAsistencia\\ProyectoAsistencia.Tests\\ProyectoAsistencia.Tests.csproj",
       "packagesPath": "C:\\Users\\ALVARO\\.nuget\\packages\\",
-      "outputPath": "D:\\calidad22\\ProyectoAsistencia\\ProyectoAsistencia.Tests\\obj\\",
+      "outputPath": "D:\\proyecto-si784-2024-ii-u2-contreras_paja_hernandez\\ProyectoAsistencia\\ProyectoAsistencia.Tests\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ALVARO\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -11810,8 +11810,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\calidad22\\ProyectoAsistencia\\ProyectoAsistencia\\ProyectoAsistencia.csproj": {
-              "projectPath": "D:\\calidad22\\ProyectoAsistencia\\ProyectoAsistencia\\ProyectoAsistencia.csproj"
+            "D:\\proyecto-si784-2024-ii-u2-contreras_paja_hernandez\\ProyectoAsistencia\\ProyectoAsistencia\\ProyectoAsistencia.csproj": {
+              "projectPath": "D:\\proyecto-si784-2024-ii-u2-contreras_paja_hernandez\\ProyectoAsistencia\\ProyectoAsistencia\\ProyectoAsistencia.csproj"
             }
           }
         }
