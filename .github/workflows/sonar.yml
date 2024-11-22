@@ -41,10 +41,7 @@ jobs:
           dotnet test --collect:"XPlat Code Coverage"
           Rename-Item -Path "TestResults/*/coverage.cobertura.xml" -NewName "coverage.xml"
 
-        #reportgenerator "-reports:TestResults/**/coverage.cobertura.xml" "-targetdir:coverage" -reporttypes:Cobertura
-        #Rename-Item -Path "coverage\Cobertura.xml" -NewName "coverage.xml"
-
-
+ 
           dotnet tool install --global dotnet-sonarscanner
           dotnet sonarscanner begin /k:"alvarocontreras13_calidadproyecto" /o:"alvarocontreras13" /d:sonar.cs.opencover.reportsPaths="TestResults/*/coverage.xml" /d:sonar.login="${{ secrets.SONAR_TOKEN }}"
 
