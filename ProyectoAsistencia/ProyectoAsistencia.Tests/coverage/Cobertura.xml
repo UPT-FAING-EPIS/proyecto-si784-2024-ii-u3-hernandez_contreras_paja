@@ -1,0 +1,1129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE coverage SYSTEM "http://cobertura.sourceforge.net/xml/coverage-04.dtd">
+<coverage line-rate="0.8143939393939394" branch-rate="0.225" lines-covered="215" lines-valid="264" branches-covered="36" branches-valid="160" complexity="225" version="0" timestamp="1732294671">
+  <sources>
+    <source>D:\calidad22\ProyectoAsistencia\ProyectoAsistencia\</source>
+  </sources>
+  <packages>
+    <package name="ProyectoAsistencia" line-rate="0.8143939393939394" branch-rate="0.225" complexity="225">
+      <classes>
+        <class name="AspNetCoreGeneratedDocument.Views__ViewStart" filename="D:\calidad22\ProyectoAsistencia\ProyectoAsistencia\Views\_ViewStart.cshtml" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name="ExecuteAsync" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="2" hits="1" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="2" hits="1" branch="false" />
+          </lines>
+        </class>
+        <class name="AspNetCoreGeneratedDocument.Views_Admin_GestionAsistencias" filename="D:\calidad22\ProyectoAsistencia\ProyectoAsistencia\Views\Admin\GestionAsistencias.cshtml" line-rate="0" branch-rate="0" complexity="12">
+          <methods>
+            <method name="ExecuteAsync" signature="()" line-rate="0" branch-rate="0" complexity="12">
+              <lines>
+                <line number="16" hits="0" branch="true" condition-coverage="0% (0/2)" />
+                <line number="17" hits="0" branch="false" />
+                <line number="21" hits="0" branch="false" />
+                <line number="23" hits="0" branch="false" />
+                <line number="24" hits="0" branch="true" condition-coverage="0% (0/2)" />
+                <line number="25" hits="0" branch="true" condition-coverage="0% (0/8)" />
+                <line number="35" hits="0" branch="false" />
+                <line number="36" hits="0" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="16" hits="0" branch="true" condition-coverage="0% (0/2)" />
+            <line number="17" hits="0" branch="false" />
+            <line number="21" hits="0" branch="false" />
+            <line number="23" hits="0" branch="false" />
+            <line number="24" hits="0" branch="true" condition-coverage="0% (0/2)" />
+            <line number="25" hits="0" branch="true" condition-coverage="0% (0/8)" />
+            <line number="35" hits="0" branch="false" />
+            <line number="36" hits="0" branch="false" />
+          </lines>
+        </class>
+        <class name="AspNetCoreGeneratedDocument.Views_Admin_GestionEmpleados" filename="D:\calidad22\ProyectoAsistencia\ProyectoAsistencia\Views\Admin\GestionEmpleados.cshtml" line-rate="0" branch-rate="0" complexity="4">
+          <methods>
+            <method name="ExecuteAsync" signature="()" line-rate="0" branch-rate="0" complexity="4">
+              <lines>
+                <line number="14" hits="0" branch="true" condition-coverage="0% (0/4)" />
+                <line number="15" hits="0" branch="false" />
+                <line number="20" hits="0" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="14" hits="0" branch="true" condition-coverage="0% (0/4)" />
+            <line number="15" hits="0" branch="false" />
+            <line number="20" hits="0" branch="false" />
+          </lines>
+        </class>
+        <class name="AspNetCoreGeneratedDocument.Views_Admin_HistorialCambios" filename="D:\calidad22\ProyectoAsistencia\ProyectoAsistencia\Views\Admin\HistorialCambios.cshtml" line-rate="0" branch-rate="0" complexity="2">
+          <methods>
+            <method name="ExecuteAsync" signature="()" line-rate="0" branch-rate="0" complexity="2">
+              <lines>
+                <line number="14" hits="0" branch="true" condition-coverage="0% (0/2)" />
+                <line number="15" hits="0" branch="false" />
+                <line number="22" hits="0" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="14" hits="0" branch="true" condition-coverage="0% (0/2)" />
+            <line number="15" hits="0" branch="false" />
+            <line number="22" hits="0" branch="false" />
+          </lines>
+        </class>
+        <class name="AspNetCoreGeneratedDocument.Views_Admin_Reportes" filename="D:\calidad22\ProyectoAsistencia\ProyectoAsistencia\Views\Admin\Reportes.cshtml" line-rate="0" branch-rate="0" complexity="16">
+          <methods>
+            <method name="ExecuteAsync" signature="()" line-rate="0" branch-rate="0" complexity="16">
+              <lines>
+                <line number="2" hits="0" branch="true" condition-coverage="0% (0/16)" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="2" hits="0" branch="true" condition-coverage="0% (0/16)" />
+          </lines>
+        </class>
+        <class name="AspNetCoreGeneratedDocument.Views_Admin_VerEmpleados" filename="D:\calidad22\ProyectoAsistencia\ProyectoAsistencia\Views\Admin\VerEmpleados.cshtml" line-rate="0" branch-rate="0" complexity="2">
+          <methods>
+            <method name="ExecuteAsync" signature="()" line-rate="0" branch-rate="0" complexity="2">
+              <lines>
+                <line number="13" hits="0" branch="true" condition-coverage="0% (0/2)" />
+                <line number="14" hits="0" branch="false" />
+                <line number="19" hits="0" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="13" hits="0" branch="true" condition-coverage="0% (0/2)" />
+            <line number="14" hits="0" branch="false" />
+            <line number="19" hits="0" branch="false" />
+          </lines>
+        </class>
+        <class name="AspNetCoreGeneratedDocument.Views_Asistencia_AgregarAsistencia" filename="D:\calidad22\ProyectoAsistencia\ProyectoAsistencia\Views\Asistencia\AgregarAsistencia.cshtml" line-rate="0" branch-rate="0" complexity="16">
+          <methods>
+            <method name="&lt;ExecuteAsync" signature="()" line-rate="0" branch-rate="0" complexity="16">
+              <lines>
+                <line number="6" hits="0" branch="true" condition-coverage="0% (0/10)" />
+                <line number="7" hits="0" branch="true" condition-coverage="0% (0/6)" />
+                <line number="9" hits="0" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="6" hits="0" branch="true" condition-coverage="0% (0/10)" />
+            <line number="7" hits="0" branch="true" condition-coverage="0% (0/6)" />
+            <line number="9" hits="0" branch="false" />
+          </lines>
+        </class>
+        <class name="AspNetCoreGeneratedDocument.Views_Asistencia_FiltrarPorFecha" filename="D:\calidad22\ProyectoAsistencia\ProyectoAsistencia\Views\Asistencia\FiltrarPorFecha.cshtml" line-rate="0" branch-rate="0" complexity="32">
+          <methods>
+            <method name="ExecuteAsync" signature="()" line-rate="0" branch-rate="0" complexity="32">
+              <lines>
+                <line number="11" hits="0" branch="true" condition-coverage="0% (0/8)" />
+                <line number="12" hits="0" branch="false" />
+                <line number="24" hits="0" branch="true" condition-coverage="0% (0/4)" />
+                <line number="25" hits="0" branch="true" condition-coverage="0% (0/20)" />
+                <line number="32" hits="0" branch="false" />
+                <line number="35" hits="0" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="11" hits="0" branch="true" condition-coverage="0% (0/8)" />
+            <line number="12" hits="0" branch="false" />
+            <line number="24" hits="0" branch="true" condition-coverage="0% (0/4)" />
+            <line number="25" hits="0" branch="true" condition-coverage="0% (0/20)" />
+            <line number="32" hits="0" branch="false" />
+            <line number="35" hits="0" branch="false" />
+          </lines>
+        </class>
+        <class name="AspNetCoreGeneratedDocument.Views_Asistencia_Historial" filename="D:\calidad22\ProyectoAsistencia\ProyectoAsistencia\Views\Asistencia\Historial.cshtml" line-rate="0" branch-rate="0" complexity="4">
+          <methods>
+            <method name="ExecuteAsync" signature="()" line-rate="0" branch-rate="0" complexity="4">
+              <lines>
+                <line number="14" hits="0" branch="true" condition-coverage="0% (0/2)" />
+                <line number="15" hits="0" branch="true" condition-coverage="0% (0/2)" />
+                <line number="21" hits="0" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="14" hits="0" branch="true" condition-coverage="0% (0/2)" />
+            <line number="15" hits="0" branch="true" condition-coverage="0% (0/2)" />
+            <line number="21" hits="0" branch="false" />
+          </lines>
+        </class>
+        <class name="AspNetCoreGeneratedDocument.Views_Asistencia_RegistrarAsistencia" filename="D:\calidad22\ProyectoAsistencia\ProyectoAsistencia\Views\Asistencia\RegistrarAsistencia.cshtml" line-rate="0" branch-rate="0" complexity="20">
+          <methods>
+            <method name="&lt;ExecuteAsync" signature="()" line-rate="0" branch-rate="0" complexity="18">
+              <lines>
+                <line number="12" hits="0" branch="true" condition-coverage="0% (0/12)" />
+                <line number="13" hits="0" branch="true" condition-coverage="0% (0/6)" />
+                <line number="15" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="ExecuteAsync" signature="()" line-rate="0" branch-rate="0" complexity="2">
+              <lines>
+                <line number="2" hits="0" branch="true" condition-coverage="0% (0/2)" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="2" hits="0" branch="true" condition-coverage="0% (0/2)" />
+            <line number="12" hits="0" branch="true" condition-coverage="0% (0/12)" />
+            <line number="13" hits="0" branch="true" condition-coverage="0% (0/6)" />
+            <line number="15" hits="0" branch="false" />
+          </lines>
+        </class>
+        <class name="AspNetCoreGeneratedDocument.Views_Empleado_Index" filename="D:\calidad22\ProyectoAsistencia\ProyectoAsistencia\Views\Empleado\Index.cshtml" line-rate="0" branch-rate="0" complexity="8">
+          <methods>
+            <method name="ExecuteAsync" signature="()" line-rate="0" branch-rate="0" complexity="8">
+              <lines>
+                <line number="16" hits="0" branch="true" condition-coverage="0% (0/4)" />
+                <line number="17" hits="0" branch="true" condition-coverage="0% (0/4)" />
+                <line number="23" hits="0" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="16" hits="0" branch="true" condition-coverage="0% (0/4)" />
+            <line number="17" hits="0" branch="true" condition-coverage="0% (0/4)" />
+            <line number="23" hits="0" branch="false" />
+          </lines>
+        </class>
+        <class name="AspNetCoreGeneratedDocument.Views_Home_Index" filename="D:\calidad22\ProyectoAsistencia\ProyectoAsistencia\Views\Home\Index.cshtml" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name="ExecuteAsync" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="2" hits="1" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="2" hits="1" branch="false" />
+          </lines>
+        </class>
+        <class name="AspNetCoreGeneratedDocument.Views_Home_Privacy" filename="D:\calidad22\ProyectoAsistencia\ProyectoAsistencia\Views\Home\Privacy.cshtml" line-rate="0" branch-rate="1" complexity="1">
+          <methods>
+            <method name="ExecuteAsync" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="2" hits="0" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="2" hits="0" branch="false" />
+          </lines>
+        </class>
+        <class name="AspNetCoreGeneratedDocument.Views_Shared_Error" filename="D:\calidad22\ProyectoAsistencia\ProyectoAsistencia\Views\Shared\Error.cshtml" line-rate="0" branch-rate="0" complexity="2">
+          <methods>
+            <method name="ExecuteAsync" signature="()" line-rate="0" branch-rate="0" complexity="2">
+              <lines>
+                <line number="3" hits="0" branch="false" />
+                <line number="9" hits="0" branch="true" condition-coverage="0% (0/2)" />
+                <line number="10" hits="0" branch="false" />
+                <line number="14" hits="0" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="3" hits="0" branch="false" />
+            <line number="9" hits="0" branch="true" condition-coverage="0% (0/2)" />
+            <line number="10" hits="0" branch="false" />
+            <line number="14" hits="0" branch="false" />
+          </lines>
+        </class>
+        <class name="Program" filename="D:\calidad22\ProyectoAsistencia\ProyectoAsistencia\Program.cs" line-rate="0.75" branch-rate="0.5" complexity="2">
+          <methods>
+            <method name="&lt;Main&gt;$" signature="(System.String[])" line-rate="0.75" branch-rate="0.5" complexity="2">
+              <lines>
+                <line number="1" hits="1" branch="false" />
+                <line number="4" hits="1" branch="false" />
+                <line number="6" hits="1" branch="false" />
+                <line number="9" hits="1" branch="true" condition-coverage="50% (1/2)" />
+                <line number="10" hits="0" branch="false" />
+                <line number="11" hits="0" branch="false" />
+                <line number="13" hits="0" branch="false" />
+                <line number="14" hits="0" branch="false" />
+                <line number="16" hits="1" branch="false" />
+                <line number="17" hits="1" branch="false" />
+                <line number="19" hits="1" branch="false" />
+                <line number="21" hits="1" branch="false" />
+                <line number="23" hits="1" branch="false" />
+                <line number="24" hits="1" branch="false" />
+                <line number="25" hits="1" branch="false" />
+                <line number="27" hits="1" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="1" hits="1" branch="false" />
+            <line number="4" hits="1" branch="false" />
+            <line number="6" hits="1" branch="false" />
+            <line number="9" hits="1" branch="true" condition-coverage="50% (1/2)" />
+            <line number="10" hits="0" branch="false" />
+            <line number="11" hits="0" branch="false" />
+            <line number="13" hits="0" branch="false" />
+            <line number="14" hits="0" branch="false" />
+            <line number="16" hits="1" branch="false" />
+            <line number="17" hits="1" branch="false" />
+            <line number="19" hits="1" branch="false" />
+            <line number="21" hits="1" branch="false" />
+            <line number="23" hits="1" branch="false" />
+            <line number="24" hits="1" branch="false" />
+            <line number="25" hits="1" branch="false" />
+            <line number="27" hits="1" branch="false" />
+          </lines>
+        </class>
+        <class name="ProyectoAsistencia.Controllers.AdminController" filename="D:\calidad22\ProyectoAsistencia\ProyectoAsistencia\Controllers\AdminController.cs" line-rate="0.9571428571428572" branch-rate="0.8846153846153846" complexity="35">
+          <methods>
+            <method name="AgregarEmpleadoParaPruebas" signature="(ProyectoAsistencia.Models.Empleado)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="18" hits="3" branch="false" />
+                <line number="19" hits="3" branch="false" />
+                <line number="20" hits="3" branch="false" />
+              </lines>
+            </method>
+            <method name="AgregarAsistenciaParaPruebas" signature="(ProyectoAsistencia.Models.Asistencia)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="23" hits="4" branch="false" />
+                <line number="24" hits="4" branch="false" />
+                <line number="25" hits="4" branch="false" />
+              </lines>
+            </method>
+            <method name="LimpiarDatosPruebas" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="28" hits="9" branch="false" />
+                <line number="29" hits="9" branch="false" />
+                <line number="30" hits="9" branch="false" />
+                <line number="31" hits="9" branch="false" />
+                <line number="32" hits="9" branch="false" />
+              </lines>
+            </method>
+            <method name="Dashboard" signature="()" line-rate="1" branch-rate="0.8333333333333334" complexity="12">
+              <lines>
+                <line number="36" hits="2" branch="false" />
+                <line number="37" hits="2" branch="true" condition-coverage="100% (2/2)" />
+                <line number="38" hits="3" branch="true" condition-coverage="100% (2/2)" />
+                <line number="39" hits="3" branch="true" condition-coverage="75% (3/4)" />
+                <line number="40" hits="3" branch="true" condition-coverage="75% (3/4)" />
+                <line number="41" hits="2" branch="false" />
+                <line number="42" hits="2" branch="false" />
+              </lines>
+            </method>
+            <method name="GestionEmpleados" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="46" hits="1" branch="false" />
+                <line number="47" hits="1" branch="false" />
+                <line number="48" hits="1" branch="false" />
+              </lines>
+            </method>
+            <method name="AgregarEmpleado" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="52" hits="1" branch="false" />
+                <line number="53" hits="1" branch="false" />
+                <line number="54" hits="1" branch="false" />
+              </lines>
+            </method>
+            <method name="AgregarEmpleado" signature="(ProyectoAsistencia.Models.Empleado)" line-rate="1" branch-rate="0.8333333333333334" complexity="6">
+              <lines>
+                <line number="59" hits="3" branch="false" />
+                <line number="60" hits="3" branch="true" condition-coverage="75% (3/4)" />
+                <line number="61" hits="1" branch="false" />
+                <line number="62" hits="1" branch="false" />
+                <line number="63" hits="1" branch="false" />
+                <line number="67" hits="3" branch="true" condition-coverage="100% (2/2)" />
+                <line number="68" hits="1" branch="false" />
+                <line number="69" hits="1" branch="false" />
+                <line number="70" hits="1" branch="false" />
+                <line number="73" hits="1" branch="false" />
+                <line number="74" hits="1" branch="false" />
+                <line number="77" hits="1" branch="false" />
+                <line number="78" hits="1" branch="false" />
+                <line number="79" hits="1" branch="false" />
+                <line number="80" hits="1" branch="false" />
+                <line number="81" hits="1" branch="false" />
+                <line number="82" hits="1" branch="false" />
+                <line number="83" hits="1" branch="false" />
+                <line number="85" hits="1" branch="false" />
+                <line number="86" hits="3" branch="false" />
+              </lines>
+            </method>
+            <method name="GestionAsistencias" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="90" hits="2" branch="false" />
+                <line number="91" hits="2" branch="false" />
+                <line number="92" hits="2" branch="false" />
+              </lines>
+            </method>
+            <method name="HistorialCambios" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="96" hits="2" branch="false" />
+                <line number="97" hits="2" branch="false" />
+                <line number="98" hits="2" branch="false" />
+              </lines>
+            </method>
+            <method name="Reportes" signature="()" line-rate="1" branch-rate="1" complexity="8">
+              <lines>
+                <line number="102" hits="2" branch="false" />
+                <line number="104" hits="2" branch="false" />
+                <line number="105" hits="10" branch="true" condition-coverage="100% (2/2)" />
+                <line number="106" hits="2" branch="false" />
+                <line number="107" hits="2" branch="false" />
+                <line number="108" hits="2" branch="false" />
+                <line number="109" hits="2" branch="false" />
+                <line number="112" hits="4" branch="false" />
+                <line number="113" hits="4" branch="false" />
+                <line number="116" hits="2" branch="true" condition-coverage="100% (2/2)" />
+                <line number="117" hits="2" branch="true" condition-coverage="100% (2/2)" />
+                <line number="118" hits="2" branch="true" condition-coverage="100% (2/2)" />
+                <line number="120" hits="2" branch="false" />
+                <line number="121" hits="2" branch="false" />
+              </lines>
+            </method>
+            <method name="ObtenerEmpleados" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="125" hits="0" branch="false" />
+                <line number="126" hits="0" branch="false" />
+                <line number="127" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name=".cctor" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="12" hits="1" branch="false" />
+                <line number="13" hits="1" branch="false" />
+                <line number="14" hits="1" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="12" hits="1" branch="false" />
+            <line number="13" hits="1" branch="false" />
+            <line number="14" hits="1" branch="false" />
+            <line number="18" hits="3" branch="false" />
+            <line number="19" hits="3" branch="false" />
+            <line number="20" hits="3" branch="false" />
+            <line number="23" hits="4" branch="false" />
+            <line number="24" hits="4" branch="false" />
+            <line number="25" hits="4" branch="false" />
+            <line number="28" hits="9" branch="false" />
+            <line number="29" hits="9" branch="false" />
+            <line number="30" hits="9" branch="false" />
+            <line number="31" hits="9" branch="false" />
+            <line number="32" hits="9" branch="false" />
+            <line number="36" hits="2" branch="false" />
+            <line number="37" hits="2" branch="true" condition-coverage="100% (2/2)" />
+            <line number="38" hits="3" branch="true" condition-coverage="100% (2/2)" />
+            <line number="39" hits="3" branch="true" condition-coverage="75% (3/4)" />
+            <line number="40" hits="3" branch="true" condition-coverage="75% (3/4)" />
+            <line number="41" hits="2" branch="false" />
+            <line number="42" hits="2" branch="false" />
+            <line number="46" hits="1" branch="false" />
+            <line number="47" hits="1" branch="false" />
+            <line number="48" hits="1" branch="false" />
+            <line number="52" hits="1" branch="false" />
+            <line number="53" hits="1" branch="false" />
+            <line number="54" hits="1" branch="false" />
+            <line number="59" hits="3" branch="false" />
+            <line number="60" hits="3" branch="true" condition-coverage="75% (3/4)" />
+            <line number="61" hits="1" branch="false" />
+            <line number="62" hits="1" branch="false" />
+            <line number="63" hits="1" branch="false" />
+            <line number="67" hits="3" branch="true" condition-coverage="100% (2/2)" />
+            <line number="68" hits="1" branch="false" />
+            <line number="69" hits="1" branch="false" />
+            <line number="70" hits="1" branch="false" />
+            <line number="73" hits="1" branch="false" />
+            <line number="74" hits="1" branch="false" />
+            <line number="77" hits="1" branch="false" />
+            <line number="78" hits="1" branch="false" />
+            <line number="79" hits="1" branch="false" />
+            <line number="80" hits="1" branch="false" />
+            <line number="81" hits="1" branch="false" />
+            <line number="82" hits="1" branch="false" />
+            <line number="83" hits="1" branch="false" />
+            <line number="85" hits="1" branch="false" />
+            <line number="86" hits="3" branch="false" />
+            <line number="90" hits="2" branch="false" />
+            <line number="91" hits="2" branch="false" />
+            <line number="92" hits="2" branch="false" />
+            <line number="96" hits="2" branch="false" />
+            <line number="97" hits="2" branch="false" />
+            <line number="98" hits="2" branch="false" />
+            <line number="102" hits="2" branch="false" />
+            <line number="104" hits="2" branch="false" />
+            <line number="105" hits="10" branch="true" condition-coverage="100% (2/2)" />
+            <line number="106" hits="2" branch="false" />
+            <line number="107" hits="2" branch="false" />
+            <line number="108" hits="2" branch="false" />
+            <line number="109" hits="2" branch="false" />
+            <line number="112" hits="4" branch="false" />
+            <line number="113" hits="4" branch="false" />
+            <line number="116" hits="2" branch="true" condition-coverage="100% (2/2)" />
+            <line number="117" hits="2" branch="true" condition-coverage="100% (2/2)" />
+            <line number="118" hits="2" branch="true" condition-coverage="100% (2/2)" />
+            <line number="120" hits="2" branch="false" />
+            <line number="121" hits="2" branch="false" />
+            <line number="125" hits="0" branch="false" />
+            <line number="126" hits="0" branch="false" />
+            <line number="127" hits="0" branch="false" />
+          </lines>
+        </class>
+        <class name="ProyectoAsistencia.Controllers.AsistenciaController" filename="D:\calidad22\ProyectoAsistencia\ProyectoAsistencia\Controllers\AsistenciaController.cs" line-rate="1" branch-rate="1" complexity="7">
+          <methods>
+            <method name="Index" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="15" hits="2" branch="false" />
+                <line number="16" hits="2" branch="false" />
+                <line number="17" hits="2" branch="false" />
+              </lines>
+            </method>
+            <method name="RegistrarAsistencia" signature="()" line-rate="1" branch-rate="1" complexity="2">
+              <lines>
+                <line number="21" hits="2" branch="false" />
+                <line number="22" hits="2" branch="true" condition-coverage="100% (2/2)" />
+                <line number="23" hits="2" branch="false" />
+                <line number="24" hits="2" branch="false" />
+              </lines>
+            </method>
+            <method name="RegistrarAsistencia" signature="(System.Int32,System.Boolean)" line-rate="1" branch-rate="1" complexity="2">
+              <lines>
+                <line number="29" hits="3" branch="false" />
+                <line number="30" hits="6" branch="false" />
+                <line number="31" hits="5" branch="true" condition-coverage="100% (2/2)" />
+                <line number="33" hits="1" branch="false" />
+                <line number="34" hits="1" branch="false" />
+                <line number="35" hits="1" branch="false" />
+                <line number="36" hits="1" branch="false" />
+                <line number="37" hits="1" branch="false" />
+                <line number="38" hits="1" branch="false" />
+                <line number="39" hits="1" branch="false" />
+                <line number="40" hits="1" branch="false" />
+                <line number="42" hits="1" branch="false" />
+                <line number="43" hits="1" branch="false" />
+                <line number="44" hits="3" branch="false" />
+              </lines>
+            </method>
+            <method name="Historial" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="48" hits="2" branch="false" />
+                <line number="49" hits="2" branch="false" />
+                <line number="50" hits="2" branch="false" />
+              </lines>
+            </method>
+            <method name=".cctor" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="11" hits="1" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="11" hits="1" branch="false" />
+            <line number="15" hits="2" branch="false" />
+            <line number="16" hits="2" branch="false" />
+            <line number="17" hits="2" branch="false" />
+            <line number="21" hits="2" branch="false" />
+            <line number="22" hits="2" branch="true" condition-coverage="100% (2/2)" />
+            <line number="23" hits="2" branch="false" />
+            <line number="24" hits="2" branch="false" />
+            <line number="29" hits="3" branch="false" />
+            <line number="30" hits="6" branch="false" />
+            <line number="31" hits="5" branch="true" condition-coverage="100% (2/2)" />
+            <line number="33" hits="1" branch="false" />
+            <line number="34" hits="1" branch="false" />
+            <line number="35" hits="1" branch="false" />
+            <line number="36" hits="1" branch="false" />
+            <line number="37" hits="1" branch="false" />
+            <line number="38" hits="1" branch="false" />
+            <line number="39" hits="1" branch="false" />
+            <line number="40" hits="1" branch="false" />
+            <line number="42" hits="1" branch="false" />
+            <line number="43" hits="1" branch="false" />
+            <line number="44" hits="3" branch="false" />
+            <line number="48" hits="2" branch="false" />
+            <line number="49" hits="2" branch="false" />
+            <line number="50" hits="2" branch="false" />
+          </lines>
+        </class>
+        <class name="ProyectoAsistencia.Controllers.EmpleadoController" filename="D:\calidad22\ProyectoAsistencia\ProyectoAsistencia\Controllers\EmpleadoController.cs" line-rate="1" branch-rate="1" complexity="6">
+          <methods>
+            <method name="AgregarEmpleado" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="13" hits="1" branch="false" />
+                <line number="14" hits="1" branch="false" />
+                <line number="15" hits="1" branch="false" />
+              </lines>
+            </method>
+            <method name="AgregarEmpleado" signature="(ProyectoAsistencia.Models.Empleado)" line-rate="1" branch-rate="1" complexity="2">
+              <lines>
+                <line number="20" hits="3" branch="false" />
+                <line number="21" hits="3" branch="true" condition-coverage="100% (2/2)" />
+                <line number="22" hits="2" branch="false" />
+                <line number="23" hits="2" branch="false" />
+                <line number="24" hits="2" branch="false" />
+                <line number="25" hits="2" branch="false" />
+                <line number="28" hits="1" branch="false" />
+                <line number="29" hits="3" branch="false" />
+              </lines>
+            </method>
+            <method name="VerEmpleados" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="33" hits="1" branch="false" />
+                <line number="34" hits="1" branch="false" />
+                <line number="35" hits="1" branch="false" />
+              </lines>
+            </method>
+            <method name="ObtenerEmpleados" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="39" hits="10" branch="false" />
+                <line number="40" hits="10" branch="false" />
+                <line number="41" hits="10" branch="false" />
+              </lines>
+            </method>
+            <method name=".cctor" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="9" hits="1" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="9" hits="1" branch="false" />
+            <line number="13" hits="1" branch="false" />
+            <line number="14" hits="1" branch="false" />
+            <line number="15" hits="1" branch="false" />
+            <line number="20" hits="3" branch="false" />
+            <line number="21" hits="3" branch="true" condition-coverage="100% (2/2)" />
+            <line number="22" hits="2" branch="false" />
+            <line number="23" hits="2" branch="false" />
+            <line number="24" hits="2" branch="false" />
+            <line number="25" hits="2" branch="false" />
+            <line number="28" hits="1" branch="false" />
+            <line number="29" hits="3" branch="false" />
+            <line number="33" hits="1" branch="false" />
+            <line number="34" hits="1" branch="false" />
+            <line number="35" hits="1" branch="false" />
+            <line number="39" hits="10" branch="false" />
+            <line number="40" hits="10" branch="false" />
+            <line number="41" hits="10" branch="false" />
+          </lines>
+        </class>
+        <class name="ProyectoAsistencia.Controllers.HomeController" filename="D:\calidad22\ProyectoAsistencia\ProyectoAsistencia\Controllers\HomeController.cs" line-rate="1" branch-rate="0.75" complexity="7">
+          <methods>
+            <method name="Index" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="17" hits="3" branch="false" />
+                <line number="18" hits="3" branch="false" />
+                <line number="19" hits="3" branch="false" />
+              </lines>
+            </method>
+            <method name="Privacy" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="22" hits="2" branch="false" />
+                <line number="23" hits="2" branch="false" />
+                <line number="24" hits="2" branch="false" />
+              </lines>
+            </method>
+            <method name="Error" signature="()" line-rate="1" branch-rate="0.75" complexity="4">
+              <lines>
+                <line number="28" hits="1" branch="false" />
+                <line number="29" hits="1" branch="true" condition-coverage="75% (3/4)" />
+                <line number="30" hits="1" branch="false" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(Microsoft.Extensions.Logging.ILogger`1&lt;ProyectoAsistencia.Controllers.HomeController&gt;)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="11" hits="6" branch="false" />
+                <line number="12" hits="6" branch="false" />
+                <line number="13" hits="6" branch="false" />
+                <line number="14" hits="6" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="11" hits="6" branch="false" />
+            <line number="12" hits="6" branch="false" />
+            <line number="13" hits="6" branch="false" />
+            <line number="14" hits="6" branch="false" />
+            <line number="17" hits="3" branch="false" />
+            <line number="18" hits="3" branch="false" />
+            <line number="19" hits="3" branch="false" />
+            <line number="22" hits="2" branch="false" />
+            <line number="23" hits="2" branch="false" />
+            <line number="24" hits="2" branch="false" />
+            <line number="28" hits="1" branch="false" />
+            <line number="29" hits="1" branch="true" condition-coverage="75% (3/4)" />
+            <line number="30" hits="1" branch="false" />
+          </lines>
+        </class>
+        <class name="ProyectoAsistencia.Models.Administrador" filename="D:\calidad22\ProyectoAsistencia\ProyectoAsistencia\Models\Administrador.cs" line-rate="1" branch-rate="1" complexity="3">
+          <methods>
+            <method name="get_Id" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="7" hits="2" branch="false" />
+              </lines>
+            </method>
+            <method name="get_Username" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="10" hits="5" branch="false" />
+              </lines>
+            </method>
+            <method name="get_Password" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="13" hits="5" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="7" hits="2" branch="false" />
+            <line number="10" hits="5" branch="false" />
+            <line number="13" hits="5" branch="false" />
+          </lines>
+        </class>
+        <class name="ProyectoAsistencia.Models.Asistencia" filename="D:\calidad22\ProyectoAsistencia\ProyectoAsistencia\Models\Asistencia.cs" line-rate="1" branch-rate="1" complexity="5">
+          <methods>
+            <method name="get_Id" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="7" hits="5" branch="false" />
+              </lines>
+            </method>
+            <method name="get_EmpleadoId" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="10" hits="8" branch="false" />
+              </lines>
+            </method>
+            <method name="get_Empleado" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="13" hits="8" branch="false" />
+              </lines>
+            </method>
+            <method name="get_Fecha" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="15" hits="19" branch="false" />
+              </lines>
+            </method>
+            <method name="get_Estado" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="17" hits="16" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="7" hits="5" branch="false" />
+            <line number="10" hits="8" branch="false" />
+            <line number="13" hits="8" branch="false" />
+            <line number="15" hits="19" branch="false" />
+            <line number="17" hits="16" branch="false" />
+          </lines>
+        </class>
+        <class name="ProyectoAsistencia.Models.Empleado" filename="D:\calidad22\ProyectoAsistencia\ProyectoAsistencia\Models\Empleado.cs" line-rate="1" branch-rate="1" complexity="3">
+          <methods>
+            <method name="get_Id" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="7" hits="23" branch="false" />
+              </lines>
+            </method>
+            <method name="get_NombreUsuario" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="10" hits="49" branch="false" />
+              </lines>
+            </method>
+            <method name="get_Contraseña" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="13" hits="29" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="7" hits="23" branch="false" />
+            <line number="10" hits="49" branch="false" />
+            <line number="13" hits="29" branch="false" />
+          </lines>
+        </class>
+        <class name="ProyectoAsistencia.Models.ErrorViewModel" filename="D:\calidad22\ProyectoAsistencia\ProyectoAsistencia\Models\ErrorViewModel.cs" line-rate="1" branch-rate="1" complexity="2">
+          <methods>
+            <method name="get_RequestId" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="5" hits="12" branch="false" />
+              </lines>
+            </method>
+            <method name="get_ShowRequestId" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="7" hits="5" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="5" hits="12" branch="false" />
+            <line number="7" hits="5" branch="false" />
+          </lines>
+        </class>
+        <class name="ProyectoAsistencia.Models.Historial" filename="D:\calidad22\ProyectoAsistencia\ProyectoAsistencia\Models\Historial.cs" line-rate="1" branch-rate="1" complexity="4">
+          <methods>
+            <method name="get_Id" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="7" hits="1" branch="false" />
+              </lines>
+            </method>
+            <method name="get_Accion" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="8" hits="4" branch="false" />
+              </lines>
+            </method>
+            <method name="get_Fecha" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="9" hits="2" branch="false" />
+              </lines>
+            </method>
+            <method name="get_Usuario" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="10" hits="3" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="7" hits="1" branch="false" />
+            <line number="8" hits="4" branch="false" />
+            <line number="9" hits="2" branch="false" />
+            <line number="10" hits="3" branch="false" />
+          </lines>
+        </class>
+        <class name="ProyectoAsistencia.Views.Admin.AgregarEmpleadoModel" filename="D:\calidad22\ProyectoAsistencia\ProyectoAsistencia\Views\Admin\AgregarEmpleado.cshtml.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name="OnGet" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="9" hits="1" branch="false" />
+                <line number="10" hits="1" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="9" hits="1" branch="false" />
+            <line number="10" hits="1" branch="false" />
+          </lines>
+        </class>
+        <class name="ProyectoAsistencia.Views.Admin.DashboardModel" filename="D:\calidad22\ProyectoAsistencia\ProyectoAsistencia\Views\Admin\Dashboard.cshtml.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name="OnGet" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="9" hits="1" branch="false" />
+                <line number="10" hits="1" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="9" hits="1" branch="false" />
+            <line number="10" hits="1" branch="false" />
+          </lines>
+        </class>
+        <class name="ProyectoAsistencia.Views.Admin.GestionAsistenciasModel" filename="D:\calidad22\ProyectoAsistencia\ProyectoAsistencia\Views\Admin\GestionAsistencias.cshtml.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name="OnGet" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="9" hits="2" branch="false" />
+                <line number="10" hits="2" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="9" hits="2" branch="false" />
+            <line number="10" hits="2" branch="false" />
+          </lines>
+        </class>
+        <class name="ProyectoAsistencia.Views.Admin.GestionEmpleadosModel" filename="D:\calidad22\ProyectoAsistencia\ProyectoAsistencia\Views\Admin\GestionEmpleados.cshtml.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name="OnGet" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="9" hits="1" branch="false" />
+                <line number="10" hits="1" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="9" hits="1" branch="false" />
+            <line number="10" hits="1" branch="false" />
+          </lines>
+        </class>
+        <class name="ProyectoAsistencia.Views.Admin.HistorialCambiosModel" filename="D:\calidad22\ProyectoAsistencia\ProyectoAsistencia\Views\Admin\HistorialCambios.cshtml.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name="OnGet" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="9" hits="2" branch="false" />
+                <line number="10" hits="2" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="9" hits="2" branch="false" />
+            <line number="10" hits="2" branch="false" />
+          </lines>
+        </class>
+        <class name="ProyectoAsistencia.Views.Admin.ReportesModel" filename="D:\calidad22\ProyectoAsistencia\ProyectoAsistencia\Views\Admin\Reportes.cshtml.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name="OnGet" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="9" hits="1" branch="false" />
+                <line number="10" hits="1" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="9" hits="1" branch="false" />
+            <line number="10" hits="1" branch="false" />
+          </lines>
+        </class>
+        <class name="ProyectoAsistencia.Views.Admin.VerEmpleadosModel" filename="D:\calidad22\ProyectoAsistencia\ProyectoAsistencia\Views\Admin\VerEmpleados.cshtml.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name="OnGet" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="9" hits="2" branch="false" />
+                <line number="10" hits="2" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="9" hits="2" branch="false" />
+            <line number="10" hits="2" branch="false" />
+          </lines>
+        </class>
+        <class name="ProyectoAsistencia.Views.Asistencia.AgregarAsistenciaModel" filename="D:\calidad22\ProyectoAsistencia\ProyectoAsistencia\Views\Asistencia\AgregarAsistencia.cshtml.cs" line-rate="1" branch-rate="1" complexity="3">
+          <methods>
+            <method name="get_Asistencias" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="8" hits="6" branch="false" />
+              </lines>
+            </method>
+            <method name="OnGet" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="11" hits="1" branch="false" />
+                <line number="13" hits="1" branch="false" />
+              </lines>
+            </method>
+            <method name="OnPost" signature="(ProyectoAsistencia.Models.Asistencia)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="16" hits="1" branch="false" />
+                <line number="17" hits="1" branch="false" />
+                <line number="18" hits="1" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="8" hits="6" branch="false" />
+            <line number="11" hits="1" branch="false" />
+            <line number="13" hits="1" branch="false" />
+            <line number="16" hits="1" branch="false" />
+            <line number="17" hits="1" branch="false" />
+            <line number="18" hits="1" branch="false" />
+          </lines>
+        </class>
+        <class name="ProyectoAsistencia.Views.Asistencia.ConfirmacionModel" filename="D:\calidad22\ProyectoAsistencia\ProyectoAsistencia\Views\Asistencia\Confirmacion.cshtml.cs" line-rate="1" branch-rate="1" complexity="3">
+          <methods>
+            <method name="get_IsSuccess" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="5" hits="4" branch="false" />
+              </lines>
+            </method>
+            <method name="OnGet" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="8" hits="1" branch="false" />
+                <line number="10" hits="1" branch="false" />
+              </lines>
+            </method>
+            <method name="OnPost" signature="(System.Boolean)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="13" hits="2" branch="false" />
+                <line number="14" hits="2" branch="false" />
+                <line number="15" hits="2" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="5" hits="4" branch="false" />
+            <line number="8" hits="1" branch="false" />
+            <line number="10" hits="1" branch="false" />
+            <line number="13" hits="2" branch="false" />
+            <line number="14" hits="2" branch="false" />
+            <line number="15" hits="2" branch="false" />
+          </lines>
+        </class>
+        <class name="ProyectoAsistencia.Views.Asistencia.FiltrarPorFechaModel" filename="D:\calidad22\ProyectoAsistencia\ProyectoAsistencia\Views\Asistencia\FiltrarPorFecha.cshtml.cs" line-rate="1" branch-rate="0.5" complexity="4">
+          <methods>
+            <method name="get_Asistencias" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="10" hits="6" branch="false" />
+              </lines>
+            </method>
+            <method name="OnGet" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="13" hits="1" branch="false" />
+                <line number="15" hits="1" branch="false" />
+              </lines>
+            </method>
+            <method name="OnPost" signature="(System.DateTime,System.DateTime)" line-rate="1" branch-rate="0.5" complexity="2">
+              <lines>
+                <line number="18" hits="1" branch="false" />
+                <line number="19" hits="3" branch="true" condition-coverage="50% (1/2)" />
+                <line number="20" hits="1" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="10" hits="6" branch="false" />
+            <line number="13" hits="1" branch="false" />
+            <line number="15" hits="1" branch="false" />
+            <line number="18" hits="1" branch="false" />
+            <line number="19" hits="3" branch="true" condition-coverage="50% (1/2)" />
+            <line number="20" hits="1" branch="false" />
+          </lines>
+        </class>
+        <class name="ProyectoAsistencia.Views.Asistencia.HistorialModel" filename="D:\calidad22\ProyectoAsistencia\ProyectoAsistencia\Views\Asistencia\Historial.cshtml.cs" line-rate="1" branch-rate="1" complexity="2">
+          <methods>
+            <method name="get_HistorialCambios" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="8" hits="4" branch="false" />
+              </lines>
+            </method>
+            <method name="OnGet" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="11" hits="2" branch="false" />
+                <line number="13" hits="2" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="8" hits="4" branch="false" />
+            <line number="11" hits="2" branch="false" />
+            <line number="13" hits="2" branch="false" />
+          </lines>
+        </class>
+        <class name="ProyectoAsistencia.Views.Asistencia.IndexModel" filename="D:\calidad22\ProyectoAsistencia\ProyectoAsistencia\Views\Asistencia\Index.cshtml.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name="OnGet" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="9" hits="1" branch="false" />
+                <line number="10" hits="1" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="9" hits="1" branch="false" />
+            <line number="10" hits="1" branch="false" />
+          </lines>
+        </class>
+        <class name="ProyectoAsistencia.Views.Asistencia.RegistrarAsistenciaModel" filename="D:\calidad22\ProyectoAsistencia\ProyectoAsistencia\Views\Asistencia\RegistrarAsistencia.cshtml.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name="OnGet" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="9" hits="1" branch="false" />
+                <line number="10" hits="1" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="9" hits="1" branch="false" />
+            <line number="10" hits="1" branch="false" />
+          </lines>
+        </class>
+        <class name="ProyectoAsistencia.Views.Empleado.AgregarEmpleadoModel" filename="D:\calidad22\ProyectoAsistencia\ProyectoAsistencia\Views\Empleado\AgregarEmpleado.cshtml.cs" line-rate="1" branch-rate="1" complexity="5">
+          <methods>
+            <method name="get_Empleado" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="8" hits="6" branch="false" />
+              </lines>
+            </method>
+            <method name="get_Empleados" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="9" hits="4" branch="false" />
+              </lines>
+            </method>
+            <method name="OnGet" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="12" hits="1" branch="false" />
+                <line number="13" hits="1" branch="false" />
+              </lines>
+            </method>
+            <method name="OnPost" signature="()" line-rate="1" branch-rate="1" complexity="2">
+              <lines>
+                <line number="16" hits="1" branch="false" />
+                <line number="17" hits="1" branch="true" condition-coverage="100% (2/2)" />
+                <line number="18" hits="1" branch="false" />
+                <line number="19" hits="1" branch="false" />
+                <line number="20" hits="1" branch="false" />
+                <line number="21" hits="1" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="8" hits="6" branch="false" />
+            <line number="9" hits="4" branch="false" />
+            <line number="12" hits="1" branch="false" />
+            <line number="13" hits="1" branch="false" />
+            <line number="16" hits="1" branch="false" />
+            <line number="17" hits="1" branch="true" condition-coverage="100% (2/2)" />
+            <line number="18" hits="1" branch="false" />
+            <line number="19" hits="1" branch="false" />
+            <line number="20" hits="1" branch="false" />
+            <line number="21" hits="1" branch="false" />
+          </lines>
+        </class>
+        <class name="ProyectoAsistencia.Views.Empleado.DetallesModel" filename="D:\calidad22\ProyectoAsistencia\ProyectoAsistencia\Views\Empleado\Detalles.cshtml.cs" line-rate="1" branch-rate="1" complexity="2">
+          <methods>
+            <method name="get_Empleado" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="8" hits="6" branch="false" />
+              </lines>
+            </method>
+            <method name="OnGet" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="11" hits="2" branch="false" />
+                <line number="12" hits="2" branch="false" />
+                <line number="13" hits="2" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="8" hits="6" branch="false" />
+            <line number="11" hits="2" branch="false" />
+            <line number="12" hits="2" branch="false" />
+            <line number="13" hits="2" branch="false" />
+          </lines>
+        </class>
+        <class name="ProyectoAsistencia.Views.Empleado.IndexModel" filename="D:\calidad22\ProyectoAsistencia\ProyectoAsistencia\Views\Empleado\Index.cshtml.cs" line-rate="1" branch-rate="1" complexity="2">
+          <methods>
+            <method name="get_Empleados" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="8" hits="7" branch="false" />
+              </lines>
+            </method>
+            <method name="OnGet" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="11" hits="2" branch="false" />
+                <line number="12" hits="2" branch="false" />
+                <line number="13" hits="2" branch="false" />
+                <line number="14" hits="2" branch="false" />
+                <line number="15" hits="2" branch="false" />
+                <line number="16" hits="2" branch="false" />
+                <line number="17" hits="2" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="8" hits="7" branch="false" />
+            <line number="11" hits="2" branch="false" />
+            <line number="12" hits="2" branch="false" />
+            <line number="13" hits="2" branch="false" />
+            <line number="14" hits="2" branch="false" />
+            <line number="15" hits="2" branch="false" />
+            <line number="16" hits="2" branch="false" />
+            <line number="17" hits="2" branch="false" />
+          </lines>
+        </class>
+      </classes>
+    </package>
+  </packages>
+</coverage>
