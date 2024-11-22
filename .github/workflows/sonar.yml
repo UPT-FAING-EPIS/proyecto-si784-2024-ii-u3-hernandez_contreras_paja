@@ -23,6 +23,13 @@ jobs:
         with:
           dotnet-version: 8.x  
 
+      - name: Install ReportGenerator
+        run: dotnet tool install --global dotnet-reportgenerator-globaltool
+
+      - name: Add .NET tools to PATH
+        run: echo "$env:USERPROFILE\.dotnet\tools" >> $env:GITHUB_PATH
+        shell: pwsh
+
  
       - name: Restore, Test, and Analyze with SonarCloud
         env:
@@ -33,7 +40,7 @@ jobs:
           cd ProyectoAsistencia.Tests
           dotnet test --collect:"XPlat Code Coverage"
 
-
+          
           reportgenerator "-reports:TestResults/**/coverage.cobertura.xml" "-targetdir:coverage" -reporttypes:Cobertura
           Rename-Item -Path "coverage\Cobertura.xml" -NewName "coverage.xml"
 
