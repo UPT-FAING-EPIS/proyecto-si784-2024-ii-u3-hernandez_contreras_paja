@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE coverage SYSTEM "http://cobertura.sourceforge.net/xml/coverage-04.dtd">
-<coverage line-rate="0.8143939393939394" branch-rate="0.225" lines-covered="215" lines-valid="264" branches-covered="36" branches-valid="160" complexity="225" version="0" timestamp="1732294671">
+<coverage line-rate="0.8143939393939394" branch-rate="0.225" lines-covered="215" lines-valid="264" branches-covered="36" branches-valid="160" complexity="225" version="0" timestamp="1732296443">
   <sources>
     <source>D:\calidad22\ProyectoAsistencia\ProyectoAsistencia\</source>
   </sources>
