@@ -1,0 +1,17 @@
+﻿<h2>Registrar Asistencia</h2>
+
+<form asp-action="AgregarAsistencia" method="post">
+    <label>Empleado:</label>
+    <select name="empleadoId" required>
+        @foreach (var empleado in ViewBag.Empleados)
+        {
+            <option value="@empleado.Id">@empleado.NombreUsuario</option>
+        }
+    </select>
+    <label>Estado:</label>
+    <select name="estado">
+        <option value="true">Presente</option>
+        <option value="false">Ausente</option>
+    </select>
+    <button type="submit">Registrar</button>
+</form>
