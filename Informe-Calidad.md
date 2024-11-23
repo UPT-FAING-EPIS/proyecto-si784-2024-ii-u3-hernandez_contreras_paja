@@ -384,6 +384,18 @@ Caso inválido: Prueba un escenario en el que una propiedad requerida no está c
 * Cobertura de pruebas:
     * OnGet: Valida que el método OnGet no arroje excepciones durante su ejecución.
 
+## **SONAR CLOUD - Reporte de cobertura**
+
+![view_tests](./media/coveragesonar_0.png)
+![view_tests](./media/coveragesonar_1.png)
+
+La cobertura de código en SonarCloud es una métrica clave que evalúa qué porcentaje del código de un proyecto está siendo probado mediante pruebas automatizadas. Este análisis permite identificar las partes del código que no han sido ejecutadas durante los tests, ayudando a mejorar la calidad del software al reducir errores no detectados.
+
+* Cobertura General (Coverage):
+Se alcanzó un 93.6% de cobertura general, lo que indica que la mayoría del código está siendo verificado mediante pruebas automatizadas.
+Existen 10 líneas y 7 condiciones no cubiertas, lo que podría representar áreas del código que aún no han sido probadas.
+* Line Coverage:
+Específicamente, las líneas de código tienen una cobertura del 95.5%, lo que significa que casi todas las líneas han sido evaluadas en las pruebas.
 
 
 Referencias:
