@@ -40,14 +40,13 @@ jobs:
           dotnet build
           cd ProyectoAsistencia.Tests
 
-          dotnet restore
+          
           dotnet build
           coverlet ./bin/Debug/net8.0/ProyectoAsistencia.Tests.dll --target "dotnet" --targetargs "test --no-build" -f opencover -o "coverage.xml"
           
+          cd ..
           
           
-          dotnet sonarscanner begin /k:"alvarocontreras13_calidadproyecto" /o:"alvarocontreras13" /d:sonar.cs.opencover.reportsPaths="coverage.xml" /d:sonar.login="${{ secrets.SONAR_TOKEN }}"
-          
-          
-          
+          dotnet sonarscanner begin /k:"alvarocontreras13_calidadproyecto" /o:"alvarocontreras13" /d:sonar.cs.opencover.reportsPaths="ProyectoAsistencia.Tests/coverage.xml" /d:sonar.login="${{ secrets.SONAR_TOKEN }}"
+          dotnet build
           dotnet sonarscanner end /d:sonar.login="${{ secrets.SONAR_TOKEN }}"
