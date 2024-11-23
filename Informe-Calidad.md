@@ -251,13 +251,14 @@ no se encontraron errores en el código
 ![snyk](./media/snyk.png)
 
 
-**Reporte de Cobertura de Pruebas Unitarias**
+## **Reporte de Cobertura de Pruebas Unitarias**
 
 El objetivo del reporte de cobertura es evaluar qué porcentaje del código fuente ha sido ejecutado durante las pruebas automatizadas, ayudando a identificar áreas no probadas, garantizar la calidad del software, fomentar pruebas más exhaustivas y guiar el mantenimiento del código. Proporciona métricas claras para medir el progreso de las pruebas y priorizar esfuerzos en áreas críticas, reduciendo el riesgo de errores y asegurando que el software sea más robusto y confiable.
 
-![reporte_cobertura](./media/reporte_cobertura.png)
+![reporte_cobertura](./media/reporte_cobertura_1.jpg)
+![reporte_cobertura](./media/reporte_cobertura_2.jpg)
 
-**Tests Creados**
+### **Tests Creados**
 
 ![controller_tests](./media/controller_tests.png)
 
@@ -288,6 +289,18 @@ El objetivo del reporte de cobertura es evaluar qué porcentaje del código fuen
     * AgregarEmpleado: Valida tanto los casos de éxito como los errores en el registro de empleados (por ejemplo, cuando el modelo es inválido).
     * VerEmpleados: Comprueba que la lista de empleados se carga correctamente.
     * Actualización de la lista: Asegura que, tras agregar un empleado, la lista se actualiza adecuadamente y refleja los cambios esperados.
+
+5. AsistenciaControllerTests2.cs
+* Objetivo: Validar funcionalidades adicionales del controlador AsistenciaController relacionadas con el manejo de asistencias y vistas complementarias.
+* Cobertura de pruebas:
+    * Index: Comprueba que el método retorna una vista con el modelo esperado de tipo List<Asistencia>.
+    * RegistrarAsistencia (GET): Valida que se retorna una vista con la lista de empleados en el ViewData.
+    * RegistrarAsistencia (POST):
+        * Caso exitoso: Verifica que una asistencia se agrega correctamente cuando el empleado existe, redirigiendo al método Historial.
+        * Caso fallido: Valida que retorna un BadRequest con un mensaje adecuado cuando el empleado no es encontrado.
+    * Historial: Asegura que retorna una vista con un modelo de tipo List<Asistencia>.
+
+
 
 ![model_tests](./media/model_tests.png)
 
@@ -321,7 +334,7 @@ Caso inválido: Prueba un escenario en el que una propiedad requerida no está c
     * Caso Vacío: Confirma que ShowRequestId retorna false cuando RequestId está vacío.
     * Caso Válido: Asegura que ShowRequestId devuelve true cuando RequestId contiene un valor válido.
 
-![view_tests](./media/view_tests.png)
+![view_tests](./media/view_test.png)
 
 1. AdminViewTest.cs
 * Objetivo: Validar el correcto funcionamiento de las vistas relacionadas con la administración en el proyecto.
@@ -354,6 +367,22 @@ Caso inválido: Prueba un escenario en el que una propiedad requerida no está c
 * Cobertura de pruebas:
     * Index: Comprueba que el método Index devuelve un resultado de tipo ViewResult.
     * Privacy: Verifica que el método Privacy también devuelve un resultado de tipo ViewResult.
+
+5. ErrorViewModelTests.cs
+* Objetivo: Validar la funcionalidad del modelo ErrorViewModel en la gestión de identificadores de solicitud (RequestId).
+* Cobertura de pruebas:
+    * ShowRequestId (true): Comprueba que ShowRequestId retorna verdadero cuando RequestId no es nulo ni vacío.
+    * ShowRequestId (false): Valida que ShowRequestId retorna falso cuando RequestId es nulo o vacío.
+
+6. IndexModelTests.cs
+* Objetivo: Validar el correcto funcionamiento de la página de inicio (Index) del módulo de asistencia.
+* Cobertura de pruebas:
+    * OnGet: Verifica que la ejecución del método OnGet no genera excepciones.
+
+7. RegistrarAsistenciaModelTests.cs
+* Objetivo: Asegurar que el modelo de la vista para registrar asistencias opera correctamente.
+* Cobertura de pruebas:
+    * OnGet: Valida que el método OnGet no arroje excepciones durante su ejecución.
 
 
 
