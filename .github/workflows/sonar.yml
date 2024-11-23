@@ -21,30 +21,40 @@ jobs:
         with:
           dotnet-version: 8.x  
 
-      - name: Install .NET tools
-        run: |
-          dotnet tool install --global dotnet-reportgenerator-globaltool
-          dotnet tool install --global coverlet.console
-          dotnet tool install --global dotnet-sonarscanner
+      - name: Install ReportGenerator
+        run: dotnet tool install --global dotnet-reportgenerator-globaltool
 
       - name: Add .NET tools to PATH
         run: echo "$env:USERPROFILE\.dotnet\tools" >> $env:GITHUB_PATH
         shell: pwsh
 
-      - name: Restore, Test, and Analyze with SonarCloud
+      - name: Restore, Build, Test, and Generate Coverage Report
+        run: |
+          dotnet restore
+          dotnet build
+          cd ProyectoAsistencia.Tests
+          coverlet ./bin/Debug/net8.0/ProyectoAsistencia.Tests.dll --target "dotnet" --targetargs "test --no-build" -f opencover -o "coverage.xml"
+          cd ..
+
+      - name: Install SonarScanner
+        run: dotnet tool install --global dotnet-sonarscanner
+
+      - name: Analyze with SonarCloud
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         run: |
-          cd ProyectoAsistencia
-          dotnet restore
-          cd ProyectoAsistencia.Tests
-          
-          coverlet ./bin/Debug/net8.0/ProyectoAsistencia.Tests.dll --target "dotnet" --targetargs "test --no-build" -f opencover -o "coverage.xml"
-          
-          cd ..
-          
-          dotnet sonarscanner begin /k:"alvarocontreras13_calidadproyecto" /o:"alvarocontreras13" /d:sonar.cs.opencover.reportsPaths="ProyectoAsistencia.Tests/coverage.xml" /d:sonar.login="${{ secrets.SONAR_TOKEN }}"
-          
+          dotnet sonarscanner begin \
+            /k:"alvarocontreras13_calidadproyecto" \
+            /o:"alvarocontreras13" \
+            /d:sonar.projectName="ProyectoAsistencia" \
+            /d:sonar.projectVersion="1.0" \
+            /d:sonar.sources="ProyectoAsistencia" \
+            /d:sonar.exclusions="**/bin/**,**/obj/**,**/TestResults/**,**/*.json" \
+            /d:sonar.tests="ProyectoAsistencia.Tests" \
+            /d:sonar.test.inclusions="ProyectoAsistencia.Tests/**/*.cs" \
+            /d:sonar.cs.opencover.reportsPaths="ProyectoAsistencia.Tests/coverage.xml" \
+            /d:sonar.login="${{ secrets.SONAR_TOKEN }}"
+
           dotnet build
-          
+
           dotnet sonarscanner end /d:sonar.login="${{ secrets.SONAR_TOKEN }}"
