@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\proyecto-si784-2024-ii-u2-contreras_paja_hernandez\\ProyectoAsistencia\\ProyectoAsistencia\\ProyectoAsistencia.csproj": {}
+    "D:\\segunda\\proyectoasistencia\\ProyectoAsistencia\\ProyectoAsistencia.csproj": {}
   },
   "projects": {
-    "D:\\proyecto-si784-2024-ii-u2-contreras_paja_hernandez\\ProyectoAsistencia\\ProyectoAsistencia\\ProyectoAsistencia.csproj": {
+    "D:\\segunda\\proyectoasistencia\\ProyectoAsistencia\\ProyectoAsistencia.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\proyecto-si784-2024-ii-u2-contreras_paja_hernandez\\ProyectoAsistencia\\ProyectoAsistencia\\ProyectoAsistencia.csproj",
+        "projectUniqueName": "D:\\segunda\\proyectoasistencia\\ProyectoAsistencia\\ProyectoAsistencia.csproj",
         "projectName": "ProyectoAsistencia",
-        "projectPath": "D:\\proyecto-si784-2024-ii-u2-contreras_paja_hernandez\\ProyectoAsistencia\\ProyectoAsistencia\\ProyectoAsistencia.csproj",
+        "projectPath": "D:\\segunda\\proyectoasistencia\\ProyectoAsistencia\\ProyectoAsistencia.csproj",
         "packagesPath": "C:\\Users\\ALVARO\\.nuget\\packages\\",
-        "outputPath": "D:\\proyecto-si784-2024-ii-u2-contreras_paja_hernandez\\ProyectoAsistencia\\ProyectoAsistencia\\obj\\",
+        "outputPath": "D:\\segunda\\proyectoasistencia\\ProyectoAsistencia\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ALVARO\\AppData\\Roaming\\NuGet\\NuGet.Config"

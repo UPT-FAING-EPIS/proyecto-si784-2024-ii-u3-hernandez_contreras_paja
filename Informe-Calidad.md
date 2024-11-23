@@ -262,7 +262,7 @@ El objetivo del reporte de cobertura es evaluar qué porcentaje del código fuen
 
 ![controller_tests](./media/controller_tests.png)
 
-1. HomeControllerTests.cs
+1. HomeControllerTests.cs **Mock**
 * Objetivo: Verificar las funcionalidades clave del controlador HomeController.
 * Cobertura de pruebas:
     * Método Error: Asegura que el método Error retorna un ViewResult con un modelo de tipo ErrorViewModel y valida el TraceIdentifier proporcionado.
@@ -362,7 +362,7 @@ Caso inválido: Prueba un escenario en el que una propiedad requerida no está c
     * DetallesModel: Comprueba que los detalles de un empleado se carguen correctamente.
     * IndexModel: Valida que la lista de empleados se cargue correctamente en la vista de índice y simula datos para verificar el conteo y contenido.
 
-4. HomeViewTest.cs
+4. HomeViewTest.cs **Mock**
 * Objetivo: Validar las funcionalidades principales de las vistas de inicio y privacidad.
 * Cobertura de pruebas:
     * Index: Comprueba que el método Index devuelve un resultado de tipo ViewResult.
@@ -384,6 +384,45 @@ Caso inválido: Prueba un escenario en el que una propiedad requerida no está c
 * Cobertura de pruebas:
     * OnGet: Valida que el método OnGet no arroje excepciones durante su ejecución.
 
+## **Reporte de Pruebas mutantes**
+![view_tests](./media/mutantes_all.png)
+* Killed (65): Mutantes eliminados por las pruebas. Tus pruebas lograron detectar los errores introducidos en estas 65 mutaciones.
+
+* Survived (24): Mutantes que sobrevivieron. Esto significa que tus pruebas no detectaron los errores introducidos y no fallaron. Estas son áreas donde tus pruebas necesitan mejorar.
+
+* Timeout (0): No hubo casos en los que las pruebas excedieran el tiempo de ejecución permitido.
+
+* No Coverage (12): Mutantes que no fueron alcanzados por ninguna prueba. Esto indica código no cubierto.
+
+* Ignored (20): Mutantes ignorados por filtros internos (por ejemplo, mutantes en bloques ya cubiertos).
+
+* Compile Errors (14): Mutantes que causaron errores de compilación y no pudieron ser probados.
+![view_tests](./media/mutantes_controller.png)
+### Controllers:
+* Puntaje total: 73.02%
+* De los cubiertos: 85.19%
+* Mutantes totales: 90
+* 46 Killed: Buen resultado, pero hay margen de mejora.
+* 8 Survived: Estos indican áreas donde las pruebas no detectaron mutaciones.
+* 9 No Coverage: Hay partes del código en los controladores no alcanzadas por pruebas.
+* 14 Compile Errors: Mutaciones en los controladores causaron errores de compilación.
+
+![view_tests](./media/mutantes_model.png)
+### Models:
+* Puntaje total y cubierto: 77.78%
+* Mutantes totales: 9
+* 7 Killed: La mayoría de las pruebas cubrieron correctamente estas mutaciones.
+* 2 Survived: Representan áreas donde las pruebas podrían mejorar.
+
+![view_tests](./media/mutantes_view.png)
+### Views:
+* Puntaje total y cubierto: 62.50%
+* Mutantes totales: 22
+* 10 Killed: Las pruebas en las vistas están funcionando relativamente bien.
+* 6 Survived: Algunas mutaciones no detectadas; se necesita mayor cobertura.
+* 3 No Coverage: Hay código en las vistas no alcanzado por pruebas.
+
+
 ## **SONAR CLOUD - Reporte de cobertura**
 
 ![view_tests](./media/coveragesonar_0.png)
@@ -398,13 +437,12 @@ Existen 10 líneas y 7 condiciones no cubiertas, lo que podría representar áre
 Específicamente, las líneas de código tienen una cobertura del 95.5%, lo que significa que casi todas las líneas han sido evaluadas en las pruebas.
 
 
-Referencias:
+ ### **Referencias:**
 
 * Juanjo. (2022, September 20). Qué es SonarCloud y cómo mejora la calidad de tu código. Platzi. https://platzi.com/blog/sonarcloud-mejora-codigo-sast/
-
-‌* Vergara, S. (2019, February 21). Seguridad continua en tus desarrollos con Snyk. Blog ITDO - Agencia de Desarrollo Web, APPs Y Marketing En Barcelona. https://www.itdo.com/blog/seguridad-continua-en-tus-desarrollos-con-snyk/
-
-‌* Quickstart | Semgrep. (2024, September 20). Semgrep.dev. https://semgrep.dev/docs/getting-started/quickstart
+* Vergara, S. (2019, February 21). Seguridad continua en tus desarrollos con Snyk. Blog ITDO - Agencia de Desarrollo Web, APPs Y Marketing En Barcelona. https://www.itdo.com/blog/seguridad-continua-en-tus-desarrollos-con-snyk/
+* Quickstart | Semgrep. (2024, September 20). Semgrep.dev. https://semgrep.dev/docs/getting-started/quickstart
+* .NET test coverage & SonarCloud. (2024). Sonarsource.com. https://docs.sonarsource.com/sonarcloud/enriching/test-coverage/dotnet-test-coverage/
 
 ‌
 
