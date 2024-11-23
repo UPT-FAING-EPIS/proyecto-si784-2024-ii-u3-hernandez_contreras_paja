@@ -17,7 +17,6 @@ jobs:
       - name: Check out code
         uses: actions/checkout@v3
 
-      
       - name: Setup .NET
         uses: actions/setup-dotnet@v3
         with:
@@ -30,22 +29,28 @@ jobs:
         run: echo "$env:USERPROFILE\.dotnet\tools" >> $env:GITHUB_PATH
         shell: pwsh
 
- 
       - name: Restore, Test, and Analyze with SonarCloud
         env:
-          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}  # Configura este secreto en tu repositorio
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }} 
         run: |
           cd ProyectoAsistencia
           dotnet restore
           cd ProyectoAsistencia.Tests
-          dotnet test --collect:"XPlat Code Coverage"
-          Rename-Item -Path "TestResults/*/coverage.cobertura.xml" -NewName "coverage.xml"
 
- 
-          dotnet tool install --global dotnet-sonarscanner
-          dotnet sonarscanner begin /k:"alvarocontreras13_calidadproyecto" /o:"alvarocontreras13" /d:sonar.cs.opencover.reportsPaths="TestResults/*/coverage.xml" /d:sonar.login="${{ secrets.SONAR_TOKEN }}"
+         
+          coverlet ./bin/Debug/net8.0/ProyectoAsistencia.Tests.dll --target "dotnet" --targetargs "test --no-build" -f opencover -o "coverage.xml"
 
           
-          dotnet build
-          dotnet sonarscanner end /d:sonar.login="${{ secrets.SONAR_TOKEN }}"
+          cd ..
 
+        
+          dotnet tool install --global dotnet-sonarscanner
+
+       
+          dotnet sonarscanner begin /k:"alvarocontreras13_calidadproyecto" /o:"alvarocontreras13" /d:sonar.cs.opencover.reportsPaths="ProyectoAsistencia.Tests/coverage.xml" /d:sonar.login="${{ secrets.SONAR_TOKEN }}"
+
+        
+          dotnet build
+
+        
+          dotnet sonarscanner end /d:sonar.login="${{ secrets.SONAR_TOKEN }}"
