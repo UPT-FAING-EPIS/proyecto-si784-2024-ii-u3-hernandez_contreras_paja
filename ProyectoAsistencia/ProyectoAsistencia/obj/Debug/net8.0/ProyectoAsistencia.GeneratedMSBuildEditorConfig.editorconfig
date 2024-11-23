@@ -9,103 +9,103 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = ProyectoAsistencia
 build_property.RootNamespace = ProyectoAsistencia
-build_property.ProjectDir = D:\segunda\proyectoasistencia\ProyectoAsistencia\
+build_property.ProjectDir = D:\Descargas\Calidad\REAL\proyecto-si784-2024-ii-u2-contreras_paja_hernandez\ProyectoAsistencia\ProyectoAsistencia\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = D:\segunda\proyectoasistencia\ProyectoAsistencia
+build_property.MSBuildProjectDirectory = D:\Descargas\Calidad\REAL\proyecto-si784-2024-ii-u2-contreras_paja_hernandez\ProyectoAsistencia\ProyectoAsistencia
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/segunda/proyectoasistencia/ProyectoAsistencia/Views/Admin/AgregarEmpleado.cshtml]
+[D:/Descargas/Calidad/REAL/proyecto-si784-2024-ii-u2-contreras_paja_hernandez/ProyectoAsistencia/ProyectoAsistencia/Views/Admin/AgregarEmpleado.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQWdyZWdhckVtcGxlYWRvLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/segunda/proyectoasistencia/ProyectoAsistencia/Views/Admin/Dashboard.cshtml]
+[D:/Descargas/Calidad/REAL/proyecto-si784-2024-ii-u2-contreras_paja_hernandez/ProyectoAsistencia/ProyectoAsistencia/Views/Admin/Dashboard.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRGFzaGJvYXJkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/segunda/proyectoasistencia/ProyectoAsistencia/Views/Admin/GestionAsistencias.cshtml]
+[D:/Descargas/Calidad/REAL/proyecto-si784-2024-ii-u2-contreras_paja_hernandez/ProyectoAsistencia/ProyectoAsistencia/Views/Admin/GestionAsistencias.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cR2VzdGlvbkFzaXN0ZW5jaWFzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/segunda/proyectoasistencia/ProyectoAsistencia/Views/Admin/GestionEmpleados.cshtml]
+[D:/Descargas/Calidad/REAL/proyecto-si784-2024-ii-u2-contreras_paja_hernandez/ProyectoAsistencia/ProyectoAsistencia/Views/Admin/GestionEmpleados.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cR2VzdGlvbkVtcGxlYWRvcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/segunda/proyectoasistencia/ProyectoAsistencia/Views/Admin/HistorialCambios.cshtml]
+[D:/Descargas/Calidad/REAL/proyecto-si784-2024-ii-u2-contreras_paja_hernandez/ProyectoAsistencia/ProyectoAsistencia/Views/Admin/HistorialCambios.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cSGlzdG9yaWFsQ2FtYmlvcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/segunda/proyectoasistencia/ProyectoAsistencia/Views/Admin/Reportes.cshtml]
+[D:/Descargas/Calidad/REAL/proyecto-si784-2024-ii-u2-contreras_paja_hernandez/ProyectoAsistencia/ProyectoAsistencia/Views/Admin/Reportes.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cUmVwb3J0ZXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/segunda/proyectoasistencia/ProyectoAsistencia/Views/Admin/VerEmpleados.cshtml]
+[D:/Descargas/Calidad/REAL/proyecto-si784-2024-ii-u2-contreras_paja_hernandez/ProyectoAsistencia/ProyectoAsistencia/Views/Admin/VerEmpleados.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cVmVyRW1wbGVhZG9zLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/segunda/proyectoasistencia/ProyectoAsistencia/Views/Asistencia/AgregarAsistencia.cshtml]
+[D:/Descargas/Calidad/REAL/proyecto-si784-2024-ii-u2-contreras_paja_hernandez/ProyectoAsistencia/ProyectoAsistencia/Views/Asistencia/AgregarAsistencia.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXNpc3RlbmNpYVxBZ3JlZ2FyQXNpc3RlbmNpYS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/segunda/proyectoasistencia/ProyectoAsistencia/Views/Asistencia/Confirmacion.cshtml]
+[D:/Descargas/Calidad/REAL/proyecto-si784-2024-ii-u2-contreras_paja_hernandez/ProyectoAsistencia/ProyectoAsistencia/Views/Asistencia/Confirmacion.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXNpc3RlbmNpYVxDb25maXJtYWNpb24uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/segunda/proyectoasistencia/ProyectoAsistencia/Views/Asistencia/FiltrarPorFecha.cshtml]
+[D:/Descargas/Calidad/REAL/proyecto-si784-2024-ii-u2-contreras_paja_hernandez/ProyectoAsistencia/ProyectoAsistencia/Views/Asistencia/FiltrarPorFecha.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXNpc3RlbmNpYVxGaWx0cmFyUG9yRmVjaGEuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/segunda/proyectoasistencia/ProyectoAsistencia/Views/Asistencia/Historial.cshtml]
+[D:/Descargas/Calidad/REAL/proyecto-si784-2024-ii-u2-contreras_paja_hernandez/ProyectoAsistencia/ProyectoAsistencia/Views/Asistencia/Historial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXNpc3RlbmNpYVxIaXN0b3JpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/segunda/proyectoasistencia/ProyectoAsistencia/Views/Asistencia/Index.cshtml]
+[D:/Descargas/Calidad/REAL/proyecto-si784-2024-ii-u2-contreras_paja_hernandez/ProyectoAsistencia/ProyectoAsistencia/Views/Asistencia/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXNpc3RlbmNpYVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/segunda/proyectoasistencia/ProyectoAsistencia/Views/Asistencia/RegistrarAsistencia.cshtml]
+[D:/Descargas/Calidad/REAL/proyecto-si784-2024-ii-u2-contreras_paja_hernandez/ProyectoAsistencia/ProyectoAsistencia/Views/Asistencia/RegistrarAsistencia.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXNpc3RlbmNpYVxSZWdpc3RyYXJBc2lzdGVuY2lhLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/segunda/proyectoasistencia/ProyectoAsistencia/Views/Empleado/AgregarEmpleado.cshtml]
+[D:/Descargas/Calidad/REAL/proyecto-si784-2024-ii-u2-contreras_paja_hernandez/ProyectoAsistencia/ProyectoAsistencia/Views/Empleado/AgregarEmpleado.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbGVhZG9cQWdyZWdhckVtcGxlYWRvLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/segunda/proyectoasistencia/ProyectoAsistencia/Views/Empleado/Detalles.cshtml]
+[D:/Descargas/Calidad/REAL/proyecto-si784-2024-ii-u2-contreras_paja_hernandez/ProyectoAsistencia/ProyectoAsistencia/Views/Empleado/Detalles.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbGVhZG9cRGV0YWxsZXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/segunda/proyectoasistencia/ProyectoAsistencia/Views/Empleado/Index.cshtml]
+[D:/Descargas/Calidad/REAL/proyecto-si784-2024-ii-u2-contreras_paja_hernandez/ProyectoAsistencia/ProyectoAsistencia/Views/Empleado/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbGVhZG9cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/segunda/proyectoasistencia/ProyectoAsistencia/Views/Home/Index.cshtml]
+[D:/Descargas/Calidad/REAL/proyecto-si784-2024-ii-u2-contreras_paja_hernandez/ProyectoAsistencia/ProyectoAsistencia/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/segunda/proyectoasistencia/ProyectoAsistencia/Views/Home/Privacy.cshtml]
+[D:/Descargas/Calidad/REAL/proyecto-si784-2024-ii-u2-contreras_paja_hernandez/ProyectoAsistencia/ProyectoAsistencia/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/segunda/proyectoasistencia/ProyectoAsistencia/Views/Shared/Error.cshtml]
+[D:/Descargas/Calidad/REAL/proyecto-si784-2024-ii-u2-contreras_paja_hernandez/ProyectoAsistencia/ProyectoAsistencia/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/segunda/proyectoasistencia/ProyectoAsistencia/Views/Shared/_ValidationScriptsPartial.cshtml]
+[D:/Descargas/Calidad/REAL/proyecto-si784-2024-ii-u2-contreras_paja_hernandez/ProyectoAsistencia/ProyectoAsistencia/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/segunda/proyectoasistencia/ProyectoAsistencia/Views/_ViewImports.cshtml]
+[D:/Descargas/Calidad/REAL/proyecto-si784-2024-ii-u2-contreras_paja_hernandez/ProyectoAsistencia/ProyectoAsistencia/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/segunda/proyectoasistencia/ProyectoAsistencia/Views/_ViewStart.cshtml]
+[D:/Descargas/Calidad/REAL/proyecto-si784-2024-ii-u2-contreras_paja_hernandez/ProyectoAsistencia/ProyectoAsistencia/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/segunda/proyectoasistencia/ProyectoAsistencia/Views/Shared/_Layout.cshtml]
+[D:/Descargas/Calidad/REAL/proyecto-si784-2024-ii-u2-contreras_paja_hernandez/ProyectoAsistencia/ProyectoAsistencia/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-2t7iwcb4po
