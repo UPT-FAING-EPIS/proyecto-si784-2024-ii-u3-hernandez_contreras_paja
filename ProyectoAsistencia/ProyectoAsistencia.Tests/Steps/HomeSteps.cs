@@ -3,7 +3,8 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc.Testing;
 using NUnit.Framework;
 using TechTalk.SpecFlow;
-using ProyectoAsistencia;
+using XunitAssert = Xunit.Assert;
+using NUnitAssert = NUnit.Framework.Assert;
 
 
 namespace ProyectoAsistencia.Tests.Steps
@@ -32,16 +33,37 @@ namespace ProyectoAsistencia.Tests.Steps
             _response = await _client.GetAsync(url);
         }
 
+        [When(@"realizo una petición POST a ""(.*)"" con datos (.*)")]
+        public async Task CuandoRealizoUnaPeticionPOSTA(string url, string dataStatus)
+        {
+            var content = dataStatus == "válidos" ? new StringContent("{\"key\":\"value\"}") : new StringContent("{}");
+            _response = await _client.PostAsync(url, content);
+        }
+
+        [When(@"realizo una petición DELETE a ""(.*)""")]
+        public async Task CuandoRealizoUnaPeticionDELETEA(string url)
+        {
+            _response = await _client.DeleteAsync(url);
+        }
+
+        [When(@"realizo una petición PUT a ""(.*)"" con datos válidos")]
+        public async Task CuandoRealizoUnaPeticionPUTA(string url)
+        {
+            var content = new StringContent("{\"key\":\"updated value\"}");
+            _response = await _client.PutAsync(url, content);
+        }
+
         [Then(@"obtengo un código de respuesta exitoso")]
         public void EntoncesObtengoUnCodigoDeRespuestaExitoso()
         {
-            NUnit.Framework.Assert.IsTrue(_response.IsSuccessStatusCode, "La respuesta no es exitosa");
+            XunitAssert.True(_response.IsSuccessStatusCode, "La respuesta no es exitosa.");
         }
 
         [Then(@"obtengo un código de respuesta (.*)")]
         public void EntoncesObtengoUnCodigoDeRespuesta(int expectedStatusCode)
         {
-            NUnit.Framework.Assert.AreEqual(expectedStatusCode, (int)_response.StatusCode, "El código de respuesta no coincide");
+            XunitAssert.Equal(expectedStatusCode, (int)_response.StatusCode);
         }
+
     }
 }

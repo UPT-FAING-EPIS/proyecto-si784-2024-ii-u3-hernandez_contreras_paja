@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "x0dBGg3g8WU=",
+  "dgSpecHash": "jy1w+dncBCc=",
   "success": true,
-  "projectFilePath": "C:\\Users\\angel\\Documents\\Calidad\\calidad x2\\PROYECTO\\asda\\proyecto-si784-2024-ii-u2-contreras_paja_hernandez\\ProyectoAsistencia\\ProyectoAsistencia.Tests\\ProyectoAsistencia.Tests.csproj",
+  "projectFilePath": "C:\\Users\\angel\\Documents\\Calidad\\calidad x2\\PROYECTO\\asda\\bien\\proyecto-si784-2024-ii-u2-contreras_paja_hernandez\\ProyectoAsistencia\\ProyectoAsistencia.Tests\\ProyectoAsistencia.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\angel\\.nuget\\packages\\bodi\\1.5.0\\bodi.1.5.0.nupkg.sha512",
     "C:\\Users\\angel\\.nuget\\packages\\castle.core\\5.1.1\\castle.core.5.1.1.nupkg.sha512",
