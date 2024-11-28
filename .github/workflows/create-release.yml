@@ -26,4 +26,4 @@ jobs:
             ## Titulo
             - Cuerpo
           draft: false 
-          prerelease: true # Cambia a true si es una pre-lanzamiento
+          prerelease: false # Cambia a true si es una pre-lanzamiento
