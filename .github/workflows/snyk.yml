@@ -1,0 +1,68 @@
+name: "Snyk Analysis for .NET"
+
+on:
+  push:
+    branches:
+      - main  
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  snyk:
+    runs-on: windows-latest  
+
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v3
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: 8.x  
+
+      - name: Install Snyk CLI
+        uses: snyk/actions/setup@master
+
+      - name: Install .NET tools
+        run: |
+          dotnet tool install --global dotnet-reportgenerator-globaltool
+          dotnet tool install --global coverlet.console
+
+      - name: Add .NET tools to PATH
+        run: echo "$env:USERPROFILE\.dotnet\tools" >> $env:GITHUB_PATH
+        shell: pwsh
+
+      - name: Restore, Test, and Analyze with Snyk
+        env:
+          SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
+        run: |
+          # Navegar a la carpeta del proyecto principal
+          cd ProyectoAsistencia
+          dotnet restore
+          dotnet build
+          
+          # Navegar a la carpeta de pruebas
+          cd ../ProyectoAsistencia.Tests
+          dotnet build
+          
+          # Ejecutar análisis de código con cobertura
+          coverlet ./bin/Debug/net8.0/ProyectoAsistencia.Tests.dll --target "dotnet" --targetargs "test --no-build" -f opencover -o "coverage.xml"
+          
+          cd ..
+          
+          # Análisis de seguridad del código fuente
+          snyk code test ProyectoAsistencia --json-file-output=snyk-code-results.json
+          
+          # Análisis del contenedor basado en el Dockerfile
+          snyk container test --file=Dockerfile --json-file-output=snyk-container-results.json
+
+      - name: Upload Snyk results to GitHub Security
+        uses: github/codeql-action/upload-sarif@v3
+        with:
+          sarif_file: snyk-code-results.json
+
+      - name: Upload Snyk container results
+        uses: github/codeql-action/upload-sarif@v3
+        with:
+          sarif_file: snyk-container-results.json
