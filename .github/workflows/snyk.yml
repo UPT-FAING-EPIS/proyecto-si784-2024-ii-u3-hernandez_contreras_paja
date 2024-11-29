@@ -1,4 +1,4 @@
-name: "Snyk Analysis with Reports"
+name: "Snyk Analysis for .NET"
 
 on:
   push:
@@ -10,7 +10,7 @@ on:
 
 jobs:
   snyk:
-    runs-on: ubuntu-latest 
+    runs-on: ubuntu-latest
 
     steps:
       - name: Check out code
@@ -44,18 +44,26 @@ jobs:
           cd ProyectoAsistencia
           snyk code test --json | snyk-to-html -o code-test-results.html
 
+      - name: Upload Code Report
+        uses: actions/upload-artifact@v3s
+        with:
+          name: Snyk Code Report
+          path: ProyectoAsistencia/code-test-results.html
+
+      # Opcional: Análisis de contenedor solo si tienes un Dockerfile
       - name: Build Docker image
-        run: docker build -t proyectoasistencia-tests .
+        if: exists('ProyectoAsistencia/Dockerfile')
+        run: docker build -t proyectoasistencia-tests ProyectoAsistencia
 
       - name: Snyk Container Analysis
+        if: exists('ProyectoAsistencia/Dockerfile')
         env:
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
         run: snyk container test proyectoasistencia-tests --json | snyk-to-html -o container-test-result.html
 
-      - name: Upload Reports
+      - name: Upload Container Report
+        if: exists('ProyectoAsistencia/Dockerfile')
         uses: actions/upload-artifact@v3
         with:
-          name: Snyk Reports
-          path: |
-            ProyectoAsistencia/code-test-results.html
-            container-test-result.html
+          name: Snyk Container Report
+          path: container-test-result.html
