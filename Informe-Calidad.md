@@ -423,6 +423,44 @@ Caso inválido: Prueba un escenario en el que una propiedad requerida no está c
 * 3 No Coverage: Hay código en las vistas no alcanzado por pruebas.
 
 
+## **Reporte de Pruebas de Aceptación**	
+
+## Propósito General:
+Como desarrollador, se busca validar los modelos del proyecto para asegurar que los datos son válidos y cumplen con los requisitos definidos.
+
+![view_tests](./media/pruebas_aceptacion.png)
+
+## Escenarios de Validación:
+
+### Escenario: Validar modelo Administrador
+- **Given:** Se cuenta con un modelo de administrador válido.
+- **Then:** Los datos del administrador deben ser correctos.
+- **Resultado:** El modelo Administrador fue validado con éxito, cumpliendo con los requisitos definidos.
+
+![view_tests](./media/aceptacion_1.png)
+
+### Escenario: Validar modelo Empleado
+- **Given:** Se cuenta con un modelo de empleado válido.
+- **Then:** Los datos del empleado deben ser correctos.
+- **Resultado:** El modelo Empleado fue validado exitosamente. No se encontraron inconsistencias en las pruebas realizadas.
+
+![view_tests](./media/aceptacion_2.png)
+
+### Escenario: Validar modelo Asistencia
+- **Given:** Se cuenta con un modelo de asistencia válido.
+- **Then:** Los datos de asistencia deben ser correctos.
+- **Resultado:** El modelo Asistencia pasó las pruebas satisfactoriamente, validando tanto las propiedades como las relaciones asociadas.
+
+![view_tests](./media/aceptacion_3.png)
+
+### Escenario: Validar modelo Historial
+- **Given:** Se cuenta con un modelo de historial válido.
+- **Then:** Los datos del historial deben ser correctos.
+- **Resultado:** El modelo Historial fue validado correctamente, demostrando que cumple con los requisitos de negocio establecidos.
+
+![view_tests](./media/aceptacion_4.png)
+
+
 ## **SONAR CLOUD - Reporte de cobertura**
 
 ![view_tests](./media/coveragesonar_0.png)
@@ -435,6 +473,44 @@ Se alcanzó un 93.6% de cobertura general, lo que indica que la mayoría del có
 Existen 10 líneas y 7 condiciones no cubiertas, lo que podría representar áreas del código que aún no han sido probadas.
 * Line Coverage:
 Específicamente, las líneas de código tienen una cobertura del 95.5%, lo que significa que casi todas las líneas han sido evaluadas en las pruebas.
+
+
+## **SEMGREP - Reporte de semgrep**
+
+![view_tests](./media/reporte_semgrep.png)
+
+- Total de Hallazgos: 8
+- Avisos de Baja Severidad (LOW): 3
+- Avisos de Media Severidad (MEDIUM): 5
+- Avisos de Alta Severidad (HIGH): 0
+- Errores de Confianza Desconocida: 8
+
+1. Falta de Protección Contra Ataques CSRF (LOW)
+
+Se ha detectado que algunos métodos de la aplicación, como AgregarEmpleado y RegistrarAsistencia, no están validando correctamente que las solicitudes provengan de fuentes legítimas. Esto crea una vulnerabilidad a ataques CSRF (Cross-Site Request Forgery), donde un atacante podría modificar datos o realizar acciones no autorizadas sin ser detectado.
+
+Ubicación del problema:
+
+AdminController.cs, línea 57
+AsistenciaController.cs, línea 27
+EmpleadoController.cs, línea 18
+
+2. Vulnerabilidad por Exposición de Datos (MEDIUM)
+
+Se ha identificado una vulnerabilidad de over-posting en varios métodos, lo que permite que los parámetros de las solicitudes modifiquen más datos de los que deberían. Esto permite a un atacante agregar o manipular datos internos de la aplicación, lo que podría causar alteraciones no deseadas.
+
+Ubicación del problema:
+
+AdminController.cs, líneas 63, 70, 77
+EmpleadoController.cs, línea 28
+
+3. Riesgo de Colapso por Expresión Regular (LOW)
+
+Se encontró un uso ineficiente de expresiones regulares en el código JavaScript, específicamente en el archivo jquery.validate.unobtrusive.js. Esto podría generar un problema de ReDoS (Regular Expression Denial of Service), donde un atacante puede provocar un uso excesivo de recursos al enviar entradas diseñadas para colapsar la aplicación.
+
+Ubicación del problema:
+
+jquery.validate.unobtrusive.js, línea 349
 
 
  ### **Referencias:**
