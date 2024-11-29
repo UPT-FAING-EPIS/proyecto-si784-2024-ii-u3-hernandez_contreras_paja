@@ -6,7 +6,6 @@ using TechTalk.SpecFlow;
 using XunitAssert = Xunit.Assert;
 using NUnitAssert = NUnit.Framework.Assert;
 
-
 namespace ProyectoAsistencia.Tests.Steps
 {
     [Binding]
@@ -14,11 +13,13 @@ namespace ProyectoAsistencia.Tests.Steps
     {
         private readonly WebApplicationFactory<Program> _factory;
         private HttpClient _client;
-        private HttpResponseMessage _response;
+        private HttpResponseMessage? _response; // Solución para permitir valores NULL
 
         public HomeSteps(WebApplicationFactory<Program> factory)
         {
             _factory = factory;
+            _client = _factory.CreateClient();
+            _response = null; // Inicialización predeterminada
         }
 
         [Given(@"estoy en el cliente HTTP")]
@@ -56,14 +57,17 @@ namespace ProyectoAsistencia.Tests.Steps
         [Then(@"obtengo un código de respuesta exitoso")]
         public void EntoncesObtengoUnCodigoDeRespuestaExitoso()
         {
-            XunitAssert.True(_response.IsSuccessStatusCode, "La respuesta no es exitosa.");
+            // Validación de _response con manejo de null
+            XunitAssert.NotNull(_response);
+            XunitAssert.True(_response!.IsSuccessStatusCode, "La respuesta no es exitosa.");
         }
 
         [Then(@"obtengo un código de respuesta (.*)")]
         public void EntoncesObtengoUnCodigoDeRespuesta(int expectedStatusCode)
         {
-            XunitAssert.Equal(expectedStatusCode, (int)_response.StatusCode);
+            // Validación de _response con manejo de null
+            XunitAssert.NotNull(_response);
+            XunitAssert.Equal(expectedStatusCode, (int)_response!.StatusCode);
         }
-
     }
 }
