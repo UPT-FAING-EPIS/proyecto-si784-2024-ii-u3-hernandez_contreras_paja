@@ -1,4 +1,4 @@
-name: "Snyk Analysis for .NET"
+name: "Snyk Analysis with Reports"
 
 on:
   push:
@@ -21,15 +21,9 @@ jobs:
         with:
           dotnet-version: 8.x  
 
-      - name: Install Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: 16 
-
       - name: Install Snyk CLI and snyk-to-html
         run: |
-          npm install -g snyk
-          npm install -g snyk-to-html
+          npm install -g snyk snyk-to-html
 
       - name: Restore and Build Project
         run: |
@@ -44,26 +38,20 @@ jobs:
           cd ProyectoAsistencia
           snyk code test --json | snyk-to-html -o code-test-results.html
 
-      - name: Upload Code Report
-        uses: actions/upload-artifact@v3s
-        with:
-          name: Snyk Code Report
-          path: ProyectoAsistencia/code-test-results.html
-
-      # Opcional: Análisis de contenedor solo si tienes un Dockerfile
       - name: Build Docker image
-        if: exists('ProyectoAsistencia/Dockerfile')
-        run: docker build -t proyectoasistencia-tests ProyectoAsistencia
+        run: |
+          docker build -t proyectoasistencia-tests .
 
       - name: Snyk Container Analysis
-        if: exists('ProyectoAsistencia/Dockerfile')
         env:
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
-        run: snyk container test proyectoasistencia-tests --json | snyk-to-html -o container-test-result.html
+        run: |
+          snyk container test proyectoasistencia-tests --json | snyk-to-html -o container-test-result.html
 
-      - name: Upload Container Report
-        if: exists('ProyectoAsistencia/Dockerfile')
+      - name: Upload Reports
         uses: actions/upload-artifact@v3
         with:
-          name: Snyk Container Report
-          path: container-test-result.html
+          name: Snyk Reports
+          path: |
+            ProyectoAsistencia/code-test-results.html
+            container-test-result.html
