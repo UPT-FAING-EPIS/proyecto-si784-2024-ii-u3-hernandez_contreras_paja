@@ -432,33 +432,115 @@ Como desarrollador, se busca validar los modelos del proyecto para asegurar que 
 
 ## Escenarios de Validación:
 
-### Escenario: Validar modelo Administrador
-- **Given:** Se cuenta con un modelo de administrador válido.
-- **Then:** Los datos del administrador deben ser correctos.
-- **Resultado:** El modelo Administrador fue validado con éxito, cumpliendo con los requisitos definidos.
+### Escenario: Acceso a la página principal
+- **Given:** Estoy en el cliente HTTP.
+- **Then:** Realizo una petición GET a "/".
+- **Resultado:** La página principal fue validada exitosamente, asegurando que responde con el código esperado (200).
 
 ![view_tests](./media/aceptacion_1.png)
 
-### Escenario: Validar modelo Empleado
-- **Given:** Se cuenta con un modelo de empleado válido.
-- **Then:** Los datos del empleado deben ser correctos.
-- **Resultado:** El modelo Empleado fue validado exitosamente. No se encontraron inconsistencias en las pruebas realizadas.
+### Escenario: Acceso a una página inexistente
+- **Given:** Estoy en el cliente HTTP.
+- **Then:** Realizo una petición GET a "/non-existing-page".
+- **Resultado:** El sistema devolvió correctamente un código de respuesta 404, confirmando que las rutas inexistentes se manejan apropiadamente.
 
 ![view_tests](./media/aceptacion_2.png)
 
-### Escenario: Validar modelo Asistencia
-- **Given:** Se cuenta con un modelo de asistencia válido.
-- **Then:** Los datos de asistencia deben ser correctos.
-- **Resultado:** El modelo Asistencia pasó las pruebas satisfactoriamente, validando tanto las propiedades como las relaciones asociadas.
+### Escenario: Acceso a la página de inicio de sesión
+- **Given:** Estoy en el cliente HTTP.
+- **Then:** Realizo una petición GET a "/login".
+- **Resultado:** La página de inicio de sesión fue validada con éxito, asegurando que responde con el código esperado (200).
 
 ![view_tests](./media/aceptacion_3.png)
 
-### Escenario: Validar modelo Historial
-- **Given:** Se cuenta con un modelo de historial válido.
-- **Then:** Los datos del historial deben ser correctos.
-- **Resultado:** El modelo Historial fue validado correctamente, demostrando que cumple con los requisitos de negocio establecidos.
+### Escenario: Envío de formulario sin datos
+- **Given:** Estoy en el cliente HTTP.
+- **Then:** Realizo una petición POST a "/submit-form" con datos vacíos.
+- **Resultado:** El formulario fue correctamente rechazado, devolviendo el código de error esperado (400).
 
 ![view_tests](./media/aceptacion_4.png)
+
+### Escenario: Acceso a la página de perfil
+- **Given:** Estoy en el cliente HTTP.
+- **Then:** Realizo una petición GET a "/profile".
+- **Resultado:** La página de perfil fue validada exitosamente, asegurando que responde con el código esperado (200).
+
+![view_tests](./media/aceptacion_5.png)
+
+### Escenario: Envío de formulario con datos válidos
+- **Given:** Estoy en el cliente HTTP.
+- **Then:** Realizo una petición POST a "/submit-form" con datos válidos.
+- **Resultado:** El formulario fue procesado correctamente, devolviendo un código de respuesta exitoso (200).
+
+![view_tests](./media/aceptacion_6.png)
+
+### Escenario: Eliminación de un registro inexistente
+- **Given:** Estoy en el cliente HTTP.
+- **Then:** Realizo una petición DELETE a "/delete/999".
+- **Resultado:** La eliminación del registro inexistente fue validada correctamente, devolviendo el código esperado (404).
+
+![view_tests](./media/aceptacion_7.png)
+
+### Escenario: Acceso a la página de configuración
+- **Given:** Estoy en el cliente HTTP.
+- **Then:** Realizo una petición GET a "/settings".
+- **Resultado:** La página de configuración fue validada exitosamente, asegurando que responde con el código esperado (200).
+
+![view_tests](./media/aceptacion_8.png)
+
+### Escenario: Actualización de un registro
+- **Given:** Estoy en el cliente HTTP.
+- **Then:** Realizo una petición PUT a "/update/1" con datos válidos.
+- **Resultado:** La actualización del registro fue procesada correctamente, devolviendo un código de respuesta exitoso (200).
+
+![view_tests](./media/aceptacion_9.png)
+
+### Escenario: Consulta de un registro inexistente
+- **Given:** Estoy en el cliente HTTP.
+- **Then:** Realizo una petición GET a "/record/999".
+- **Resultado:** La consulta del registro inexistente fue validada correctamente, devolviendo el código esperado (404).
+
+![view_tests](./media/aceptacion_10.png)
+
+### Escenario: Consulta de un registro válido
+- **Given:** Estoy en el cliente HTTP.
+- **When:** Realizo una petición GET a "/record/1".
+- **Then:** Obtengo un código de respuesta exitoso.
+- **Resultado:** La consulta al registro válido fue realizada correctamente, devolviendo un código 200.
+
+![view_tests](./media/aceptacion_11.png)
+
+### Escenario: Acceso a una API pública
+- **Given:** Estoy en el cliente HTTP.
+- **When:** Realizo una petición GET a "/api/public".
+- **Then:** Obtengo un código de respuesta exitoso.
+- **Resultado:** El acceso a la API pública fue validado con éxito, retornando un código de respuesta 200.
+
+![view_tests](./media/aceptacion_12.png)
+
+### Escenario: Intento de acceso no autorizado
+- **Given:** Estoy en el cliente HTTP.
+- **When:** Realizo una petición GET a "/admin".
+- **Then:** Obtengo un código de respuesta 403.
+- **Resultado:** La prueba confirmó que el acceso no autorizado está protegido, devolviendo el código esperado de prohibición (403).
+
+![view_tests](./media/aceptacion_13.png)
+
+### Escenario: Descarga de un archivo
+- **Given:** Estoy en el cliente HTTP.
+- **When:** Realizo una petición GET a "/download/file".
+- **Then:** Obtengo un código de respuesta exitoso.
+- **Resultado:** La descarga del archivo fue validada correctamente, con un código de respuesta 200.
+
+![view_tests](./media/aceptacion_14.png)
+
+### Escenario: Acceso a una API protegida sin token
+- **Given:** Estoy en el cliente HTTP.
+- **When:** Realizo una petición GET a "/api/private".
+- **Then:** Obtengo un código de respuesta 401.
+- **Resultado:** El acceso sin token a la API protegida fue bloqueado correctamente, devolviendo el código de error 401 por falta de autenticación.
+
+![view_tests](./media/aceptacion_15.png)
 
 
 ## **SONAR CLOUD - Reporte de cobertura**
