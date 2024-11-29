@@ -23,14 +23,14 @@ jobs:
 
     - name: Ejecutar pruebas y recolectar cobertura
       run: |
-        cd ProyectoAsistencia.Tests
+        cd ProyectoAsistencia/ProyectoAsistencia.Tests
         dotnet test --filter "FullyQualifiedName~Controllers|FullyQualifiedName~Models|FullyQualifiedName~Views" --collect:"XPlat Code Coverage"
 
     - name: Generar Reportes y Publicar en GitHub Pages
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: | 
-        cd ProyectoAsistencia.Tests
+        cd ProyectoAsistencia/ProyectoAsistencia.Tests
         dotnet tool install -g dotnet-reportgenerator-globaltool
         reportgenerator "-reports:TestResults\**\coverage.cobertura.xml" "-targetdir:Reports\Cobertura" -reporttypes:HTML
         
