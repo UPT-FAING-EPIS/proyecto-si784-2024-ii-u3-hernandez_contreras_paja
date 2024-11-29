@@ -1,4 +1,4 @@
-name: "Snyk Analysis for .NET"
+name: "Snyk Analysis with Reports"
 
 on:
   push:
@@ -10,7 +10,7 @@ on:
 
 jobs:
   snyk:
-    runs-on: windows-latest  # Mantener el runner Windows
+    runs-on: ubuntu-latest 
 
     steps:
       - name: Check out code
@@ -26,20 +26,36 @@ jobs:
         with:
           node-version: 16 
 
-      - name: Install Snyk CLI manually
-        run: npm install -g snyk
+      - name: Install Snyk CLI and snyk-to-html
+        run: |
+          npm install -g snyk
+          npm install -g snyk-to-html
 
-      - name: Restore, Test, and Analyze with Snyk
-        env:
-          SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
+      - name: Restore and Build Project
         run: |
           cd ProyectoAsistencia
           dotnet restore
           dotnet build
-          snyk code test ProyectoAsistencia --json-file-output=snyk-code-results.json
-          snyk container test --file=Dockerfile --json-file-output=snyk-container-results.json
 
-      - name: Upload Snyk results
-        uses: github/codeql-action/upload-sarif@v3
+      - name: Snyk Code Analysis
+        env:
+          SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
+        run: |
+          cd ProyectoAsistencia
+          snyk code test --json | snyk-to-html -o code-test-results.html
+
+      - name: Build Docker image
+        run: docker build -t proyectoasistencia-tests .
+
+      - name: Snyk Container Analysis
+        env:
+          SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
+        run: snyk container test proyectoasistencia-tests --json | snyk-to-html -o container-test-result.html
+
+      - name: Upload Reports
+        uses: actions/upload-artifact@v3
         with:
-          sarif_file: snyk-code-results.json
+          name: Snyk Reports
+          path: |
+            ProyectoAsistencia/code-test-results.html
+            container-test-result.html
