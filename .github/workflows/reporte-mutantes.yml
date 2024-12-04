@@ -35,24 +35,23 @@ jobs:
           # Encuentra la carpeta más reciente de StrykerOutput
           latest_folder=$(ls -td StrykerOutput/* | head -n 1)
 
-          # Crea la carpeta public si no existe
-          mkdir -p ../public
+          # Crea la carpeta Reportes si no existe
+          mkdir -p ../Reportes
 
-          # Copiar el archivo de reporte HTML a la carpeta public
-          cp "$latest_folder/reports/mutation-report.html" ../public/
+          # Copiar el archivo de reporte HTML a la carpeta Reportes
+          cp "$latest_folder/reports/mutation-report.html" ../Reportes/
           cd ..
 
           git config --global user.name "github-actions"
           git config --global user.email "github-actions@github.com"
           git fetch --all
           git checkout gh-pages
-          git add public/
+          git add Reportes/
           git commit -m "Add Stryker report"
           git push origin gh-pages
-
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           personal_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./public
+          publish_dir: ./Reportes
