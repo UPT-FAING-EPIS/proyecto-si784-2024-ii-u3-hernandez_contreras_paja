@@ -13,57 +13,59 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    # Clonar el repositorio
     - name: Checkout code
       uses: actions/checkout@v4
 
-    # Configurar el entorno de .NET
     - name: Setup .NET SDK
       uses: actions/setup-dotnet@v2
       with:
         dotnet-version: '8.0.x'
 
-    # Listar archivos para confirmar estructura inicial
-    - name: Verificar estructura inicial
-      run: ls -R
+    - name: Instalar LivingDoc CLI
+      run: dotnet tool install --global SpecFlow.Plus.LivingDoc.CLI
 
-    # Restaurar dependencias
-    - name: Restore Dependencies
+    - name: Agregar herramienta LivingDoc al PATH
+      shell: bash
+      run: echo "export PATH=\"\$PATH:\$HOME/.dotnet/tools\"" >> $GITHUB_ENV
+
+    - name: Instalar dependencias de Python
+      run: |
+        python3 -m pip install --upgrade pip
+        python3 -m pip install xmltodict
+
+    - name: Restaurar dependencias
       working-directory: ProyectoAsistencia/ProyectoAsistencia.Tests
       run: dotnet restore ProyectoAsistencia.Tests.csproj
 
-    # Ejecutar pruebas y generar archivo .trx
-    - name: Run Tests
+    - name: Compilar proyecto de pruebas
+      working-directory: ProyectoAsistencia/ProyectoAsistencia.Tests
+      run: dotnet build ProyectoAsistencia.Tests.csproj --configuration Debug
+
+    - name: Ejecutar pruebas y generar archivo TRX
       working-directory: ProyectoAsistencia/ProyectoAsistencia.Tests
       run: dotnet test --filter FullyQualifiedName~HomeFeature --logger "trx;LogFileName=TestResults/TestResults.trx"
 
-    # Convertir el archivo .trx a JSON
-    - name: Convert .trx to .json
+    - name: Convertir TRX a JSON
       working-directory: ProyectoAsistencia/ProyectoAsistencia.Tests
       run: python3 TestResults/trx_to_json.py TestResults/TestResults.trx TestResults/TestResults.json
 
-    # Generar reporte de LivingDoc
     - name: Generar Reporte de LivingDoc
       working-directory: ProyectoAsistencia/ProyectoAsistencia.Tests
-      run: livingdoc test-assembly ./bin/Debug/net8.0/ProyectoAsistencia.Tests.dll -t TestResults/TestResults.json -o ./TestResults/LivingDocReport.html
+      run: livingdoc test-assembly ./bin/Debug/net8.0/ProyectoAsistencia.Tests.dll -t TestResults/TestResults.json -o ../public/LivingDocReport.html
 
-    # Publicar el reporte en GitHub Pages
     - name: Configurar Git para la publicación en GitHub Pages
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: | 
         mkdir -p ../public
-        cp ProyectoAsistencia/ProyectoAsistencia.Tests/TestResults/LivingDocReport.html ../public/
+        cp ../public/LivingDocReport.html . # Aseguramos que el reporte exista
         git config --global user.name "github-actions"
         git config --global user.email "github-actions@github.com"
+        
+        # Publicar en gh-pages
         git fetch origin
         git checkout -B gh-pages
-        cp -r ../public/* .
+        cp -r ../public/* .  # Mover contenido a la raíz de gh-pages
         git add .
         git commit -m "Add LivingDoc report"
         git push origin gh-pages --force
-
-    # Verificar archivos generados para debug
-    - name: Verificar archivos generados
-      working-directory: ProyectoAsistencia/ProyectoAsistencia.Tests/TestResults
-      run: ls -R
