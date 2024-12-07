@@ -23,7 +23,7 @@ jobs:
 
       # 3. Restaurar dependencias
       - name: Restore Dependencies
-        run: dotnet restore ProyectoAsistencia.Tests/ProyectoAsistencia.Tests.csproj
+        run: dotnet restore ProyectoAsistencia.sln
 
       # 4. Ejecutar pruebas para generar el archivo .trx
       - name: Run Tests and Generate .trx
