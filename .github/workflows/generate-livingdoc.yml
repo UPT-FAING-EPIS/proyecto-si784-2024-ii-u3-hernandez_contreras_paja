@@ -1,4 +1,4 @@
-name: Test and LivingDoc Generation
+name: Generate LivingDoc Report
 
 on:
   push:
@@ -16,6 +16,9 @@ jobs:
     - name: Checkout Repository
       uses: actions/checkout@v3
 
+    - name: List Directory
+      run: ls -R
+
     - name: Set up .NET
       uses: actions/setup-dotnet@v3
       with:
@@ -31,13 +34,13 @@ jobs:
 
     - name: Run Tests and Generate TRX
       working-directory: ProyectoAsistencia.Tests
-      run: dotnet test --filter FullyQualifiedName~HomeFeature --logger "trx;LogFileName=TestResults/TestResults.trx"
+      run: dotnet test ProyectoAsistencia.Tests.csproj --filter FullyQualifiedName~HomeFeature --logger "trx;LogFileName=TestResults/TestResults.trx"
 
     - name: Convert TRX to JSON
       working-directory: ProyectoAsistencia.Tests/TestResults
       run: python trx_to_json.py TestResults.trx TestResults.json
 
-    - name: Generate Living Documentation
+    - name: Generate LivingDoc Report
       working-directory: ProyectoAsistencia.Tests
       run: livingdoc test-assembly ./bin/Debug/net8.0/ProyectoAsistencia.Tests.dll -t ./TestResults/TestResults.json -o ../ProyectoAsistenciaReport.html
 
