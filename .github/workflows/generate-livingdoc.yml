@@ -21,13 +21,17 @@ jobs:
       with:
         dotnet-version: '8.0.x'
 
+    - name: Instalar LivingDoc CLI
+      run: dotnet tool install --global SpecFlow.Plus.LivingDoc.CLI
+
+    - name: Agregar herramienta LivingDoc al PATH
+      shell: bash
+      run: echo "export PATH=\"\$PATH:\$HOME/.dotnet/tools\"" >> $GITHUB_ENV
+
     - name: Instalar dependencias de Python
       run: |
         python3 -m pip install --upgrade pip
         python3 -m pip install xmltodict
-
-    - name: Listar archivos para verificar la estructura
-      run: ls -R
 
     - name: Restaurar dependencias
       working-directory: ProyectoAsistencia/ProyectoAsistencia.Tests
