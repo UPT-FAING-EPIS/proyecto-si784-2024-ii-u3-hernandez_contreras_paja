@@ -1,51 +1,36 @@
-name: Generate LivingDoc Report
+name: Build and Test
 
 on:
   push:
     branches:
       - main
   pull_request:
-    branches:
-      - main
 
 jobs:
-  build-and-test:
+  build:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout Repository
+    - name: Checkout code
       uses: actions/checkout@v3
 
-    - name: List Directory
-      run: ls -R
+    - name: Navigate to the project directory
+      run: cd ProyectoAsistencia
 
-    - name: Set up .NET
-      uses: actions/setup-dotnet@v3
-      with:
-        dotnet-version: 8.0.x
+    - name: Restore dependencies
+      run: dotnet restore ProyectoAsistencia.sln
 
-    - name: Restore Dependencies
+    - name: Build solution
+      run: dotnet build ProyectoAsistencia.sln --configuration Debug
+
+    - name: Run tests and generate trx
       working-directory: ProyectoAsistencia.Tests
-      run: dotnet restore ProyectoAsistencia.Tests.csproj
+      run: dotnet test --filter FullyQualifiedName~HomeFeature --logger "trx;LogFileName=TestResults.trx"
 
-    - name: Build Tests Project
-      working-directory: ProyectoAsistencia.Tests
-      run: dotnet build ProyectoAsistencia.Tests.csproj --no-restore --configuration Debug
-
-    - name: Run Tests and Generate TRX
-      working-directory: ProyectoAsistencia.Tests
-      run: dotnet test ProyectoAsistencia.Tests.csproj --filter FullyQualifiedName~HomeFeature --logger "trx;LogFileName=TestResults/TestResults.trx"
-
-    - name: Convert TRX to JSON
+    - name: Convert trx to JSON
       working-directory: ProyectoAsistencia.Tests/TestResults
-      run: python trx_to_json.py TestResults.trx TestResults.json
+      run: python3 trx_to_json.py TestResults.trx TestResults.json
 
-    - name: Generate LivingDoc Report
+    - name: Generate LivingDoc
       working-directory: ProyectoAsistencia.Tests
       run: livingdoc test-assembly ./bin/Debug/net8.0/ProyectoAsistencia.Tests.dll -t ./TestResults/TestResults.json -o ../ProyectoAsistenciaReport.html
-
-    - name: Upload Report as Artifact
-      uses: actions/upload-artifact@v3
-      with:
-        name: LivingDocReport
-        path: ProyectoAsistenciaReport.html
