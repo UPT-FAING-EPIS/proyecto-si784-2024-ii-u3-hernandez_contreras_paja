@@ -53,6 +53,14 @@ jobs:
       working-directory: ProyectoAsistencia/ProyectoAsistencia.Tests
       run: livingdoc test-assembly ./bin/Debug/net8.0/ProyectoAsistencia.Tests.dll -t TestResults/TestResults.json -o ../public/LivingDocReport.html
 
+    - name: Validar si LivingDocReport.html fue generado
+      working-directory: ProyectoAsistencia/ProyectoAsistencia.Tests
+      run: |
+        if [ ! -f "../public/LivingDocReport.html" ]; then
+          echo "Error: LivingDocReport.html no se generó correctamente."
+          exit 1
+        fi
+
     - name: Configurar Git para la publicación en GitHub Pages
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
