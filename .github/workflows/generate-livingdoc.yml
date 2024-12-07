@@ -51,7 +51,9 @@ jobs:
 
     - name: Generar Reporte de LivingDoc
       working-directory: ProyectoAsistencia/ProyectoAsistencia.Tests
-      run: livingdoc test-assembly ./bin/Debug/net8.0/ProyectoAsistencia.Tests.dll -t TestResults/TestResults.json -o ../public/LivingDocReport.html
+      run: |
+        mkdir -p ../public
+        livingdoc test-assembly ./bin/Debug/net8.0/ProyectoAsistencia.Tests.dll -t TestResults/TestResults.json -o ../public/LivingDocReport.html
 
     - name: Validar si LivingDocReport.html fue generado
       working-directory: ProyectoAsistencia/ProyectoAsistencia.Tests
@@ -64,16 +66,16 @@ jobs:
     - name: Configurar Git para la publicación en GitHub Pages
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      working-directory: ProyectoAsistencia/ProyectoAsistencia.Tests
       run: | 
-        mkdir -p ../public
-        cp ../public/LivingDocReport.html . # Aseguramos que el reporte exista
         git config --global user.name "github-actions"
         git config --global user.email "github-actions@github.com"
         
         # Publicar en gh-pages
         git fetch origin
         git checkout -B gh-pages
-        cp -r ../public/* .  # Mover contenido a la raíz de gh-pages
+        cp -r ../public/* ../../public/
+        cd ../../public
         git add .
         git commit -m "Add LivingDoc report"
         git push origin gh-pages --force
