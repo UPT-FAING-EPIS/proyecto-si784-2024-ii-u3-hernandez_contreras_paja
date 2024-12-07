@@ -1,59 +1,52 @@
-name: Generate LivingDoc Report
+name: Test and LivingDoc Generation
 
 on:
   push:
     branches:
       - main
   pull_request:
+    branches:
+      - main
 
 jobs:
-  generate-livingdoc:
+  build-and-test:
     runs-on: ubuntu-latest
 
     steps:
-      # 1. Checkout el repositorio
-      - name: Checkout Code
-        uses: actions/checkout@v3
+    - name: Checkout Repository
+      uses: actions/checkout@v3
 
-      # 2. Configurar .NET
-      - name: Setup .NET
-        uses: actions/setup-dotnet@v3
-        with:
-          dotnet-version: 8.x
+    - name: Set up .NET
+      uses: actions/setup-dotnet@v3
+      with:
+        dotnet-version: 8.0.x
 
-      # 3. Restaurar dependencias
-      - name: Restore Dependencies
-        run: dotnet restore ProyectoAsistencia.sln
+    - name: Move to Tests Directory
+      working-directory: ProyectoAsistencia.Tests
+      run: echo "Navigating to Tests Directory"
 
-      # 4. Ejecutar pruebas para generar el archivo .trx
-      - name: Run Tests and Generate .trx
-        run: dotnet test --filter FullyQualifiedName~HomeFeature --logger "trx;LogFileName=TestResults/TestResults.trx"
+    - name: Restore Dependencies
+      working-directory: ProyectoAsistencia.Tests
+      run: dotnet restore ProyectoAsistencia.Tests.csproj
 
-      # 5. Configurar Python
-      - name: Setup Python
-        uses: actions/setup-python@v4
-        with:
-          python-version: '3.x'
+    - name: Build Tests Project
+      working-directory: ProyectoAsistencia.Tests
+      run: dotnet build ProyectoAsistencia.Tests.csproj --no-restore --configuration Debug
 
-      # 6. Instalar dependencias de Python
-      - name: Install Python Dependencies
-        run: pip install xmltodict
+    - name: Run Tests and Generate TRX
+      working-directory: ProyectoAsistencia.Tests
+      run: dotnet test --filter FullyQualifiedName~HomeFeature --logger "trx;LogFileName=TestResults.trx"
 
-      # 7. Convertir .trx a .json
-      - name: Convert .trx to .json
-        run: python ProyectoAsistencia.Tests/TestResults/trx_to_json.py ProyectoAsistencia.Tests/TestResults/TestResults.trx ProyectoAsistencia.Tests/TestResults/TestResults.json
+    - name: Convert TRX to JSON
+      working-directory: ProyectoAsistencia.Tests/TestResults
+      run: python trx_to_json.py TestResults.trx TestResults.json
 
-      # 8. Instalar SpecFlow LivingDoc CLI
-      - name: Install SpecFlow LivingDoc CLI
-        run: dotnet tool install --global SpecFlow.Plus.LivingDoc.CLI
+    - name: Generate Living Documentation
+      working-directory: ProyectoAsistencia.Tests
+      run: livingdoc test-assembly ./bin/Debug/net8.0/ProyectoAsistencia.Tests.dll -t ./TestResults/TestResults.json -o ../ProyectoAsistenciaReport.html
 
-      # 9. Generar el reporte HTML de LivingDoc
-      - name: Generate LivingDoc Report
-        run: livingdoc test-assembly ./ProyectoAsistencia.Tests/bin/Debug/net8.0/ProyectoAsistencia.Tests.dll -t ./ProyectoAsistencia.Tests/TestResults/TestResults.json -o ProyectoAsistenciaReport.html
-
-      # 10. Subir el reporte generado como artefacto
-      - name: Upload LivingDoc Report
-        uses: actions/upload-artifact@v3
-        with:
-          name: ProyectoAsistenciaReport
-          path: ProyectoAsistenciaReport.html
+    - name: Upload Report as Artifact
+      uses: actions/upload-artifact@v3
+      with:
+        name: LivingDocReport
+        path: ProyectoAsistenciaReport.html
