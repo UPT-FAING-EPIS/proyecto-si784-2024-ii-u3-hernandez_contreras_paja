@@ -1,7 +1,5 @@
 name: Generate LivingDoc Report
 
-name: Pruebas y Publicación de LivingDoc en GitHub Pages
-
 on: 
   push:
     branches: 
