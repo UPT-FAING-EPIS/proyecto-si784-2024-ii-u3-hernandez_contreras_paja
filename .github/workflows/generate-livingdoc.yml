@@ -21,10 +21,6 @@ jobs:
       with:
         dotnet-version: 8.0.x
 
-    - name: Move to Tests Directory
-      working-directory: ProyectoAsistencia.Tests
-      run: echo "Navigating to Tests Directory"
-
     - name: Restore Dependencies
       working-directory: ProyectoAsistencia.Tests
       run: dotnet restore ProyectoAsistencia.Tests.csproj
@@ -35,7 +31,7 @@ jobs:
 
     - name: Run Tests and Generate TRX
       working-directory: ProyectoAsistencia.Tests
-      run: dotnet test --filter FullyQualifiedName~HomeFeature --logger "trx;LogFileName=TestResults.trx"
+      run: dotnet test --filter FullyQualifiedName~HomeFeature --logger "trx;LogFileName=TestResults/TestResults.trx"
 
     - name: Convert TRX to JSON
       working-directory: ProyectoAsistencia.Tests/TestResults
