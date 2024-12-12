@@ -1,36 +1,33 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\angel\\Documents\\Calidad\\calidadx4\\proyecto-si784-2024-ii-u2-contreras_paja_hernandez\\ProyectoAsistencia\\ProyectoAsistencia.Tests\\ProyectoAsistencia.Tests.csproj": {}
+    "D:\\1224\\ProyectoAsistencia\\ProyectoAsistencia.Tests\\ProyectoAsistencia.Tests.csproj": {}
   },
   "projects": {
-    "C:\\Users\\angel\\Documents\\Calidad\\calidadx4\\proyecto-si784-2024-ii-u2-contreras_paja_hernandez\\ProyectoAsistencia\\ProyectoAsistencia.Tests\\ProyectoAsistencia.Tests.csproj": {
+    "D:\\1224\\ProyectoAsistencia\\ProyectoAsistencia.Tests\\ProyectoAsistencia.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\angel\\Documents\\Calidad\\calidadx4\\proyecto-si784-2024-ii-u2-contreras_paja_hernandez\\ProyectoAsistencia\\ProyectoAsistencia.Tests\\ProyectoAsistencia.Tests.csproj",
+        "projectUniqueName": "D:\\1224\\ProyectoAsistencia\\ProyectoAsistencia.Tests\\ProyectoAsistencia.Tests.csproj",
         "projectName": "ProyectoAsistencia.Tests",
-        "projectPath": "C:\\Users\\angel\\Documents\\Calidad\\calidadx4\\proyecto-si784-2024-ii-u2-contreras_paja_hernandez\\ProyectoAsistencia\\ProyectoAsistencia.Tests\\ProyectoAsistencia.Tests.csproj",
-        "packagesPath": "C:\\Users\\angel\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\angel\\Documents\\Calidad\\calidadx4\\proyecto-si784-2024-ii-u2-contreras_paja_hernandez\\ProyectoAsistencia\\ProyectoAsistencia.Tests\\obj\\",
+        "projectPath": "D:\\1224\\ProyectoAsistencia\\ProyectoAsistencia.Tests\\ProyectoAsistencia.Tests.csproj",
+        "packagesPath": "C:\\Users\\ALVARO\\.nuget\\packages\\",
+        "outputPath": "D:\\1224\\ProyectoAsistencia\\ProyectoAsistencia.Tests\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\angel\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\ALVARO\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\angel\\Documents\\Calidad\\calidadx4\\proyecto-si784-2024-ii-u2-contreras_paja_hernandez\\ProyectoAsistencia\\ProyectoAsistencia\\ProyectoAsistencia.csproj": {
-                "projectPath": "C:\\Users\\angel\\Documents\\Calidad\\calidadx4\\proyecto-si784-2024-ii-u2-contreras_paja_hernandez\\ProyectoAsistencia\\ProyectoAsistencia\\ProyectoAsistencia.csproj"
+              "D:\\1224\\ProyectoAsistencia\\ProyectoAsistencia\\ProyectoAsistencia.csproj": {
+                "projectPath": "D:\\1224\\ProyectoAsistencia\\ProyectoAsistencia\\ProyectoAsistencia.csproj"
               }
             }
           }
@@ -135,25 +132,22 @@
         }
       }
     },
-    "C:\\Users\\angel\\Documents\\Calidad\\calidadx4\\proyecto-si784-2024-ii-u2-contreras_paja_hernandez\\ProyectoAsistencia\\ProyectoAsistencia\\ProyectoAsistencia.csproj": {
+    "D:\\1224\\ProyectoAsistencia\\ProyectoAsistencia\\ProyectoAsistencia.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\angel\\Documents\\Calidad\\calidadx4\\proyecto-si784-2024-ii-u2-contreras_paja_hernandez\\ProyectoAsistencia\\ProyectoAsistencia\\ProyectoAsistencia.csproj",
+        "projectUniqueName": "D:\\1224\\ProyectoAsistencia\\ProyectoAsistencia\\ProyectoAsistencia.csproj",
         "projectName": "ProyectoAsistencia",
-        "projectPath": "C:\\Users\\angel\\Documents\\Calidad\\calidadx4\\proyecto-si784-2024-ii-u2-contreras_paja_hernandez\\ProyectoAsistencia\\ProyectoAsistencia\\ProyectoAsistencia.csproj",
-        "packagesPath": "C:\\Users\\angel\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\angel\\Documents\\Calidad\\calidadx4\\proyecto-si784-2024-ii-u2-contreras_paja_hernandez\\ProyectoAsistencia\\ProyectoAsistencia\\obj\\",
+        "projectPath": "D:\\1224\\ProyectoAsistencia\\ProyectoAsistencia\\ProyectoAsistencia.csproj",
+        "packagesPath": "C:\\Users\\ALVARO\\.nuget\\packages\\",
+        "outputPath": "D:\\1224\\ProyectoAsistencia\\ProyectoAsistencia\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\angel\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\ALVARO\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
