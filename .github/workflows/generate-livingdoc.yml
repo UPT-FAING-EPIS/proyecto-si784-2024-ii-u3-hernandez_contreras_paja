@@ -66,16 +66,19 @@ jobs:
     - name: Configurar Git para la publicación en GitHub Pages
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      working-directory: ProyectoAsistencia/ProyectoAsistencia.Tests
       run: | 
         git config --global user.name "github-actions"
         git config --global user.email "github-actions@github.com"
         
+        # Crear directorio público si no existe
+        mkdir -p public
+
+        # Copiar el reporte generado
+        cp -r ProyectoAsistencia/public/* public/
+
         # Publicar en gh-pages
         git fetch origin
         git checkout -B gh-pages
-        cp -r ../public/* ../../public/
-        cd ../../public
-        git add .
+        git add public/*
         git commit -m "Add LivingDoc report"
         git push origin gh-pages --force

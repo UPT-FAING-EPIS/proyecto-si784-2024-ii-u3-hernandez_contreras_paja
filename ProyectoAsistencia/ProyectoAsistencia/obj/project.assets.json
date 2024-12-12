@@ -8,24 +8,27 @@
     "net8.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Usuario\\.nuget\\packages\\": {}
+    "C:\\Users\\angel\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Descargas\\moviles\\proyecto-si784-2024-ii-u3-hernandez_contreras_paja\\ProyectoAsistencia\\ProyectoAsistencia\\ProyectoAsistencia.csproj",
+      "projectUniqueName": "C:\\Users\\angel\\Documents\\negocios\\calidad p3\\adsasd\\proyecto-si784-2024-ii-u3-hernandez_contreras_paja\\ProyectoAsistencia\\ProyectoAsistencia\\ProyectoAsistencia.csproj",
       "projectName": "ProyectoAsistencia",
-      "projectPath": "D:\\Descargas\\moviles\\proyecto-si784-2024-ii-u3-hernandez_contreras_paja\\ProyectoAsistencia\\ProyectoAsistencia\\ProyectoAsistencia.csproj",
-      "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-      "outputPath": "D:\\Descargas\\moviles\\proyecto-si784-2024-ii-u3-hernandez_contreras_paja\\ProyectoAsistencia\\ProyectoAsistencia\\obj\\",
+      "projectPath": "C:\\Users\\angel\\Documents\\negocios\\calidad p3\\adsasd\\proyecto-si784-2024-ii-u3-hernandez_contreras_paja\\ProyectoAsistencia\\ProyectoAsistencia\\ProyectoAsistencia.csproj",
+      "packagesPath": "C:\\Users\\angel\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\angel\\Documents\\negocios\\calidad p3\\adsasd\\proyecto-si784-2024-ii-u3-hernandez_contreras_paja\\ProyectoAsistencia\\ProyectoAsistencia\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\angel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
