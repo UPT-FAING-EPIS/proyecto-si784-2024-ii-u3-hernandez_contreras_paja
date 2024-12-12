@@ -1,4 +1,4 @@
-name: Pruebas y Publicación en GitHub Pages - Cobertura
+name: Pruebas y Publicación en GitHub Pages
 
 on: 
   push:
@@ -21,29 +21,39 @@ jobs:
       with:
         dotnet-version: '8.0.x'
 
-    - name: Ejecutar pruebas y recolectar cobertura
+    - name: Ejecutar pruebas y recolectar cobertura y mutaciones
       run: |
         cd ProyectoAsistencia/ProyectoAsistencia.Tests  
         dotnet test --collect:"XPlat Code Coverage"
 
         dotnet tool install -g dotnet-reportgenerator-globaltool
         reportgenerator "-reports:TestResults/**/coverage.cobertura.xml" "-targetdir:Reports/Cobertura" -reporttypes:HTML
+
+       
       continue-on-error: true
 
-    - name: Mover reportes de cobertura a carpeta
+    - name: Mover a carpeta
       run: |
         cd ProyectoAsistencia/ProyectoAsistencia.Tests
+        dotnet tool install -g dotnet-stryker
+        dotnet stryker
 
-        # Crear carpeta temporal para los reportes
+        # Copiar reporte de mutaciones
         mkdir -p ../../ReportesGH
-        cp Reports/Cobertura/index.html ../../ReportesGH/ || echo "No coverage report found"
-        cp Reports/Cobertura/report.css ../../ReportesGH/ || echo "No CSS for coverage report"
+        if [ -d "StrykerOutput" ]; then
+          latest_folder=$(ls -td StrykerOutput/* | head -n 1)
+          cp "$latest_folder/reports/mutation-report.html" ../../ReportesGH/ || echo "No Stryker report found"
+        fi
 
+         # Copiar reporte de cobertura
+         cp Reports/Cobertura/index.html ../../ReportesGH/ || echo "No coverage report found"
+         cp Reports/Cobertura/report.css ../../ReportesGH/ || echo "No coverage report found"
+        
     - name: Verificar contenido de ReportesGH
       run: |
         ls -R ReportesGH || echo "ReportesGH is empty"
 
-    - name: Publicar reportes de cobertura en GitHub Pages
+    - name: Publicar reportes en GitHub Pages
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
@@ -58,10 +68,10 @@ jobs:
         git checkout gh-pages || git checkout --orphan gh-pages
         git rm -rf .  # Limpiar todo el contenido
 
-        # Mover los reportes de cobertura a la raíz
+        # Mover los reportes de nuevo a la raíz
         mv /tmp/ReportesGH/* .
 
-        # Subir solo los reportes de cobertura
+        # Subir solo ReportesGH
         git add .
-        git commit -m "Actualizar reportes de cobertura" || echo "No hay cambios que confirmar"
+        git commit -m "Actualizar reportes de pruebas y mutaciones" || echo "No hay cambios que confirmar"
         git push origin gh-pages --force
