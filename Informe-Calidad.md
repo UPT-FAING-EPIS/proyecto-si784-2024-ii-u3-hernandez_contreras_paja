@@ -163,31 +163,166 @@ Abstract
 
 **DIAGRAMA DE PAQUETES**
 
-![paquetes](./media/paquetesv2.png)
+```mermaid
+graph TD
+    ProyectoAsistencia --> Modelos
+    ProyectoAsistencia --> Controladores
+    ProyectoAsistencia --> Vistas
+    
+    Modelos --> Empleado
+    Modelos --> Asistencia
+    
+    Controladores --> EmpleadoController
+    Controladores --> AsistenciaController
+    
+    Vistas --> VistaDeEmpleados
+    Vistas --> VistaDeAsistencias
+
+    subgraph Modelos
+        Empleado
+        Asistencia
+    end
+    
+    subgraph Controladores
+        EmpleadoController
+        AsistenciaController
+    end
+    
+    subgraph Vistas
+        VistaDeEmpleados
+        VistaDeAsistencias
+    end
+```
+
 
 **DIAGRAMA ENTIDAD-RELACIÓN**
 
-![entidad-relacion](./media/entidad-relacionv2.png)
+```mermaid
+erDiagram
+    EMPLEADO {
+        int Id
+        string NombreUsuario
+        string Contrasenia
+    }
+    ASISTENCIA {
+        int Id
+        int EmpleadoId
+        date Fecha
+        bool Estado
+    }
+    EMPLEADO ||--o{ ASISTENCIA : tiene
+```
+
 
 **DIAGRAMA DE CLASES**
 
-![clases](./media/clasesv2.png)
+```mermaid
+classDiagram
+    class AsistenciaController {
+        +IActionResult Index()
+        +IActionResult RegistrarAsistencia(int empleadoId, bool estado)
+        +IActionResult Historial()
+    }
+    class EmpleadoController {
+        +IActionResult AgregarEmpleado()
+        +IActionResult VerEmpleados()
+        +static List ObtenerEmpleados()
+    }
+    class Empleado {
+        +int Id
+        +string NombreUsuario
+        +string Contrasenia
+    }
+    class Asistencia {
+        +int Id
+        +int EmpleadoId
+        +Empleado Empleado
+        +DateTime Fecha
+        +bool Estado
+    }
+    
+    AsistenciaController --> EmpleadoController : usa
+    EmpleadoController --> Empleado : gestiona
+    Empleado --> Asistencia : 1 "usa" 1..*
+    AsistenciaController --> Empleado : gestiona
+    Empleado --> Asistencia : gestiona
+```
+
 
 **DIAGRAMA DE SECUENCIA**
 
-![secuencia](./media/secuenciav2.png)
+```mermaid
+sequenceDiagram
+    participant Administrador
+    participant NavegadorWeb as Navegador Web
+    participant AsistenciaController
+    participant EmpleadoController
+    participant Modelos
+    participant BaseDeDatos as Base de Datos
+
+    Administrador ->> NavegadorWeb: Solicitar página de registrar asistencia
+    NavegadorWeb ->> AsistenciaController: GET /Asistencia/RegistrarAsistencia
+    AsistenciaController ->> EmpleadoController: Obtener lista de empleados
+    EmpleadoController ->> Modelos: Consultar empleados
+    Modelos ->> BaseDeDatos: Leer empleados desde la base de datos
+    BaseDeDatos -->> Modelos: Lista de empleados
+    Modelos -->> EmpleadoController: Lista de empleados
+    EmpleadoController -->> AsistenciaController: Lista de empleados
+    AsistenciaController -->> NavegadorWeb: Renderizar página con lista de empleados
+
+    Administrador ->> NavegadorWeb: Completar formulario de asistencia
+    NavegadorWeb ->> AsistenciaController: POST /Asistencia/RegistrarAsistencia
+    AsistenciaController ->> EmpleadoController: Validar empleado
+    EmpleadoController ->> Modelos: Consultar empleado por ID
+    Modelos ->> BaseDeDatos: Leer empleado desde la base de datos
+    BaseDeDatos -->> Modelos: Datos del empleado
+    Modelos -->> EmpleadoController: Datos del empleado
+    EmpleadoController -->> AsistenciaController: Validación exitosa
+    AsistenciaController ->> Modelos: Registrar nueva asistencia
+    Modelos ->> BaseDeDatos: Guardar asistencia en la base de datos
+    BaseDeDatos -->> Modelos: Confirmación
+    Modelos -->> AsistenciaController: Asistencia registrada
+    AsistenciaController -->> NavegadorWeb: Redirigir a historial de asistencias
+```
 
 **DIAGRAMA DE CASOS DE USO**
 
-![casos-de-uso](./media/casos-de-usov2.png)
+```mermaid
+graph TD
+    Administrador --> AgregarEmpleados["Agregar Empleados"]
+    Administrador --> VerEmpleados["Ver Empleados"]
+    Administrador --> RegistrarAsistencia["Registrar Asistencia"]
+    Empleado --> ConsultarHistorial["Consultar Historial"]
+    Empleado --> RegistrarAsistencia["Registrar Asistencia"]
+```
+
+
 
 **DIAGRAMA DE COMPONENTES**
 
-![componentes](./media/componentesv2.png)
+```mermaid
+graph TD
+    AsistenciaController --> Modelos
+    AsistenciaController --> Vistas
+    EmpleadoController --> Modelos
+    EmpleadoController --> Vistas
+```
+
 
 **DIAGRAMA DE DESPLIEGUE**
 
-![despliegue](./media/desplieguev2.png)
+```mermaid
+graph TD
+    subgraph Cliente
+        WebBrowser["Web Browser"]
+    end
+    subgraph Servidor
+        AplicacionASP["Aplicación ASP.NET Core"]
+        AplicacionASP --> BaseDeDatos["Base de Datos"]
+    end
+    WebBrowser --> AplicacionASP
+```
+
 
 
 7. Desarrollo de la propuesta 
