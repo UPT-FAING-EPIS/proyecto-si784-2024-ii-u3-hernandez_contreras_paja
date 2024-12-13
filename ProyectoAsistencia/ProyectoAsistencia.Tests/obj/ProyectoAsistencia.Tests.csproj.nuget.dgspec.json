@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\HP\\Documents\\Arduino\\asdawsd\\proyecto-si784-2024-ii-u3-hernandez_contreras_paja\\ProyectoAsistencia\\ProyectoAsistencia.Tests\\ProyectoAsistencia.Tests.csproj": {}
+    "C:\\Users\\HP\\Documents\\Arduino\\asdawsd\\proyecto-si784-2024-ii-u3-hernandez_contreras_paja\\proyectoasistencia\\proyectoasistencia.tests\\ProyectoAsistencia.Tests.csproj": {}
   },
   "projects": {
-    "C:\\Users\\HP\\Documents\\Arduino\\asdawsd\\proyecto-si784-2024-ii-u3-hernandez_contreras_paja\\ProyectoAsistencia\\ProyectoAsistencia.Tests\\ProyectoAsistencia.Tests.csproj": {
+    "C:\\Users\\HP\\Documents\\Arduino\\asdawsd\\proyecto-si784-2024-ii-u3-hernandez_contreras_paja\\proyectoasistencia\\proyectoasistencia.tests\\ProyectoAsistencia.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\HP\\Documents\\Arduino\\asdawsd\\proyecto-si784-2024-ii-u3-hernandez_contreras_paja\\ProyectoAsistencia\\ProyectoAsistencia.Tests\\ProyectoAsistencia.Tests.csproj",
+        "projectUniqueName": "C:\\Users\\HP\\Documents\\Arduino\\asdawsd\\proyecto-si784-2024-ii-u3-hernandez_contreras_paja\\proyectoasistencia\\proyectoasistencia.tests\\ProyectoAsistencia.Tests.csproj",
         "projectName": "ProyectoAsistencia.Tests",
-        "projectPath": "C:\\Users\\HP\\Documents\\Arduino\\asdawsd\\proyecto-si784-2024-ii-u3-hernandez_contreras_paja\\ProyectoAsistencia\\ProyectoAsistencia.Tests\\ProyectoAsistencia.Tests.csproj",
+        "projectPath": "C:\\Users\\HP\\Documents\\Arduino\\asdawsd\\proyecto-si784-2024-ii-u3-hernandez_contreras_paja\\proyectoasistencia\\proyectoasistencia.tests\\ProyectoAsistencia.Tests.csproj",
         "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\HP\\Documents\\Arduino\\asdawsd\\proyecto-si784-2024-ii-u3-hernandez_contreras_paja\\ProyectoAsistencia\\ProyectoAsistencia.Tests\\obj\\",
+        "outputPath": "C:\\Users\\HP\\Documents\\Arduino\\asdawsd\\proyecto-si784-2024-ii-u3-hernandez_contreras_paja\\proyectoasistencia\\proyectoasistencia.tests\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -33,8 +33,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\HP\\Documents\\Arduino\\asdawsd\\proyecto-si784-2024-ii-u3-hernandez_contreras_paja\\ProyectoAsistencia\\ProyectoAsistencia\\ProyectoAsistencia.csproj": {
-                "projectPath": "C:\\Users\\HP\\Documents\\Arduino\\asdawsd\\proyecto-si784-2024-ii-u3-hernandez_contreras_paja\\ProyectoAsistencia\\ProyectoAsistencia\\ProyectoAsistencia.csproj"
+              "C:\\Users\\HP\\Documents\\Arduino\\asdawsd\\proyecto-si784-2024-ii-u3-hernandez_contreras_paja\\proyectoasistencia\\ProyectoAsistencia\\ProyectoAsistencia.csproj": {
+                "projectPath": "C:\\Users\\HP\\Documents\\Arduino\\asdawsd\\proyecto-si784-2024-ii-u3-hernandez_contreras_paja\\proyectoasistencia\\ProyectoAsistencia\\ProyectoAsistencia.csproj"
               }
             }
           }
@@ -139,14 +139,14 @@
         }
       }
     },
-    "C:\\Users\\HP\\Documents\\Arduino\\asdawsd\\proyecto-si784-2024-ii-u3-hernandez_contreras_paja\\ProyectoAsistencia\\ProyectoAsistencia\\ProyectoAsistencia.csproj": {
+    "C:\\Users\\HP\\Documents\\Arduino\\asdawsd\\proyecto-si784-2024-ii-u3-hernandez_contreras_paja\\proyectoasistencia\\ProyectoAsistencia\\ProyectoAsistencia.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\HP\\Documents\\Arduino\\asdawsd\\proyecto-si784-2024-ii-u3-hernandez_contreras_paja\\ProyectoAsistencia\\ProyectoAsistencia\\ProyectoAsistencia.csproj",
+        "projectUniqueName": "C:\\Users\\HP\\Documents\\Arduino\\asdawsd\\proyecto-si784-2024-ii-u3-hernandez_contreras_paja\\proyectoasistencia\\ProyectoAsistencia\\ProyectoAsistencia.csproj",
         "projectName": "ProyectoAsistencia",
-        "projectPath": "C:\\Users\\HP\\Documents\\Arduino\\asdawsd\\proyecto-si784-2024-ii-u3-hernandez_contreras_paja\\ProyectoAsistencia\\ProyectoAsistencia\\ProyectoAsistencia.csproj",
+        "projectPath": "C:\\Users\\HP\\Documents\\Arduino\\asdawsd\\proyecto-si784-2024-ii-u3-hernandez_contreras_paja\\proyectoasistencia\\ProyectoAsistencia\\ProyectoAsistencia.csproj",
         "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\HP\\Documents\\Arduino\\asdawsd\\proyecto-si784-2024-ii-u3-hernandez_contreras_paja\\ProyectoAsistencia\\ProyectoAsistencia\\obj\\",
+        "outputPath": "C:\\Users\\HP\\Documents\\Arduino\\asdawsd\\proyecto-si784-2024-ii-u3-hernandez_contreras_paja\\proyectoasistencia\\ProyectoAsistencia\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

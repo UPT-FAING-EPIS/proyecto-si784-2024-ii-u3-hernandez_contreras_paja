@@ -41,8 +41,6 @@ jobs:
 
         cd ProyectoAsistencia/ProyectoAsistencia.Tests
 
-        dotnet test --filter FullyQualifiedName~HomeFeature --logger "trx;LogFileName=TestResults/TestResults.trx"
-        python3 script.py TestResults/TestResults.trx output.json
         livingdoc test-assembly ./bin/Debug/net8.0/ProyectoAsistencia.Tests.dll -t TestResults/TestResults.json -o Reports/LivingDoc/LivingDocReport.html
 
 

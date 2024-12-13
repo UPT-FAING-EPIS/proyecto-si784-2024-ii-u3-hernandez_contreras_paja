@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "mij23is7eM8=",
+  "dgSpecHash": "upeDL0CYoqI=",
   "success": true,
-  "projectFilePath": "C:\\Users\\HP\\Documents\\Arduino\\asdawsd\\proyecto-si784-2024-ii-u3-hernandez_contreras_paja\\ProyectoAsistencia\\ProyectoAsistencia.Tests\\ProyectoAsistencia.Tests.csproj",
+  "projectFilePath": "C:\\Users\\HP\\Documents\\Arduino\\asdawsd\\proyecto-si784-2024-ii-u3-hernandez_contreras_paja\\proyectoasistencia\\proyectoasistencia.tests\\ProyectoAsistencia.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\HP\\.nuget\\packages\\bodi\\1.5.0\\bodi.1.5.0.nupkg.sha512",
     "C:\\Users\\HP\\.nuget\\packages\\castle.core\\5.1.1\\castle.core.5.1.1.nupkg.sha512",
