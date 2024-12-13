@@ -63,8 +63,8 @@ jobs:
       run: |
         ls -R ReportesGH || echo "ReportesGH is empty"
 
-    # Paso para ejecutar pruebas de Selenium en un entorno Windows
-    - name: Ejecutar pruebas Selenium
+    # Paso para ejecutar pruebas de Selenium con reporte NUnit
+    - name: Ejecutar pruebas Selenium y generar reporte NUnit
       runs-on: windows-latest
       steps:
         - name: Checkout code
@@ -80,10 +80,11 @@ jobs:
           with:
             dotnet-version: '8.0.x'
 
-        - name: Ejecutar pruebas Selenium
+        - name: Ejecutar pruebas Selenium con NUnit
           run: |
             cd ProyectoAsistencia/ProyectoAsistencia.Tests
-            dotnet test --filter "FullyQualifiedName~ProyectoAsistencia.Tests.AdminPanelTestsEmpleados" # Especifica el nombre de las pruebas que deseas ejecutar
+            # Ejecutar las pruebas de Selenium y generar un reporte en formato NUnit
+            dotnet test --filter "FullyQualifiedName~ProyectoAsistencia.Tests.AdminPanelTestsEmpleados" --logger "nunit;LogFilePath=Reports/SeleniumTests.xml"
 
     - name: Publicar reportes en GitHub Pages
       env:
@@ -106,4 +107,4 @@ jobs:
         # Subir solo ReportesGH
         git add .
         git commit -m "Actualizar reportes de pruebas y mutaciones" || echo "No hay cambios que confirmar"
-        git push origin gh-pages --force
+        git push origin gh-pages --forc
