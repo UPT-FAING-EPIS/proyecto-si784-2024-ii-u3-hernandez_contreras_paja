@@ -39,6 +39,11 @@ jobs:
         cd ProyectoAsistencia/ProyectoAsistencia.Tests
         dotnet test --filter FullyQualifiedName~HomeFeature --logger "trx;LogFileName=TestResults/TestResults.trx"
 
+    - name: Ejecutar script Python para procesar TRX
+      run: |
+        cd ProyectoAsistencia/ProyectoAsistencia.Tests
+        python3 script.py TestResults/TestResults.trx output.json
+
     - name: Generar reporte de LivingDoc
       run: |
         cd ProyectoAsistencia/ProyectoAsistencia.Tests
