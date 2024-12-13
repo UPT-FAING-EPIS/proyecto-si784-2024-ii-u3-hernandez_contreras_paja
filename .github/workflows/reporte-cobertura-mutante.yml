@@ -28,8 +28,6 @@ jobs:
 
         dotnet tool install -g dotnet-reportgenerator-globaltool
         reportgenerator "-reports:TestResults/**/coverage.cobertura.xml" "-targetdir:Reports/Cobertura" -reporttypes:HTML
-
-       
       continue-on-error: true
 
     - name: Instalar herramientas necesarias
@@ -42,7 +40,6 @@ jobs:
         cd ProyectoAsistencia/ProyectoAsistencia.Tests
 
         livingdoc test-assembly ./bin/Debug/net8.0/ProyectoAsistencia.Tests.dll -t TestResults/TestResults.json -o Reports/LivingDoc/LivingDocReport.html
-
 
     - name: Mover a carpeta
       run: |
@@ -57,14 +54,36 @@ jobs:
           cp "$latest_folder/reports/mutation-report.html" ../../ReportesGH/ || echo "No Stryker report found"
         fi
 
-         # Copiar reporte de cobertura
-         cp Reports/Cobertura/index.html ../../ReportesGH/ || echo "No coverage report found"
-         cp Reports/Cobertura/report.css ../../ReportesGH/ || echo "No coverage report found"
-         cp Reports/LivingDoc/LivingDocReport.html ../../ReportesGH/ || echo "No coverage report found"
+        # Copiar reporte de cobertura
+        cp Reports/Cobertura/index.html ../../ReportesGH/ || echo "No coverage report found"
+        cp Reports/Cobertura/report.css ../../ReportesGH/ || echo "No coverage report found"
+        cp Reports/LivingDoc/LivingDocReport.html ../../ReportesGH/ || echo "No coverage report found"
         
     - name: Verificar contenido de ReportesGH
       run: |
         ls -R ReportesGH || echo "ReportesGH is empty"
+
+    # Paso para ejecutar pruebas de Selenium en un entorno Windows
+    - name: Ejecutar pruebas Selenium
+      runs-on: windows-latest
+      steps:
+        - name: Checkout code
+          uses: actions/checkout@v4
+
+        - name: Install Chrome and ChromeDriver
+          run: |
+            choco install googlechrome
+            choco install chromedriver
+
+        - name: Set up .NET SDK for Selenium tests
+          uses: actions/setup-dotnet@v2
+          with:
+            dotnet-version: '8.0.x'
+
+        - name: Ejecutar pruebas Selenium
+          run: |
+            cd ProyectoAsistencia/ProyectoAsistencia.Tests
+            dotnet test --filter "FullyQualifiedName~ProyectoAsistencia.Tests.AdminPanelTestsEmpleados" # Especifica el nombre de las pruebas que deseas ejecutar
 
     - name: Publicar reportes en GitHub Pages
       env:
