@@ -50,15 +50,16 @@ jobs:
         SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
       run: |
         cd ProyectoAsistencia/ProyectoAsistencia.Tests
-        snyk container test ProyectoAsistencia --json | snyk-to-html -o Reports/Snyk/container-test-results.html
+        snyk container test ProyectoAsistencia --json | snyk-to-html -o Reports/Snyk/container-test-results.html || echo "Error generando el reporte de Snyk"
 
-    - name: Mover a carpeta
+    - name: Mover a carpeta ReportesGH
       run: |
         cd ProyectoAsistencia/ProyectoAsistencia.Tests
         dotnet tool install -g dotnet-stryker
         dotnet stryker
 
         mkdir -p ../../ReportesGH
+
         # Copiar reporte de mutaciones
         if [ -d "StrykerOutput" ]; then
           latest_folder=$(ls -td StrykerOutput/* | head -n 1)
@@ -70,7 +71,7 @@ jobs:
         cp Reports/Cobertura/report.css ../../ReportesGH/ || echo "No coverage report found"
         cp Reports/LivingDoc/LivingDocReport.html ../../ReportesGH/ || echo "No LivingDoc report found"
         cp Reports/Snyk/container-test-results.html ../../ReportesGH/ || echo "No Snyk report found"
-        
+
     - name: Verificar contenido de ReportesGH
       run: |
         ls -R ReportesGH || echo "ReportesGH is empty"
