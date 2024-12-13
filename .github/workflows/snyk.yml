@@ -31,15 +31,16 @@ jobs:
           dotnet restore
           dotnet build
 
-      - name: Snyk Code Analysis
+      - name: Run Snyk Container Analysis
         env:
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
         run: |
-          cd ProyectoAsistencia
-          snyk code test --json | snyk-to-html -o code-test-results.html
+          cd ProyectoAsistencia/ProyectoAsistencia.Tests
+          snyk container test ProyectoAsistencia --json | snyk-to-html -o container-test-results.html
 
-      - name: Upload Reports
-        uses: actions/upload-artifact@v3
+      - name: Upload to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
         with:
-          name: Snyk Code Report
-          path: ProyectoAsistencia/code-test-results.html
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ProyectoAsistencia/ProyectoAsistencia.Tests
+          destination_dir: snyk-reports
