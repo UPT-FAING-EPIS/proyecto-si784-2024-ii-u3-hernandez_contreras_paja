@@ -21,6 +21,10 @@ jobs:
       with:
         dotnet-version: '8.0.x'
 
+    - name: Instalar Snyk CLI y snyk-to-html
+      run: |
+        npm install -g snyk snyk-to-html
+
     - name: Ejecutar pruebas y recolectar cobertura y mutaciones
       run: |
         cd ProyectoAsistencia/ProyectoAsistencia.Tests  
