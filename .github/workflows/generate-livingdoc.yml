@@ -1,4 +1,4 @@
-name: Generate LivingDoc Report
+name: Generar y Publicar LivingDoc Report
 
 on: 
   push:
@@ -21,63 +21,58 @@ jobs:
       with:
         dotnet-version: '8.0.x'
 
-    - name: Instalar LivingDoc CLI
-      run: dotnet tool install --global SpecFlow.Plus.LivingDoc.CLI
-
-    - name: Agregar herramienta LivingDoc al PATH
-      shell: bash
-      run: echo "export PATH=\"\$PATH:\$HOME/.dotnet/tools\"" >> $GITHUB_ENV
-
-    - name: Instalar dependencias de Python
+    - name: Instalar herramientas necesarias
       run: |
+        dotnet tool install --global SpecFlow.Plus.LivingDoc.CLI
+        echo "export PATH=\"\$PATH:\$HOME/.dotnet/tools\"" >> $GITHUB_ENV
         python3 -m pip install --upgrade pip
         python3 -m pip install xmltodict
 
-    - name: Restaurar dependencias
-      working-directory: ProyectoAsistencia/ProyectoAsistencia.Tests
-      run: dotnet restore ProyectoAsistencia.Tests.csproj
-
-    - name: Compilar proyecto de pruebas
-      working-directory: ProyectoAsistencia/ProyectoAsistencia.Tests
-      run: dotnet build ProyectoAsistencia.Tests.csproj --configuration Debug
+    - name: Restaurar dependencias y compilar proyecto
+      run: |
+        cd ProyectoAsistencia/ProyectoAsistencia.Tests
+        dotnet restore
+        dotnet build --configuration Debug
 
     - name: Ejecutar pruebas y generar archivo TRX
-      working-directory: ProyectoAsistencia/ProyectoAsistencia.Tests
-      run: dotnet test --filter FullyQualifiedName~HomeFeature --logger "trx;LogFileName=TestResults/TestResults.trx"
-
-    - name: Convertir TRX a JSON
-      working-directory: ProyectoAsistencia/ProyectoAsistencia.Tests
-      run: python3 TestResults/trx_to_json.py TestResults/TestResults.trx TestResults/TestResults.json
-
-    - name: Generar Reporte de LivingDoc
-      working-directory: ProyectoAsistencia/ProyectoAsistencia.Tests
       run: |
-        mkdir -p ../public
-        livingdoc test-assembly ./bin/Debug/net8.0/ProyectoAsistencia.Tests.dll -t TestResults/TestResults.json -o ../public/LivingDocReport.html
+        cd ProyectoAsistencia/ProyectoAsistencia.Tests
+        dotnet test --filter FullyQualifiedName~HomeFeature --logger "trx;LogFileName=TestResults/TestResults.trx"
 
-    - name: Validar si LivingDocReport.html fue generado
-      working-directory: ProyectoAsistencia/ProyectoAsistencia.Tests
+    - name: Generar reporte de LivingDoc
       run: |
-        if [ ! -f "../public/LivingDocReport.html" ]; then
-          echo "Error: LivingDocReport.html no se generó correctamente."
-          exit 1
-        fi
+        cd ProyectoAsistencia/ProyectoAsistencia.Tests
+        mkdir -p Reports/LivingDoc
+        livingdoc test-assembly ./bin/Debug/net8.0/ProyectoAsistencia.Tests.dll -t TestResults/TestResults.json -o Reports/LivingDoc/LivingDocReport.html
 
-    - name: Publicar en GitHub Pages
+    - name: Mover reporte a carpeta de publicación
+      run: |
+        mkdir -p ReportesGH
+        cp ProyectoAsistencia/ProyectoAsistencia.Tests/Reports/LivingDoc/LivingDocReport.html ReportesGH/
+      
+    - name: Verificar contenido de ReportesGH
+      run: |
+        ls -R ReportesGH || echo "ReportesGH está vacío"
+
+    - name: Publicar reporte en GitHub Pages
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
         git config --global user.name "github-actions"
         git config --global user.email "github-actions@github.com"
-        
-        # Cambiar a la rama gh-pages
-        git fetch origin
-        git checkout gh-pages || git checkout -b gh-pages
 
-        # Copiar el reporte al directorio raíz
-        cp -r ProyectoAsistencia/public/* .
+        # Guardar carpeta ReportesGH temporalmente
+        mv ReportesGH /tmp/ReportesGH
 
-        # Confirmar y empujar cambios
+        # Configurar la rama gh-pages
+        git fetch origin gh-pages || git checkout --orphan gh-pages
+        git checkout gh-pages || git checkout --orphan gh-pages
+        git rm -rf .  # Limpiar todo el contenido
+
+        # Mover los reportes de nuevo a la raíz
+        mv /tmp/ReportesGH/* .
+
+        # Subir el contenido
         git add .
-        git commit -m "Actualizar LivingDoc report"
+        git commit -m "Actualizar reporte LivingDoc" || echo "No hay cambios que confirmar"
         git push origin gh-pages --force
