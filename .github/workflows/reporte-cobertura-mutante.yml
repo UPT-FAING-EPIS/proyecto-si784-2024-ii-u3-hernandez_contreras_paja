@@ -21,56 +21,54 @@ jobs:
       with:
         dotnet-version: '8.0.x'
 
-    - name: Instalar Snyk CLI y snyk-to-html
+    - name: Instalar herramientas necesarias
       run: |
         npm install -g snyk snyk-to-html
+        dotnet tool install --global SpecFlow.Plus.LivingDoc.CLI
+        dotnet tool install -g dotnet-reportgenerator-globaltool
+        dotnet tool install -g dotnet-stryker
+        echo "export PATH=\"\$PATH:\$HOME/.dotnet/tools\"" >> $GITHUB_ENV
+        python3 -m pip install --upgrade pip
+        python3 -m pip install xmltodict
 
     - name: Ejecutar pruebas y recolectar cobertura y mutaciones
       run: |
         cd ProyectoAsistencia/ProyectoAsistencia.Tests  
         dotnet test --collect:"XPlat Code Coverage"
 
-        dotnet tool install -g dotnet-reportgenerator-globaltool
         reportgenerator "-reports:TestResults/**/coverage.cobertura.xml" "-targetdir:Reports/Cobertura" -reporttypes:HTML
-      continue-on-error: true
-
-    - name: Instalar herramientas necesarias
-      run: |
-        dotnet tool install --global SpecFlow.Plus.LivingDoc.CLI
-        echo "export PATH=\"\$PATH:\$HOME/.dotnet/tools\"" >> $GITHUB_ENV
-        python3 -m pip install --upgrade pip
-        python3 -m pip install xmltodict
-
-        cd ProyectoAsistencia/ProyectoAsistencia.Tests
 
         livingdoc test-assembly ./bin/Debug/net8.0/ProyectoAsistencia.Tests.dll -t TestResults/TestResults.json -o Reports/LivingDoc/LivingDocReport.html
+
+        dotnet stryker
 
     - name: Análisis de seguridad con Snyk
       env:
         SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
       run: |
         cd ProyectoAsistencia/ProyectoAsistencia.Tests
+        mkdir -p Reports/Snyk
         snyk container test ProyectoAsistencia --json | snyk-to-html -o Reports/Snyk/container-test-results.html || echo "Error generando el reporte de Snyk"
 
     - name: Mover a carpeta ReportesGH
       run: |
-        cd ProyectoAsistencia/ProyectoAsistencia.Tests
-        dotnet tool install -g dotnet-stryker
-        dotnet stryker
+        mkdir -p ReportesGH
 
-        mkdir -p ../../ReportesGH
+        # Copiar reporte de cobertura
+        cp ProyectoAsistencia/ProyectoAsistencia.Tests/Reports/Cobertura/index.html ReportesGH/ || echo "No coverage report found"
+        cp ProyectoAsistencia/ProyectoAsistencia.Tests/Reports/Cobertura/report.css ReportesGH/ || echo "No coverage CSS found"
+
+        # Copiar LivingDoc
+        cp ProyectoAsistencia/ProyectoAsistencia.Tests/Reports/LivingDoc/LivingDocReport.html ReportesGH/ || echo "No LivingDoc report found"
 
         # Copiar reporte de mutaciones
-        if [ -d "StrykerOutput" ]; then
-          latest_folder=$(ls -td StrykerOutput/* | head -n 1)
-          cp "$latest_folder/reports/mutation-report.html" ../../ReportesGH/ || echo "No Stryker report found"
+        if [ -d "ProyectoAsistencia/ProyectoAsistencia.Tests/StrykerOutput" ]; then
+          latest_folder=$(ls -td ProyectoAsistencia/ProyectoAsistencia.Tests/StrykerOutput/* | head -n 1)
+          cp "$latest_folder/reports/mutation-report.html" ReportesGH/ || echo "No Stryker report found"
         fi
 
-        # Copiar reportes adicionales
-        cp Reports/Cobertura/index.html ../../ReportesGH/ || echo "No coverage report found"
-        cp Reports/Cobertura/report.css ../../ReportesGH/ || echo "No coverage report found"
-        cp Reports/LivingDoc/LivingDocReport.html ../../ReportesGH/ || echo "No LivingDoc report found"
-        cp Reports/Snyk/container-test-results.html ../../ReportesGH/ || echo "No Snyk report found"
+        # Copiar reporte de Snyk
+        cp ProyectoAsistencia/ProyectoAsistencia.Tests/Reports/Snyk/container-test-results.html ReportesGH/ || echo "No Snyk report found"
 
     - name: Verificar contenido de ReportesGH
       run: |
