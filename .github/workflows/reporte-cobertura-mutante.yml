@@ -28,6 +28,8 @@ jobs:
 
         dotnet tool install -g dotnet-reportgenerator-globaltool
         reportgenerator "-reports:TestResults/**/coverage.cobertura.xml" "-targetdir:Reports/Cobertura" -reporttypes:HTML
+
+       
       continue-on-error: true
 
     - name: Instalar herramientas necesarias
@@ -40,6 +42,7 @@ jobs:
         cd ProyectoAsistencia/ProyectoAsistencia.Tests
 
         livingdoc test-assembly ./bin/Debug/net8.0/ProyectoAsistencia.Tests.dll -t TestResults/TestResults.json -o Reports/LivingDoc/LivingDocReport.html
+
 
     - name: Mover a carpeta
       run: |
@@ -54,37 +57,14 @@ jobs:
           cp "$latest_folder/reports/mutation-report.html" ../../ReportesGH/ || echo "No Stryker report found"
         fi
 
-        # Copiar reporte de cobertura
-        cp Reports/Cobertura/index.html ../../ReportesGH/ || echo "No coverage report found"
-        cp Reports/Cobertura/report.css ../../ReportesGH/ || echo "No coverage report found"
-        cp Reports/LivingDoc/LivingDocReport.html ../../ReportesGH/ || echo "No coverage report found"
+         # Copiar reporte de cobertura
+         cp Reports/Cobertura/index.html ../../ReportesGH/ || echo "No coverage report found"
+         cp Reports/Cobertura/report.css ../../ReportesGH/ || echo "No coverage report found"
+         cp Reports/LivingDoc/LivingDocReport.html ../../ReportesGH/ || echo "No coverage report found"
         
     - name: Verificar contenido de ReportesGH
       run: |
         ls -R ReportesGH || echo "ReportesGH is empty"
-
-    # Paso para ejecutar pruebas de Selenium con reporte NUnit
-    - name: Ejecutar pruebas Selenium y generar reporte NUnit
-      runs-on: windows-latest
-      steps:
-        - name: Checkout code
-          uses: actions/checkout@v4
-
-        - name: Install Chrome and ChromeDriver
-          run: |
-            choco install googlechrome
-            choco install chromedriver
-
-        - name: Set up .NET SDK for Selenium tests
-          uses: actions/setup-dotnet@v2
-          with:
-            dotnet-version: '8.0.x'
-
-        - name: Ejecutar pruebas Selenium con NUnit
-          run: |
-            cd ProyectoAsistencia/ProyectoAsistencia.Tests
-            # Ejecutar las pruebas de Selenium y generar un reporte en formato NUnit
-            dotnet test --filter "FullyQualifiedName~ProyectoAsistencia.Tests.AdminPanelTestsEmpleados" --logger "nunit;LogFilePath=Reports/SeleniumTests.xml"
 
     - name: Publicar reportes en GitHub Pages
       env:
@@ -107,4 +87,4 @@ jobs:
         # Subir solo ReportesGH
         git add .
         git commit -m "Actualizar reportes de pruebas y mutaciones" || echo "No hay cambios que confirmar"
-        git push origin gh-pages --forc
+        git push origin gh-pages --force
