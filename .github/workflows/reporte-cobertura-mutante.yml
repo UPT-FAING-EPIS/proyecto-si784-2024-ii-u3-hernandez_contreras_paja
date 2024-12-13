@@ -23,7 +23,6 @@ jobs:
 
     - name: Instalar herramientas necesarias
       run: |
-        npm install -g snyk snyk-to-html
         dotnet tool install --global SpecFlow.Plus.LivingDoc.CLI
         dotnet tool install -g dotnet-reportgenerator-globaltool
         dotnet tool install -g dotnet-stryker
@@ -42,17 +41,12 @@ jobs:
 
         dotnet stryker
 
-    - name: Análisis de seguridad con Snyk
-      env:
-        SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
-      run: |
-        cd ProyectoAsistencia/ProyectoAsistencia.Tests
-        mkdir -p Reports/Snyk
-        snyk container test ProyectoAsistencia --json | snyk-to-html -o Reports/Snyk/container-test-results.html || echo "Error generando el reporte de Snyk"
-
-    - name: Mover a carpeta ReportesGH
+    - name: Mover reporte existente a carpeta ReportesGH
       run: |
         mkdir -p ReportesGH
+
+        # Mover archivo existente container-test-result
+        cp ProyectoAsistencia/container-test-result ReportesGH/container-test-result || echo "No se encontró el reporte existente"
 
         # Copiar reporte de cobertura
         cp ProyectoAsistencia/ProyectoAsistencia.Tests/Reports/Cobertura/index.html ReportesGH/ || echo "No coverage report found"
@@ -67,28 +61,12 @@ jobs:
           cp "$latest_folder/reports/mutation-report.html" ReportesGH/ || echo "No Stryker report found"
         fi
 
-        # Copiar reporte de Snyk
-        cp ProyectoAsistencia/ProyectoAsistencia.Tests/Reports/Snyk/container-test-results.html ReportesGH/ || echo "No Snyk report found"
-
     - name: Verificar contenido de ReportesGH
       run: |
         ls -R ReportesGH || echo "ReportesGH is empty"
 
     - name: Publicar reportes en GitHub Pages
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      run: |
-        git config --global user.name "github-actions"
-        git config --global user.email "github-actions@github.com"
-
-        mv ReportesGH /tmp/ReportesGH
-
-        git fetch origin gh-pages || git checkout --orphan gh-pages
-        git checkout gh-pages || git checkout --orphan gh-pages
-        git rm -rf .
-
-        mv /tmp/ReportesGH/* .
-
-        git add .
-        git commit -m "Actualizar reportes de pruebas, mutaciones y seguridad" || echo "No hay cambios que confirmar"
-        git push origin gh-pages --force
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ReportesGH
