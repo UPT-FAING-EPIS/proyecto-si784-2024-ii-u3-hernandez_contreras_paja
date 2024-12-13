@@ -61,6 +61,8 @@ jobs:
          cp Reports/Cobertura/index.html ../../ReportesGH/ || echo "No coverage report found"
          cp Reports/Cobertura/report.css ../../ReportesGH/ || echo "No coverage report found"
          cp Reports/LivingDoc/LivingDocReport.html ../../ReportesGH/ || echo "No coverage report found"
+
+          cp ../../container-test-result.html ../../ReportesGH/ || echo "No container test result found"
         
     - name: Verificar contenido de ReportesGH
       run: |
