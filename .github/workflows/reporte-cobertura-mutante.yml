@@ -32,6 +32,20 @@ jobs:
        
       continue-on-error: true
 
+    - name: Instalar herramientas necesarias
+      run: |
+        dotnet tool install --global SpecFlow.Plus.LivingDoc.CLI
+        echo "export PATH=\"\$PATH:\$HOME/.dotnet/tools\"" >> $GITHUB_ENV
+        python3 -m pip install --upgrade pip
+        python3 -m pip install xmltodict
+
+        cd ProyectoAsistencia/ProyectoAsistencia.Tests
+
+        dotnet test --filter FullyQualifiedName~HomeFeature --logger "trx;LogFileName=TestResults/TestResults.trx"
+        python3 script.py TestResults/TestResults.trx output.json
+        livingdoc test-assembly ./bin/Debug/net8.0/ProyectoAsistencia.Tests.dll -t TestResults/TestResults.json -o Reports/LivingDoc/LivingDocReport.html
+
+
     - name: Mover a carpeta
       run: |
         cd ProyectoAsistencia/ProyectoAsistencia.Tests
@@ -48,6 +62,7 @@ jobs:
          # Copiar reporte de cobertura
          cp Reports/Cobertura/index.html ../../ReportesGH/ || echo "No coverage report found"
          cp Reports/Cobertura/report.css ../../ReportesGH/ || echo "No coverage report found"
+         cp Reports/LivingDoc/LivingDocReport.html ../../ReportesGH/ || echo "No coverage report found"
         
     - name: Verificar contenido de ReportesGH
       run: |
